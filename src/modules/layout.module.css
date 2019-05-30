@@ -1,0 +1,32 @@
+/* Layout Base Formatting */
+.Layout {
+    min-height: 100vh;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header Base Formatting */
+.Header {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid rgba(78, 64, 64, 0.726);
+    padding: 2rem 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* Footer Base Formatting */
+.Footer {
+    width: 100%;
+    border-top: 1px solid #3831293f;
+    background-color: transparent;
+    padding: 2rem 2rem;
+}
