@@ -6,20 +6,42 @@
     padding: 0;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    background-color: rgb(188, 240, 223);
 }
 
 /* Header Base Formatting */
 .Header {
     width: 100%;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid rgba(78, 64, 64, 0.726);
-    padding: 2rem 2rem;
+    padding: 0 10vw;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+} .Logo {
+    width: 2rem;
+    height: auto;
+    margin: 0;
+} .Nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+} .NavButton {
+    background-color: transparent;
+    border: none;
+    margin: 0 1rem;
+    font-family: "Lato";
+    cursor: pointer;
+    padding: .5rem 0;
+
+    transition: .3s ease;
+} .NavButton:hover {
+    transform: translateY(-2px);
 }
 
 

@@ -12,10 +12,10 @@ import Footer from './footer'
 import "./layout.css"
 import s from '../modules/layout.module.css'
 
-const Layout = ({ children }) => (
+const Layout = (props) => (
   <div className={ s.Layout }>
-    <Header />
-    {children}
+    <Header scroll={props.scroller} current={props.activeSection} header={props.activeHeader} />
+    {props.children}
     <Footer />
   </div>
 )
