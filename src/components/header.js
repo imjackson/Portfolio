@@ -7,7 +7,7 @@ import { Link } from 'gatsby'
 import s from '../modules/layout.module.css'
 
 // Icons
-import logo from '../images/logos/jackson1000.svg'
+import logo from '../images/logos/Jackson1000.svg'
 
 // Active scroll styling
 const activeHeader = {
