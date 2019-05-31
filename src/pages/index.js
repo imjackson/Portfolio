@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
@@ -14,17 +13,21 @@ import s from '../modules/index.module.css'
 import wave from '../images/waves/wave2.svg'
 import waveTwo from '../images/waves/wave3.svg'
 import waveThree from '../images/waves/wave4.svg'
+
+// Language Icons
 import html from '../images/language-icons/html5.svg'
 import css from '../images/language-icons/css-3.svg'
 import js from '../images/language-icons/js.svg'
 import reactLogo from '../images/language-icons/react-logo.svg'
 import sass from '../images/language-icons/sass-logo.svg'
 import gatsbyLogo from '../images/language-icons/gatsby-logo.svg'
-import down from '../images/down-arrow.svg'
 
 // Site Images
-import rockland from '../images/rockland-image.png'
-import finalsclub from '../images/finalsclub-display.png'
+import rockland from '../images/site-images/rockland-display.png'
+import finalsclub from '../images/site-images/finalsclub-display.png'
+
+// Other Icons
+import down from '../images/down-arrow.svg'
 
 export default class Index extends React.Component {
   constructor(props) {
@@ -55,7 +58,6 @@ export default class Index extends React.Component {
     let splash = this.Splash.current.offsetTop, about = this.About.current.offsetTop, work = this.Work.current.offsetTop, contact = this.Contact.current.offsetTop
     if (y >= about - (this.Splash.current.offsetHeight/4) && y < work - (about/4)) {
       s = "about"
-      console.log("c")
     } else if (y >= work - (about/4) && y < contact - (work/4)) {
       s = "work"
     } else if (y >= contact- (work/4)) {
@@ -93,7 +95,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout scroller={this.scroller} activeSection={this.state.sec} activeHeader={this.state.activeHeader}>
-          <SEO title="Front-End Developer" />
+          <SEO title="Front-End Developer" description="I'm a front-end developer with a dedication to writing fast, simple, accessible websites." />
           <div className={ s.Main }>
             <div ref={this.Splash} className={ s.SplashContainer }>
               <h1 className={ s.Title }>I'm Jackson.</h1>
@@ -191,14 +193,6 @@ const WorkItem = (props) => (
   </div>
 )
 
-const WorkItemOpp = (props) => (
-  <div className={ s.WorkRow }>
-    <img src={props.img} className={ s.WorkRowImage } />
-    <div className={ s.WorkRowContent}></div>
-  </div>
-)
-
-
 export const fluidImage = graphql`
 fragment fluidImage on File {
   childImageSharp {
@@ -214,7 +208,7 @@ export const pageQuery = graphql`
     finalsclub: file(relativePath: { eq: "finalsclub-display.png" }) {
       ...fluidImage
     }
-    rockland: file(relativePath: { eq: "rockland-image.png" }) {
+    rockland: file(relativePath: { eq: "rockland-display.png" }) {
       ...fluidImage
     }
   }
