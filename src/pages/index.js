@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 // Components
 import Layout from "../components/layout"
@@ -141,6 +143,7 @@ export default class Index extends React.Component {
                   title="FinalsClub Landing"
                   roles="Design, Development"
                   tools={['Gatsby', 'CSS Modules']}
+                  fluid={this.props.data.finalsclub.childImageSharp.fluid}
                 />
                 <WorkItem
                   odd={false}
@@ -148,6 +151,7 @@ export default class Index extends React.Component {
                   roles="Development"
                   title="Rockland Pediatrics"
                   tools={['Gatsby', 'CSS Modules']}
+                  fluid={this.props.data.rockland.childImageSharp.fluid}
                 />
               </div>
             </div>
@@ -172,7 +176,7 @@ export default class Index extends React.Component {
 
 const WorkItem = (props) => (
   <div className={ s.WorkRow }>
-    {props.odd ? null : <img src={props.img} className={ s.WorkRowImage } />}
+    {props.odd ? null : <div className={ s.WorkRowImage }><Img fluid={props.fluid} /></div>}
     <div style={props.odd ? {color: '#252525'} : {color: '#f9f9f9'} }className={ s.WorkRowContent}>
       <h2 className={ s.ProjectTitle }>{props.title}</h2>
       <hr style={ props.odd ? {backgroundColor: '#14213D'} : {backgroundColor: '#BCF0DF'} }className={ s.ProjectBreak }/>
@@ -183,7 +187,7 @@ const WorkItem = (props) => (
         </ul>
       </div>
     </div>
-    {props.odd ? <img src={props.img} className={ s.WorkRowImage } /> : null }
+    {props.odd ? <div className={ s.WorkRowImage }><Img fluid={props.fluid} /></div> : null }
   </div>
 )
 
@@ -193,3 +197,25 @@ const WorkItemOpp = (props) => (
     <div className={ s.WorkRowContent}></div>
   </div>
 )
+
+
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
+
+export const pageQuery = graphql`
+  query {
+    finalsclub: file(relativePath: { eq: "finalsclub-display.png" }) {
+      ...fluidImage
+    }
+    rockland: file(relativePath: { eq: "rockland-image.png" }) {
+      ...fluidImage
+    }
+  }
+`
