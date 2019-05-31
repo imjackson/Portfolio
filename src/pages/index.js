@@ -111,29 +111,45 @@ export default class Index extends React.Component {
                   <p className={ s.Paragraph}>Morbi vitae cursus odio. Suspendisse quam mauris, tincidunt id ultrices quis, ultricies sit amet nisi. Sed sit amet erat tincidunt, laoreet lectus in, placerat lorem. Cras quis leo ac metus ultrices bibendum. Donec vehicula mi at sapien porttitor congue. Fusce varius volutpat lectus id pharetra. Sed imperdiet sit amet neque at convallis.</p>
                   <h3 className={ s.AboutSectionHeader }>As a developer</h3>
                   <p className={ s.Paragraph }>Morbi non nisi eu nibh mollis viverra. Sed et placerat erat, et varius ipsum. Morbi condimentum mattis metus eget consectetur. Pellentesque cursus turpis non finibus volutpat. Ut porttitor aliquet felis id lobortis. Donec auctor euismod nisi, malesuada ultricies mi bibendum quis. Pellentesque vel arcu id felis vestibulum tempor. Phasellus ut ligula ornare, ultricies leo ut, scelerisque arcu. Sed cursus massa sit amet est pulvinar placerat. Aenean eleifend, lorem sed faucibus pretium, metus tellus interdum mi, eu tristique mauris metus sit amet diam. Integer dui nulla, eleifend ac est id, viverra congue libero.</p>
+                
+                  
                 </div>
                 <div className={ s.AboutRight }>
-                  <h2 className={ s.LanguageTitle }>Languages.</h2>
-                  <hr className={ s.LanguageBreak } />
-                  <div className={ s.IconArray }>
-                    <img src={html} alt="HTML 5 logo." className={ s.LanguageIcon } />
-                    <img src={css} alt="HTML 5 logo." className={ s.LanguageIcon } />
-                    <img src={js} alt="HTML 5 logo." className={ s.LanguageIcon } />
+                  
+                  <div className={ s.SkillBlock }>
+                    <h2 className={ s.LanguageTitle }>Languages.</h2>
+                    <hr className={ s.LanguageBreak } />
+                    <div className={ s.IconArray }>
+                      <img src={html} alt="HTML 5 logo." className={ s.LanguageIcon } />
+                      <img src={css} alt="HTML 5 logo." className={ s.LanguageIcon } />
+                      <img src={js} alt="HTML 5 logo." className={ s.LanguageIcon } />
+                    </div>
                   </div>
-                  <h2 className={ s.LanguageTitle }>Weapons of choice.</h2>
-                  <hr className={ s.LanguageBreak } />
-                  <div className={ s.IconArray }>
-                    <img src={reactLogo} alt="HTML 5 logo." className={ s.LanguageIcon } />
-                    <img src={sass} alt="HTML 5 logo." className={ s.LanguageIcon } />
-                    <img src={gatsbyLogo} alt="HTML 5 logo." className={ s.LanguageIcon } />
+                  <div className={ s.SkillBlock }>
+                    <h2 className={ s.LanguageTitle }>Weapons of choice.</h2>
+                    <hr className={ s.LanguageBreak } />
+                    <div className={ s.IconArray }>
+                      <img src={reactLogo} alt="HTML 5 logo." className={ s.LanguageIcon } />
+                      <img src={sass} alt="HTML 5 logo." className={ s.LanguageIcon } />
+                      <img src={gatsbyLogo} alt="HTML 5 logo." className={ s.LanguageIcon } />
+                    </div>
                   </div>
-                  <h2 className={ s.LanguageTitle }>Additional skills.</h2>
-                  <hr className={ s.LanguageBreak } />
-                  <div className={ s.AdditionalList }>
-                    <p>Git, jQuery, Google Analytics</p>
+                  
+                  <div className={ s.SkillBlock }>
+                    <h2 className={ s.LanguageTitle }>Additional skills.</h2>
+                    <hr className={ s.LanguageBreak } />
+                    <div className={ s.AdditionalList }>
+                      <p>Git, jQuery, Google Analytics</p>
+                    </div>
                   </div>
+                  
                 </div>
               </div>
+              <div className={ s.FocusBox }>
+                    <Focus number="1" title="Speed" content="There is nothing more valuable than load time, sites nowadays must load quickly to keep user attention. Modern front-end JavaScript frameworks can greatly speed up a large site, but can slow down a small site. I use the right tools for the job." />
+                    <Focus number="2" title="Accessibility" content="Everybody should have equal access to the web, period. When designing and building I always take into consideration the guidelines outlined by the WCAG 2.0 and Section 508 to ensure no one is left out of the experiences I build." />
+                    <Focus number="3" title="Simplicity" content="Content is king, let it do the talking." />
+                  </div>
             </div>
             <div ref={this.Work} className={ s.WorkContainer}>
               <h2 className={ s.SectionTitle }>My work.</h2>
@@ -175,6 +191,14 @@ export default class Index extends React.Component {
     )
   }
 }
+
+const Focus = (props) => (
+  <div className={ s.Focus }>
+    <p className={ s.FocusNumber }>{props.number}</p>
+    <h3 className={ s.FocusTitle }>{props.title}</h3>
+    <p className={ s.FocusContent}>{props.content}</p>
+  </div>
+)
 
 const WorkItem = (props) => (
   <div className={ s.WorkRow }>
