@@ -98,8 +98,11 @@ export default class Index extends React.Component {
           <SEO title="Front-End Developer" description="I'm a front-end developer with a dedication to writing fast, simple, accessible websites." />
           <div className={ s.Main }>
             <div ref={this.Splash} className={ s.SplashContainer }>
-              <h1 className={ s.Title }>I'm Jackson.</h1>
-              <p className={ s.Intro }>I'm a front-end developer with a dedication to writing fast, simple, accessible websites.</p>
+              <div className={ s.SplashMain }>
+                <h1 className={ s.Title }>I'm Jackson.</h1>
+                <p className={ s.Intro }>I'm a front-end developer with a dedication to writing fast, simple, accessible websites.</p>
+              </div>
+              
               <img src={wave} alt="" className={ s.Wave } />
               <div className={ s.ArrowContainer }><img src={down} alt="Down." onClick={() => {this.scroller("about")}} className={ s.DownArrow } /></div>
             </div>
@@ -112,7 +115,7 @@ export default class Index extends React.Component {
                   <h3 className={ s.AboutSectionHeader }>As a developer</h3>
                   <p className={ s.Paragraph }>Morbi non nisi eu nibh mollis viverra. Sed et placerat erat, et varius ipsum. Morbi condimentum mattis metus eget consectetur. Pellentesque cursus turpis non finibus volutpat. Ut porttitor aliquet felis id lobortis. Donec auctor euismod nisi, malesuada ultricies mi bibendum quis. Pellentesque vel arcu id felis vestibulum tempor. Phasellus ut ligula ornare, ultricies leo ut, scelerisque arcu. Sed cursus massa sit amet est pulvinar placerat. Aenean eleifend, lorem sed faucibus pretium, metus tellus interdum mi, eu tristique mauris metus sit amet diam. Integer dui nulla, eleifend ac est id, viverra congue libero.</p>
                 
-                  
+                  <h2 className={ s.LanguageTitle }>I care about:</h2>
                 </div>
                 <div className={ s.AboutRight }>
                   
@@ -144,6 +147,7 @@ export default class Index extends React.Component {
                   </div>
                   
                 </div>
+                
               </div>
               <div className={ s.FocusBox }>
                     <Focus number="1" title="Speed" content="There is nothing more valuable than load time, sites nowadays must load quickly to keep user attention. Modern front-end JavaScript frameworks can greatly speed up a large site, but can slow down a small site. I use the right tools for the job." />

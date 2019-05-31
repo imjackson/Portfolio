@@ -9,6 +9,7 @@
     justify-content: flex-start;
     align-items: center;
     background-color: rgb(188, 240, 223);
+    position: relative;
 }
 
 /* Header Base Formatting */
@@ -52,6 +53,28 @@
     transition: .3s ease;
 } .NavButton:hover {
     transform: translateY(-2px);
+} @media screen and (max-width: 860px) {
+    .Header {
+        padding: 0 5vw;
+    } .Logo {
+        height: 1.5rem;
+    } .HeaderTitle {
+        font-size: 1.25em;
+        margin-left: 1.5rem;
+    }.NavButton {
+        margin: 0 .75rem;
+    }
+} @media screen and (max-width: 600px) {
+    .Header {
+        padding: 0 3vw;
+    } .Logo {
+        height: 1rem;;
+    } .HeaderTitle {
+        font-size: 1.15em;
+    } .NavButton {
+        font-size: .9em;
+        margin: 0 .5rem;
+    }
 }
 
 
