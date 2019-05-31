@@ -10,9 +10,9 @@
 /* Global Components */
 .SectionTitle {
     font-family: "Lato";
-    font-size: 3rem;
+    font-size: 3.25em;
     margin: 0;
-    width: 70vw;
+    width: 75vw;
 }
 
 /* Index Section */
@@ -40,12 +40,41 @@
     margin-top: 2rem;
     font-size: 1.25em;
     color: #252525;
+} .ArrowContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: 3rem 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+} .DownArrow {
+    height: 2rem;
+    width: auto;
+    margin: 0;
+    transition: .3s ease;   
+    cursor: pointer;
+} .DownArrow:hover {
+    transform: translateY(-5px);
+}
+
+/* Paragprahing */
+.Paragraph {
+    font-family: "Lato";
+    font-size: 1.1em;
+    line-height: 30px;
+    color: #252525;
+    margin: 1rem 0;
+    margin-right: 2rem;
 }
 
 /* About Section */
 .AboutContainer {
     background-color: #f9f9f9;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     width: 100vw;
     display: flex;
     flex-flow: column nowrap;
@@ -53,21 +82,37 @@
     align-items: center;
     position: relative;
 } .AboutMain {
-    width: 70vw;
+    width: 75vw;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: flex-start;
 } .AboutLeft {
     width: 65%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 2rem;
+    
+} .AboutSectionHeader {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: .75rem;
 }.AboutRight {
     width: 35%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    padding: 2rem;
+    
+    box-shadow: 0px 5px 8px 2px rgba(0,0,0,0.08);
 } .LanguageTitle {
     font-family: "Lato";
+    margin-top: 1rem;
 } .LanguageBreak {
     width: 5rem;
     height: 3px;
@@ -83,17 +128,152 @@
     width: 2.5rem;
     padding: 1.5rem 0;
     margin-right: 2rem;
+} .AdditionalList {
+    font-family: "Roboto";
+    font-size: 1em;
+    color: #252525;
 
 }
 
 /* Work Section */
 .WorkContainer {
     background-color: rgb(188, 240, 223);
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
     position: relative;
+} .WorkMain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 75vw;
+    height: auto;
+    margin-top: 2rem;
+    position: relative;
+} .WorkBackground {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #14213D;
+} .WorkRow {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    margin-bottom: 2rem;
+} .WorkRowImage {
+    width: 60%;
+    height: auto;
+}
+
+.WorkRowContent {
+    width: 40%;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 2%;
+} .ProjectTitle {
+    font-family: "IBM Plex Sans";
+    font-size: 2.5em;
+    font-weight: bold;
+} .ProjectBreak {
+    height: 4px;
+    width: 6rem;
+    border: none;
+    margin: 1rem 0;
+}.ProjectInfoRow {
+    padding-right: 5%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+} .ProjectRoles {
+    font-family: "Roboto";
+    font-size: 1.1em;
+} .ProjectTools {
+    list-style-type: none;
+    font-size: .9em;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 12px;
+}
+
+/* Contact section */
+.ContactContainer {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+} .ContactMain {
+    width: 75vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}.Form {
+    width: 50rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+} .Input {
+    background-color: transparent;
+    font-family: "Lato";
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+    box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.2);
+    resize: none;
+    margin: 1rem 0;
+    font-size: 1.25em;
+    width: 50rem;
+    outline: none;
+    transition: .3s ease;
+} .Input:focus {
+    border: 5px solid #14213D ;
+    box-shadow: none;
+} .ContactParagraph {
+    width: 50rem;
+    margin-top: 2rem;
+} .Submit {
+    align-self: flex-end;
+    font-family: "Lato";
+    font-size: 1.15em;
+    padding: 1rem 2rem;
+    background-color: rgb(188, 240, 223);
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.2);
+    margin-top: 1rem;
+    transition: .3s ease;
+    cursor: pointer;
+} .Submit:hover {
+    background-color: #252525;
+    color: #f9f9f9;
+}
+
+.WaveAlt {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
 }

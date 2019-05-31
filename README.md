@@ -1,4 +1,4 @@
-## Jackson's Gatsby Project Starter
+## Jackson's single-page portfolio website.
 
-Quick start Gatsby starter Template.
+
 

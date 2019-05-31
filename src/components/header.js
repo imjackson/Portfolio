@@ -36,11 +36,15 @@ const nonActiveLink = {
 
 const Header = (props) => (
   <header style={ props.header ? activeHeader : nonActiveHeader }className={ s.Header }>
-      <img src={logo} alt="Logo." className={ s.Logo } />
+      <div className={ s.Info }>
+        <img src={logo} alt="Logo." className={ s.Logo } />
+        {props.header ? <h2 className={ s.HeaderTitle }>I'm Jackson.</h2> : null}
+      </div>
+      
       <div className={ s.Nav }>
         <button onClick={() => {props.scroll("about")}} style={ props.current==="about" ? activeLink : nonActiveLink } className={ s.NavButton }>About</button>
         <button onClick={() => {props.scroll("work")}} style={ props.current==="work" ? activeLink : nonActiveLink } className={ s.NavButton }>Work</button>
-        <button style={ props.current==="contact" ? activeLink : nonActiveLink } className={ s.NavButton }>Contact</button>
+        <button onClick={() => {props.scroll("contact")}} style={ props.current==="contact" ? activeLink : nonActiveLink } className={ s.NavButton }>Contact</button>
       </div>
   </header>
 )

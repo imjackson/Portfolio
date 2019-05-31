@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Jackson's Gatsby Starter`,
+    title: `I'm Jackson Website`,
     description: `{Description}`,
     author: `@jacksonpack`,
   },

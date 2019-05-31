@@ -1,7 +1,7 @@
 {
-  "name": "jacksons-gatsby-starter",
+  "name": "jacksons-portfolio",
   "private": true,
-  "description": "A gatsby-starter created to quickly get running.",
+  "description": "Portfolio website.",
   "version": "0.1.0",
   "author": "Jackson Pack <jacksongpack@gmail.com>",
   "dependencies": {
@@ -36,9 +36,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nbm-jackson/gatsby-starter"
+    "url": "https://github.com/nbm-jackson/singlepage.git"
   },
   "bugs": {
-    "url": "https://github.com/nbm-jackson/gatsby-starter/issues"
+    "url": "https://github.com/nbm-jackson/singplepage.git"
   }
 }

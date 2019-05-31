@@ -22,11 +22,21 @@
     position: fixed;
     top: 0;
     z-index: 5;
-} .Logo {
+} .Info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}.Logo {
     width: 2rem;
     height: auto;
     margin: 0;
-} .Nav {
+} .HeaderTitle {
+    font-family: "IBM Plex Sans";
+    font-size: 1.5em;
+    margin-left: 2rem;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}.Nav {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -38,7 +48,7 @@
     font-family: "Lato";
     cursor: pointer;
     padding: .5rem 0;
-
+    outline: none;
     transition: .3s ease;
 } .NavButton:hover {
     transform: translateY(-2px);
@@ -48,7 +58,16 @@
 /* Footer Base Formatting */
 .Footer {
     width: 100%;
-    border-top: 1px solid #3831293f;
     background-color: transparent;
     padding: 2rem 2rem;
 }
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
