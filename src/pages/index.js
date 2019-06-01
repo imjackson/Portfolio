@@ -156,7 +156,7 @@ export default class Index extends React.Component {
               <div className={ s.FocusBox }>
                     <Focus number="1" title="Speed" content="There is nothing more valuable than load time, sites nowadays must load quickly to keep user attention. Modern front-end JavaScript frameworks can greatly speed up a large site, but can slow down a small site. I use the right tools for the job." />
                     <Focus number="2" title="Accessibility" content="Everybody should have equal access to the web, period. When designing and building I always take into consideration the guidelines outlined by the WCAG 2.0 and Section 508 to ensure no one is left out of the experiences I build." />
-                    <Focus number="3" title="Simplicity" content="Content is king, let it do the talking." />
+                    <Focus number="3" title="Simplicity" content="Content is king, let it do the talking. Everything I create is built around the underlying message, not the design itself." />
                   </div>
             </div>
             <div ref={this.Work} className={ s.WorkContainer}>
