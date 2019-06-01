@@ -136,9 +136,9 @@ export default class Index extends React.Component {
                     <h2 className={ s.LanguageTitle }>Weapons of choice.</h2>
                     <hr className={ s.LanguageBreak } />
                     <div className={ s.IconArray }>
-                      <img src={reactLogo} alt="HTML 5 logo." className={ s.LanguageIcon } />
-                      <img src={sass} alt="HTML 5 logo." className={ s.LanguageIcon } />
-                      <img src={gatsbyLogo} alt="HTML 5 logo." className={ s.LanguageIcon } />
+                      <img src={reactLogo} alt="ReactJS logo." className={ s.LanguageIcon } />
+                      <img src={sass} alt="SASS logo." className={ s.LanguageIcon } />
+                      <img src={gatsbyLogo} alt="Gatsby logo." className={ s.LanguageIcon } />
                     </div>
                   </div>
                   
@@ -168,7 +168,7 @@ export default class Index extends React.Component {
                   odd={true}
                   title="FinalsClub Landing"
                   roles="Design, Development"
-                  tools={['Gatsby', 'CSS Modules']}
+                  tools={['HTML/CSS', 'React', 'Gatsby']}
                   fluid={this.props.data.finalsclub.childImageSharp.fluid}
                 />
                 <WorkItem

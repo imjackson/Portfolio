@@ -84,18 +84,23 @@
         width: 90vw;
     }
 } @media screen and (max-width: 860px) {
-    .Title {
+    .SplashMain {
+        padding-top: 9rem;
+    }.Title {
         font-size: 3.5em;
     } .Intro {
         margin-top: 1.5rem;
         font-size: 1.1em;
     }
-} @media screen and (max-width: 860px) {
-    .Title {
+} @media screen and (max-width: 600px) {
+    .SplashMain {
+        padding-top: 11rem;
+    }.Title {
         font-size: 3em;
     } .Intro {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         font-size: 1em;
+        margin-right: 2rem;
     }
 }
 
@@ -175,19 +180,20 @@
     border: none;
     background-color: rgb(188, 240, 223);
     margin: .75rem 0;
-}.LanguageArray {
+}.IconArray {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 } .LanguageIcon {
-    width: 2.5rem;
+    width: 2.25rem;
     padding: 1.5rem 0;
     margin: 0 1rem;
 } .AdditionalList {
     font-family: "Roboto";
     font-size: 1em;
     color: #252525;
+    text-align: center;
 } .FocusBox {
     width: 100%;
     display: flex;
@@ -224,7 +230,11 @@
 } @media screen and (max-width: 1080px) {
     .AboutMain {
         width: 90vw;
-    } .FocusBox {
+    } .LanguageTitle {
+        font-size: 1.25em;
+    }.LanguageIcon {
+        width: 1.75rem;
+    }.FocusBox {
         width: 90vw;
     }
 } @media screen and (max-width: 860px) {
@@ -238,9 +248,12 @@
         font-size: 1.5em;
     }.AboutRight {
         width: 100%;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         align-items: flex-start;
-    }.FocusBox {
+        justify-content: center;
+    } .SkillBlock {
+        width: 45%;
+    } .FocusBox {
         flex-flow: column nowrap;
         width: 90vw;
     } .Focus {
@@ -248,7 +261,7 @@
     } .LanguageTitle {
         font-size: 1.25em;
     } .LanguageIcon {
-        width: 1.75rem;
+        width: 1.5rem;
     } .FocusNumber {
         font-size: 1em;
         height: 2.5rem;
@@ -273,7 +286,7 @@
     } .FocusTitle {
         font-size: 1.65em;
     } .LanguageIcon {
-        width: 1.5rem;
+        width: 1.15rem;
     } .FocusContent {
         font-size: 1em;
     }
