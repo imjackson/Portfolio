@@ -8,7 +8,7 @@ function SEO({ description, lang, meta, keywords, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title + " | Jackson Pack"}
+      title={title}
       titleTemplate={`%s | Jackson Pack`}
       meta={[
         {
