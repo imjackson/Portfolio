@@ -85,7 +85,61 @@
 .Footer {
     width: 100%;
     background-color: transparent;
-    padding: 2rem 2rem;
+    padding: 3rem 5vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+} .FooterLeft {
+    width: 38%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+} .FooterTitle {
+    font-family: "IBM Plex Sans";
+    font-size: 1.5em;
+} .FooterEmail {
+    font-family: "Lato";
+    margin-top: .5rem;
+} .FooterCenter {
+    width: 24%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+} .FooterLogo {
+    height: 3rem;
+}.FooterRight {
+    width: 38%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+} .SocialIcon {
+    height: 1.5rem;
+    margin: 0 .75rem;
+    width: auto;
+} @media screen and (max-width: 860px) {
+    .FooterLogo {
+        height: 2.5rem;
+    }
+} @media screen and (max-width: 600px) {
+    .Footer {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }.SocialIcon {
+        height: 1.2rem;
+        margin: 0 .35rem;
+
+    }.FooterTitle {
+        font-size: .8em;
+    } .FooterEmail {
+        margin-top: .25rem;
+        font-size: .65em;
+    } .FooterLogo {
+        height: 1.75rem;
+    }
 }
 
 @keyframes fade-in {
