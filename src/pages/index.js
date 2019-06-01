@@ -184,9 +184,9 @@ export default class Index extends React.Component {
                 <p className={ [s.Paragraph, s.ContactParagraph ].join(" ")}>Sed cursus massa sit amet est pulvinar placerat. Aenean eleifend, lorem sed faucibus pretium, metus tellus interdum mi, eu tristique mauris metus sit amet diam. Integer dui nulla, eleifend ac est id, viverra congue libero.</p>
                 <form name="Contact" method="POST" data-netlify="true" className={ s.Form }>
                   <input type="hidden" name="form-name" value="Contact" />
-                  <input className={ s.Input } onChange={this.formHandler} value={this.state.formName} placeholder="Name" name="formName" aria-label="Name." />
-                  <input className={ s.Input } onChange={this.formHandler} value={this.state.formEmail} placeholder="Email" name="formEmail" aria-label="Email." />
-                  <textarea className={ s.Input } onChange={this.formHandler} value={this.state.formMessage} placeholder="Message" rows="6" name="formMessage" aria-label="Message."></textarea>
+                  <input required className={ s.Input } onChange={this.formHandler} value={this.state.formName} placeholder="Name" name="formName" aria-label="Name." />
+                  <input required className={ s.Input } onChange={this.formHandler} value={this.state.formEmail} placeholder="Email" name="formEmail" aria-label="Email." />
+                  <textarea required className={ s.Input } onChange={this.formHandler} value={this.state.formMessage} placeholder="Message" rows="6" name="formMessage" aria-label="Message."></textarea>
                   <input type="Submit" value="Submit" className={ s.Submit } />
                 </form>
               </div>
