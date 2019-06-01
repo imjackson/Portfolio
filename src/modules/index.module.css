@@ -434,6 +434,7 @@
     padding: 1rem 2rem;
     background-color: rgb(188, 240, 223);
     border-radius: 10px;
+    border: none;
     box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.2);
     margin-top: 1rem;
     transition: .3s ease;

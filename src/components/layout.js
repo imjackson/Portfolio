@@ -14,7 +14,7 @@ import s from '../modules/layout.module.css'
 
 const Layout = (props) => (
   <div className={ s.Layout }>
-    <Header scroll={props.scroller} current={props.activeSection} header={props.activeHeader} />
+    <Header top={props.top} scroll={props.scroller} current={props.activeSection} header={props.activeHeader} />
     {props.children}
     <Footer />
   </div>

@@ -82,6 +82,10 @@ export default class Index extends React.Component {
     }, 1000)
   }
 
+  toTop = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'})
+  }
+
   toRem = (rem) => {
     return rem * parseFloat(getComputedStyle(document.documentElement).fontSize)
   }
@@ -94,7 +98,7 @@ export default class Index extends React.Component {
 
   render() {
     return (
-      <Layout scroller={this.scroller} activeSection={this.state.sec} activeHeader={this.state.activeHeader}>
+      <Layout top={this.toTop} scroller={this.scroller} activeSection={this.state.sec} activeHeader={this.state.activeHeader}>
           <SEO title="Front-End Developer" description="I'm a front-end developer with a dedication to writing fast, simple, accessible websites." />
           <div className={ s.Main }>
             <div ref={this.Splash} className={ s.SplashContainer }>
@@ -124,8 +128,8 @@ export default class Index extends React.Component {
                     <hr className={ s.LanguageBreak } />
                     <div className={ s.IconArray }>
                       <img src={html} alt="HTML 5 logo." className={ s.LanguageIcon } />
-                      <img src={css} alt="HTML 5 logo." className={ s.LanguageIcon } />
-                      <img src={js} alt="HTML 5 logo." className={ s.LanguageIcon } />
+                      <img src={css} alt="CSS 3 logo." className={ s.LanguageIcon } />
+                      <img src={js} alt="JavaScript logo." className={ s.LanguageIcon } />
                     </div>
                   </div>
                   <div className={ s.SkillBlock }>

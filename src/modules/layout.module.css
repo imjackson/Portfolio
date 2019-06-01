@@ -28,6 +28,7 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }.Logo {
     width: 2rem;
     height: auto;
