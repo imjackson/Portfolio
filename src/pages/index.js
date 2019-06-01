@@ -115,7 +115,7 @@ export default class Index extends React.Component {
                   <h3 className={ s.AboutSectionHeader }>As a developer</h3>
                   <p className={ s.Paragraph }>Morbi non nisi eu nibh mollis viverra. Sed et placerat erat, et varius ipsum. Morbi condimentum mattis metus eget consectetur. Pellentesque cursus turpis non finibus volutpat. Ut porttitor aliquet felis id lobortis. Donec auctor euismod nisi, malesuada ultricies mi bibendum quis. Pellentesque vel arcu id felis vestibulum tempor. Phasellus ut ligula ornare, ultricies leo ut, scelerisque arcu. Sed cursus massa sit amet est pulvinar placerat. Aenean eleifend, lorem sed faucibus pretium, metus tellus interdum mi, eu tristique mauris metus sit amet diam. Integer dui nulla, eleifend ac est id, viverra congue libero.</p>
                 
-                  <h2 className={ s.LanguageTitle }>I care about:</h2>
+                  <h2 className={ [s.LanguageTitle, s.Care ].join(' ') }>I care about:</h2>
                 </div>
                 <div className={ s.AboutRight }>
                   
@@ -181,7 +181,7 @@ export default class Index extends React.Component {
               {/* <img  src={waveThree} alt="" className={ s.WaveAlt } /> */}
               <h2 className={ s.SectionTitle }>Get in touch.</h2>
               <div className={ s.ContactMain }>
-                <p className={ [s.Paragraph, s.ContactParagraph ].join(" ")}>Pellentesque vel arcu id felis vestibulum tempor. Phasellus ut ligula ornare, ultricies leo ut, scelerisque arcu. Sed cursus massa sit amet est pulvinar placerat. Aenean eleifend, lorem sed faucibus pretium, metus tellus interdum mi, eu tristique mauris metus sit amet diam. Integer dui nulla, eleifend ac est id, viverra congue libero.</p>
+                <p className={ [s.Paragraph, s.ContactParagraph ].join(" ")}>Sed cursus massa sit amet est pulvinar placerat. Aenean eleifend, lorem sed faucibus pretium, metus tellus interdum mi, eu tristique mauris metus sit amet diam. Integer dui nulla, eleifend ac est id, viverra congue libero.</p>
                 <form className={ s.Form }>
                   <input className={ s.Input } onChange={this.formHandler} value={this.state.formName} placeholder="Name" name="formName" aria-label="Name." />
                   <input className={ s.Input } onChange={this.formHandler} value={this.state.formEmail} placeholder="Email" name="formEmail" aria-label="Email." />
@@ -205,9 +205,8 @@ const Focus = (props) => (
 )
 
 const WorkItem = (props) => (
-  <div className={ s.WorkRow }>
-    {props.odd ? null : <div className={ s.WorkRowImage }><Img fluid={props.fluid} /></div>}
-    <div style={props.odd ? {color: '#252525'} : {color: '#f9f9f9'} }className={ s.WorkRowContent}>
+  <div className={props.odd ? s.WorkRow : [ s.OddWorkRow, s.WorkRow].join(' ') }>
+    <div style={props.odd ? {color: '#252525'} : {color: '#f9f9f9'} } className={ props.odd ? s.WorkRowContent : [ s.WorkRowContent, s.DarkContent ].join(' ')}>
       <h2 className={ s.ProjectTitle }>{props.title}</h2>
       <hr style={ props.odd ? {backgroundColor: '#14213D'} : {backgroundColor: '#BCF0DF'} }className={ s.ProjectBreak }/>
       <div className={ s.ProjectInfoRow }>
@@ -217,7 +216,7 @@ const WorkItem = (props) => (
         </ul>
       </div>
     </div>
-    {props.odd ? <div className={ s.WorkRowImage }><Img fluid={props.fluid} /></div> : null }
+    <div className={ s.WorkRowImage }><Img fluid={props.fluid} /></div>
   </div>
 )
 

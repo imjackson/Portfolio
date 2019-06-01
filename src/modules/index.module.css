@@ -18,6 +18,14 @@
     .SectionTitle {
         width: 90vw;
     }
+} @media screen and (max-width: 860px) {
+    .SectionTitle {
+        font-size: 2.75em;
+    }
+} @media screen and (max-width: 600px) {
+    .SectionTitle {
+        font-size: 2.25em;
+    }
 }
 
 /* Index Section */
@@ -75,6 +83,20 @@
     .SplashMain {
         width: 90vw;
     }
+} @media screen and (max-width: 860px) {
+    .Title {
+        font-size: 3.5em;
+    } .Intro {
+        margin-top: 1.5rem;
+        font-size: 1.1em;
+    }
+} @media screen and (max-width: 860px) {
+    .Title {
+        font-size: 3em;
+    } .Intro {
+        margin-top: 1.5rem;
+        font-size: 1em;
+    }
 }
 
 /* Paragprahing */
@@ -85,6 +107,17 @@
     color: #252525;
     margin: 1rem 0;
     margin-right: 2rem;
+} @media screen and (max-width: 860px) {
+    .Paragraph {
+        font-size: 1.05em;
+        line-height: 26px;
+    }
+} @media screen and (max-width: 600px) {
+    .Paragraph {
+        font-size: .95em;
+        line-height: 24px;
+        margin: .75rem 0;
+    }
 }
 
 /* About Section */
@@ -113,21 +146,19 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding-top: 2rem;
-    
 } .AboutSectionHeader {
     font-family: "Roboto";
     font-weight: bold;
     font-size: 2em;
     margin-top: .75rem;
-}.AboutRight {
+} .AboutRight {
     width: 35%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    padding: 2rem;
-    
+    padding: 2rem; 
     box-shadow: 0px 5px 8px 2px rgba(0,0,0,0.08);
 } .SkillBlock {
     display: flex;
@@ -152,7 +183,7 @@
 } .LanguageIcon {
     width: 2.5rem;
     padding: 1.5rem 0;
-    margin-right: 2rem;
+    margin: 0 1rem;
 } .AdditionalList {
     font-family: "Roboto";
     font-size: 1em;
@@ -201,6 +232,8 @@
         flex-flow: column nowrap;
     }.AboutLeft {
         width: 100%;
+    } .AboutSectionHeader {
+        font-size: 1.5em;
     }.AboutRight {
         width: 100%;
         flex-flow: row nowrap;
@@ -210,6 +243,35 @@
         width: 90vw;
     } .Focus {
         width: 90%;
+    } .LanguageTitle {
+        font-size: 1.25em;
+    } .LanguageIcon {
+        width: 1.75rem;
+    } .FocusNumber {
+        font-size: 1em;
+        height: 2.5rem;
+        width: 2.5rem;
+    } .Care {
+        display: none;
+    }
+} @media screen and (max-width: 600px) {
+    .AboutLeft {
+        padding-top: .75rem;
+    } .AboutRight {
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 1rem 0;
+    } .LanguageTitle {
+        font-size: 1.2em;
+        margin-top: .5rem;
+    } .LanguageBreak {
+        margin: .55rem 0;
+    } .FocusTitle {
+        font-size: 1.65em;
+    } .LanguageIcon {
+        width: 1.5rem;
+    } .FocusContent {
+        font-size: 1em;
     }
 }
 
@@ -248,7 +310,9 @@
     align-items: center;
     z-index: 2;
     margin-bottom: 2rem;
-} .WorkRowImage {
+} .OddWorkRow {
+    flex-flow: row-reverse nowrap;
+}.WorkRowImage {
     width: 60%;
     height: auto;
 } .WorkRowContent {
@@ -287,6 +351,14 @@
 } @media screen and (max-width: 1080px) {
     .WorkMain {
         width: 90vw;
+    }
+} @media screen and (max-width: 860px) {
+    .WorkBackground {
+        display: none;
+    } .WorkRow {
+        flex-flow: column-reverse nowrap;
+    }  .DarkContent {
+        background-color: #14213D;
     }
 }
 
@@ -361,6 +433,21 @@
     } .ContactParagraph {
         max-width: 90vw;
     }
+} @media screen and (max-width: 600px) {
+    .Form {
+        margin-top: 1rem;
+    } .Input {
+        font-size: .9em;
+        padding: .5rem .5re;
+        margin: .65rem 0;
+    } .Submit {
+        font-size: 1em;
+        padding: .85rem 1.5rem;
+    } .ContactParagraph {
+        font-size: 1em;
+        line-height: 24px;
+        margin-top: 1rem;
+    } 
 }
 
 .WaveAlt {
