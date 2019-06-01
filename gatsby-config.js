@@ -3,9 +3,11 @@ module.exports = {
     title: `I'm Jackson Website`,
     description: `{Description}`,
     author: `@jacksonpack`,
+    siteUrl: 'https://imjackson.dev'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
