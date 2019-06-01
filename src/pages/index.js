@@ -146,7 +146,7 @@ export default class Index extends React.Component {
                     <h2 className={ s.LanguageTitle }>Additional skills.</h2>
                     <hr className={ s.LanguageBreak } />
                     <div className={ s.AdditionalList }>
-                      <p>Git, jQuery, Google Analytics</p>
+                      <p>Git | jQuery | Google Analytics | SEO | SQL </p>
                     </div>
                   </div>
                   
@@ -185,7 +185,7 @@ export default class Index extends React.Component {
               {/* <img  src={waveThree} alt="" className={ s.WaveAlt } /> */}
               <h2 className={ s.SectionTitle }>Get in touch.</h2>
               <div className={ s.ContactMain }>
-                <p className={ [s.Paragraph, s.ContactParagraph ].join(" ")}>Sed cursus massa sit amet est pulvinar placerat. Aenean eleifend, lorem sed faucibus pretium, metus tellus interdum mi, eu tristique mauris metus sit amet diam. Integer dui nulla, eleifend ac est id, viverra congue libero.</p>
+                <p className={ [s.Paragraph, s.ContactParagraph ].join(" ")}>I'm always looking for new projects to work on. If you want a website built, or just want to say hello, send me a message using the form below and I'll get back to you as soon as possible.</p>
                 <form name="Contact" method="POST" data-netlify="true" className={ s.Form }>
                   <input type="hidden" name="form-name" value="Contact" />
                   <input required className={ s.Input } onChange={this.formHandler} value={this.state.formName} placeholder="Name" name="formName" aria-label="Name." />
