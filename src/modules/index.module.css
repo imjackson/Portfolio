@@ -228,7 +228,9 @@
         width: 90vw;
     }
 } @media screen and (max-width: 860px) {
-    .AboutMain {
+    .AboutContainer {
+        padding-bottom: 14rem;
+    }.AboutMain {
         flex-flow: column nowrap;
     }.AboutLeft {
         width: 100%;
@@ -255,7 +257,9 @@
         display: none;
     }
 } @media screen and (max-width: 600px) {
-    .AboutLeft {
+    .AboutContainer {
+        padding-bottom: 10rem;
+    }.AboutLeft {
         padding-top: .75rem;
     } .AboutRight {
         flex-flow: column nowrap;
@@ -357,8 +361,24 @@
         display: none;
     } .WorkRow {
         flex-flow: column-reverse nowrap;
-    }  .DarkContent {
+    }  .WorkRowImage {
+        width: 100%;
+    } .WorkRowContent {
+        width: 100%;
+        padding: 1rem 1rem;
+    } .ProjectTitle {
+        font-size: 2.25em;
+    } .DarkContent {
         background-color: #14213D;
+    }
+} @media screen and (max-width: 860px) {
+    .ProjectTitle {
+        font-size: 1.5em;
+    } .ProjectTools {
+        font-size: .65em;
+        line-height: 8px;
+    } .ProjectRoles {
+        font-size: .85em;
     }
 }
 
