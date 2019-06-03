@@ -36,7 +36,7 @@ const nonActiveLink = {
 
 const Header = (props) => (
   <header style={ props.header ? activeHeader : nonActiveHeader }className={ s.Header }>
-      <div onClick={props.top} className={ s.Info }>
+      <div tabIndex="0" onClick={props.top} className={ s.Info }>
         <img src={logo} alt="Logo." className={ s.Logo } />
         {props.header ? <h2 className={ s.HeaderTitle }>I'm Jackson.</h2> : null}
       </div>

@@ -4,6 +4,10 @@ html {
   -webkit-text-size-adjust: 100%;
   background-color: #f3f3f3;
 }
+:focus {
+  outline-color: #252525;
+  outline-offset: 10px;
+}
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
