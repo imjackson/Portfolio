@@ -118,7 +118,7 @@ export default class Index extends React.Component {
                   <p className={ s.Paragraph}>Morbi vitae cursus odio. Suspendisse quam mauris, tincidunt id ultrices quis, ultricies sit amet nisi. Sed sit amet erat tincidunt, laoreet lectus in, placerat lorem. Cras quis leo ac metus ultrices bibendum. Donec vehicula mi at sapien porttitor congue. Fusce varius volutpat lectus id pharetra. Sed imperdiet sit amet neque at convallis.</p>
                   <h3 className={ s.AboutSectionHeader }>As a developer</h3>
                   <p className={ s.Paragraph }>Morbi non nisi eu nibh mollis viverra. Sed et placerat erat, et varius ipsum. Morbi condimentum mattis metus eget consectetur. Pellentesque cursus turpis non finibus volutpat. Ut porttitor aliquet felis id lobortis. Donec auctor euismod nisi, malesuada ultricies mi bibendum quis. Pellentesque vel arcu id felis vestibulum tempor. Phasellus ut ligula ornare, ultricies leo ut, scelerisque arcu. Sed cursus massa sit amet est pulvinar placerat. Aenean eleifend, lorem sed faucibus pretium, metus tellus interdum mi, eu tristique mauris metus sit amet diam. Integer dui nulla, eleifend ac est id, viverra congue libero.</p>
-                
+                  <hr className={ s.FullBreak } />
                   <div className={ s.SkillsContainer }>
                     <div className={ s.SkillsTitleContainer }>
                       <h2 className={ s.AboutSectionHeader }>Skills.</h2>
@@ -145,7 +145,7 @@ export default class Index extends React.Component {
                       <p className={ s.SkillListItem }>Google Analytics</p>
                     </div>
                   </div>
-
+                  <hr className={ s.FullBreak } />
 
 
                   <h2 className={ s.AboutSectionHeader }>I care about:</h2>
@@ -178,7 +178,7 @@ export default class Index extends React.Component {
                   img={rockland}
                   roles="Development"
                   title="Rockland Pediatrics"
-                  tools={['Gatsby', 'CSS Modules']}
+                  tools={['HTML/CSS', 'React', 'Gatsby']}
                   fluid={this.props.data.rockland.childImageSharp.fluid}
                 />
               </div>
