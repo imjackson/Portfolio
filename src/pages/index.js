@@ -196,7 +196,7 @@ export default class Index extends React.Component {
                   <input required className={ s.Input } onChange={this.formHandler} value={this.state.formName} placeholder="Name" name="formName" aria-label="Name input." />
                   <input required className={ s.Input } onChange={this.formHandler} value={this.state.formEmail} placeholder="Email" name="formEmail" aria-label="Email input." />
                   <textarea required className={ s.Input } onChange={this.formHandler} value={this.state.formMessage} placeholder="Message" rows="6" name="formMessage" aria-label="Message input."></textarea>
-                  <input type="Submit" value="Submit" className={ s.Submit } />
+                  <input type="Submit" value="Submit" readOnly className={ s.Submit } />
                 </form>
               </div>
             </div>
