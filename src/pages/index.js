@@ -119,29 +119,33 @@ export default class Index extends React.Component {
                   <h3 className={ s.AboutSectionHeader }>As a developer</h3>
                   <p className={ s.Paragraph }>Morbi non nisi eu nibh mollis viverra. Sed et placerat erat, et varius ipsum. Morbi condimentum mattis metus eget consectetur. Pellentesque cursus turpis non finibus volutpat. Ut porttitor aliquet felis id lobortis. Donec auctor euismod nisi, malesuada ultricies mi bibendum quis. Pellentesque vel arcu id felis vestibulum tempor. Phasellus ut ligula ornare, ultricies leo ut, scelerisque arcu. Sed cursus massa sit amet est pulvinar placerat. Aenean eleifend, lorem sed faucibus pretium, metus tellus interdum mi, eu tristique mauris metus sit amet diam. Integer dui nulla, eleifend ac est id, viverra congue libero.</p>
                   <hr className={ s.FullBreak } />
+                  <h2 className={ [s.AboutSectionHeader, s.SkillAlt ].join(' ')}>Skills.</h2>
                   <div className={ s.SkillsContainer }>
                     <div className={ s.SkillsTitleContainer }>
                       <h2 className={ s.AboutSectionHeader }>Skills.</h2>
                     </div>
                     <div className={ s.SkillColumn }>
-                      <h3 className={ s.SkillHeader }>Languages.</h3>
-                      <p className={ s.SkillListItem }>HTML(5)</p>
-                      <p className={ s.SkillListItem }>CSS(3)</p>
-                      <p className={ s.SkillListItem }>JavaScript(ES6)</p>
-                      <p className={ s.SkillListItem }>Java)</p>
+                      <h3 className={ s.SkillHeader }>Languages.</h3> 
+                      <p className={ s.SkillListItem }>HTML(5)</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>CSS(3)</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>JavaScript(ES6)</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>Java</p> 
                     </div>
                     <div className={ s.SkillColumn }>
                       <h3 className={ s.SkillHeader }>Weapons of Choice.</h3>
-                      <p className={ s.SkillListItem }>React</p>
-                      <p className={ s.SkillListItem }>Gatsby</p>
-                      <p className={ s.SkillListItem }>jQuery</p>
+                      <p className={ s.SkillListItem }>React</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>Gatsby</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>jQuery</p> 
                     </div>
                     <div className={ s.SkillColumn }>
                       <h3 className={ s.SkillHeader }>Additional Skills.</h3>
-                      <p className={ s.SkillListItem }>Git</p>
-                      <p className={ s.SkillListItem }>Firebase</p>
-                      <p className={ s.SkillListItem }>SQL</p>
-                      <p className={ s.SkillListItem }>SEO</p>
+                      <p className={ s.SkillListItem }>Git</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>Firebase</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>SQL</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>SEO</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>SEO</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>SEO</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>SEO</p> <hr className={ s.SkillDivider } />
                       <p className={ s.SkillListItem }>Google Analytics</p>
                     </div>
                   </div>
@@ -184,7 +188,7 @@ export default class Index extends React.Component {
               </div>
             </div>
             <div ref={this.Contact} className={ s.ContactContainer }>
-              <h2 className={ s.SectionTitle }>Get in touch.</h2>
+              <h2 className={ s.SectionTitle }>Let's work together.</h2>
               <div className={ s.ContactMain }>
                 <p className={ [s.Paragraph, s.ContactParagraph ].join(" ")}>I'm always looking for new projects to work on. If you want a website built, or just want to say hello, send me a message using the form below and I'll get back to you as soon as possible.</p>
                 <form name="Contact" method="POST" data-netlify="true" aria-label="Contact form." className={ s.Form }>

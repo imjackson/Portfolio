@@ -482,6 +482,8 @@
     font-size: 2.5em;
     color: #252525;
     
+} .SkillAlt {
+    display: none;
 } .SkillColumn {
     width: 100%;
     display: flex;
@@ -499,6 +501,45 @@
     margin: 0;
     margin-left: 1rem;
 
+} .SkillDivider {
+    display: none;
+} @media screen and (max-width: 860px ) {
+    .SkillAlt {
+        display: initial;
+    } .SkillsTitleContainer {
+        display: none;
+    } .SkillsContainer {
+        grid-template-columns: 33% 33% 33%;
+    } .SkillHeader {
+        font-size: 1.15em;
+    } .SkillListItem {
+        font-size: .9em;
+    }
+} @media screen and (max-width: 600px ) {
+    .SkillsContainer {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    } .SkillColumn {
+        width: 100%;
+        flex-flow: row wrap;
+        align-items: center;
+    } .SkillHeader {
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    } .SkillListItem {
+        margin: 5px 0;
+    } .SkillDivider {
+        display: initial;
+        border: none;
+        margin: 0 .5rem;
+        width: 2px;
+        height: 15px;
+        background-color: #4d4d4d;
+    }
 }
 
 
