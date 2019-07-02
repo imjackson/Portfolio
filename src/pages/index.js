@@ -143,9 +143,6 @@ export default class Index extends React.Component {
                       <p className={ s.SkillListItem }>Firebase</p> <hr className={ s.SkillDivider } />
                       <p className={ s.SkillListItem }>SQL</p> <hr className={ s.SkillDivider } />
                       <p className={ s.SkillListItem }>SEO</p> <hr className={ s.SkillDivider } />
-                      <p className={ s.SkillListItem }>SEO</p> <hr className={ s.SkillDivider } />
-                      <p className={ s.SkillListItem }>SEO</p> <hr className={ s.SkillDivider } />
-                      <p className={ s.SkillListItem }>SEO</p> <hr className={ s.SkillDivider } />
                       <p className={ s.SkillListItem }>Google Analytics</p>
                     </div>
                   </div>
