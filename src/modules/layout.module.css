@@ -178,6 +178,7 @@
 } .NotFoundContent {
     min-height: calc(100vh - 14rem);
     width: 1000px;
+    max-width: 90%;
     padding-top: 3rem;
     display: flex;
     flex-flow: column nowrap;
@@ -192,7 +193,7 @@
 }.NotFoundNumber {
     font-family: "IBM Plex Sans";
     font-weight: bold;
-    font-size: 20em;
+    font-size: 20vw;
 }.NotFoundText {
     font-family: "Lato";
     font-size: 1.1em;
@@ -215,6 +216,19 @@
     background-color: #f9f9f9;
     color: #252525;
     transform: translateY(-2px);
+} @media screen and (max-width: 600px) {
+    .NotFoundNumber {
+        font-size: 30vw;
+        margin-bottom: 0rem;
+    }.NotFoundNumberSmall {
+        font-size: 14px;
+    }.NotFoundText {
+        font-size: 14px;
+        line-height: 24px;
+    } .NotFoundReturn {
+        font-size: 14px;
+        padding: 15px 25px;
+    }
 }
 
 @keyframes fade-in {

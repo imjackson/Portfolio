@@ -173,6 +173,7 @@ export default class Index extends React.Component {
                   roles="Design, Development"
                   tools={['HTML/CSS', 'React', 'Gatsby']}
                   fluid={this.props.data.finalsclub.childImageSharp.fluid}
+                  url="http://finalsclub.io"
                 />
                 <WorkItem
                   odd={false}
@@ -222,6 +223,7 @@ const WorkItem = (props) => (
           {props.tools.map((tool, index) => <li key={index}>{tool}</li>)}
         </ul>
       </div>
+      <a href={props.url} className={ s.ProjectLink }>View &#8594;</a>
     </div>
     <div className={ s.WorkRowImage }><Img fluid={props.fluid} /></div>
   </div>

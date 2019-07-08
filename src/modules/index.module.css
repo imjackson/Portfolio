@@ -339,6 +339,15 @@
     text-transform: uppercase;
     text-align: right;
     line-height: 12px;
+} .ProjectLink {
+    font-family: "IBM Plex Sans";
+    font-weight: bold;
+    font-size: 14px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.15);    
+    
 } @media screen and (max-width: 1080px) {
     .WorkMain {
         width: 90vw;
