@@ -153,6 +153,84 @@
     }
 }
 
+
+/* Not Found */
+
+.NotFound {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(188, 240, 223);
+} .NotFoundHeader {
+    height: 6rem;
+    width: 100vw;
+    margin: 0;
+    padding: 0 10vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+} .NotFoundContent {
+    min-height: calc(100vh - 14rem);
+    width: 1000px;
+    max-width: 90%;
+    padding-top: 3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+} .NotFoundTitle {
+    font-family: "IBM Plex Sans";
+    font-weight: bold;
+    font-size: 1.5em;
+} .NotFoundNumberSmall {
+    font-size: 30px;
+}.NotFoundNumber {
+    font-family: "IBM Plex Sans";
+    font-weight: bold;
+    font-size: 20vw;
+}.NotFoundText {
+    font-family: "Lato";
+    font-size: 1.1em;
+    margin-top: 1rem;
+} .ButtonAdj {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+} .NotFoundReturn {
+    font-family: "Lato";
+    padding: 20px 35px;
+    border-radius: 4px;
+    background-color: #14213D;
+    color: #f9f9f9;
+    transition: .3s ease;
+} .NotFoundReturn:hover {
+    background-color: #f9f9f9;
+    color: #252525;
+    transform: translateY(-2px);
+} @media screen and (max-width: 600px) {
+    .NotFoundNumber {
+        font-size: 30vw;
+        margin-bottom: 0rem;
+    }.NotFoundNumberSmall {
+        font-size: 14px;
+    }.NotFoundText {
+        font-size: 14px;
+        line-height: 24px;
+    } .NotFoundReturn {
+        font-size: 14px;
+        padding: 15px 25px;
+    }
+}
+
 @keyframes fade-in {
     0% {
       opacity: 0;

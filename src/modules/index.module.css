@@ -145,7 +145,7 @@
     align-items: flex-start;
     margin-bottom: 2rem;
 } .AboutLeft {
-    width: 65%;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -155,45 +155,17 @@
     font-family: "Roboto";
     font-weight: bold;
     font-size: 2em;
-    margin-top: .75rem;
+    margin-top: 1rem;
+
 } .AboutRight {
     width: 35%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 2rem; 
     box-shadow: 0px 5px 8px 2px rgba(0,0,0,0.08);
-} .SkillBlock {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-}.LanguageTitle {
-    font-family: "Lato";
-    margin-top: 1rem;
-    text-align: center;
-} .LanguageBreak {
-    width: 5rem;
-    height: 3px;
-    border: none;
-    background-color: rgb(188, 240, 223);
-    margin: .75rem 0;
-}.IconArray {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-} .LanguageIcon {
-    width: 2.25rem;
-    padding: 1.5rem 0;
-    margin: 0 1rem;
-} .AdditionalList {
-    font-family: "Roboto";
-    font-size: 1em;
-    color: #252525;
-    text-align: center;
 } .FocusBox {
     width: 100%;
     display: flex;
@@ -201,6 +173,7 @@
     justify-content: center;
     align-items: flex-start;
     width: 75vw;
+    margin-top: 1.5rem;
 } .Focus {
     display: flex;
     flex-flow: column nowrap;
@@ -208,6 +181,7 @@
     align-items: flex-start;
     margin: 1rem 1.5rem;
     width: 33%;
+
 } .FocusNumber {
     height: 3rem;
     width: 3rem;
@@ -365,6 +339,15 @@
     text-transform: uppercase;
     text-align: right;
     line-height: 12px;
+} .ProjectLink {
+    font-family: "IBM Plex Sans";
+    font-weight: bold;
+    font-size: 14px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.15);    
+    
 } @media screen and (max-width: 1080px) {
     .WorkMain {
         width: 90vw;
@@ -425,9 +408,8 @@
     background-color: transparent;
     font-family: "Lato";
     padding: 1rem 1rem;
-    border-radius: 10px;
-    border: 1px solid rgb(145, 145, 145);
-    box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    border: 3px solid rgba(145, 145, 145, 0.733);
     resize: none;
     margin: 1rem 0;
     font-size: 1.25em;
@@ -435,8 +417,7 @@
     outline: none;
     transition: .3s ease;
 } .Input:focus {
-    border: 5px solid #14213D ;
-    box-shadow: none;
+    border: 3px solid #14213D ;
 } .ContactParagraph {
     width: 50rem;
     margin-top: 2rem;
@@ -446,7 +427,7 @@
     font-size: 1.15em;
     padding: 1rem 2rem;
     background-color: rgb(188, 240, 223);
-    border-radius: 10px;
+    border-radius: 4px;
     border: none;
     box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.2);
     margin-top: 1rem;
@@ -489,4 +470,93 @@
     top: 0;
     right: 0;
     height: 100%;
+}
+
+
+
+
+.SkillsContainer {
+    margin: 2rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 16% 28% 28% 28%;
+} .SkillsTitleContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+} .SkillsTitle {
+    font-family: "Lato";
+    font-size: 2.5em;
+    color: #252525;
+    
+} .SkillAlt {
+    display: none;
+} .SkillColumn {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+} .SkillHeader {
+    font-family: "Roboto";
+    font-size: 1.25em;
+    margin-bottom: 1rem;
+} .SkillListItem {
+    font-family: "Lato";
+    font-size: 1em;
+    text-align: left;
+    margin: 0;
+    margin-left: 1rem;
+
+} .SkillDivider {
+    display: none;
+} @media screen and (max-width: 860px ) {
+    .SkillAlt {
+        display: initial;
+    } .SkillsTitleContainer {
+        display: none;
+    } .SkillsContainer {
+        grid-template-columns: 33% 33% 33%;
+    } .SkillHeader {
+        font-size: 1.15em;
+    } .SkillListItem {
+        font-size: .9em;
+    }
+} @media screen and (max-width: 600px ) {
+    .SkillsContainer {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    } .SkillColumn {
+        width: 100%;
+        flex-flow: row wrap;
+        align-items: center;
+    } .SkillHeader {
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    } .SkillListItem {
+        margin: 5px 0;
+    } .SkillDivider {
+        display: initial;
+        border: none;
+        margin: 0 .5rem;
+        width: 2px;
+        height: 15px;
+        background-color: #4d4d4d;
+    }
+}
+
+
+
+.FullBreak {
+    width: 100%;
+    height: 2px;
+    margin: 1rem 0;
+    border: none;
+    background-color: rgba(145, 145, 145, 0.425);
 }

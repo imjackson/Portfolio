@@ -118,46 +118,49 @@ export default class Index extends React.Component {
                   <p className={ s.Paragraph}>Morbi vitae cursus odio. Suspendisse quam mauris, tincidunt id ultrices quis, ultricies sit amet nisi. Sed sit amet erat tincidunt, laoreet lectus in, placerat lorem. Cras quis leo ac metus ultrices bibendum. Donec vehicula mi at sapien porttitor congue. Fusce varius volutpat lectus id pharetra. Sed imperdiet sit amet neque at convallis.</p>
                   <h3 className={ s.AboutSectionHeader }>As a developer</h3>
                   <p className={ s.Paragraph }>Morbi non nisi eu nibh mollis viverra. Sed et placerat erat, et varius ipsum. Morbi condimentum mattis metus eget consectetur. Pellentesque cursus turpis non finibus volutpat. Ut porttitor aliquet felis id lobortis. Donec auctor euismod nisi, malesuada ultricies mi bibendum quis. Pellentesque vel arcu id felis vestibulum tempor. Phasellus ut ligula ornare, ultricies leo ut, scelerisque arcu. Sed cursus massa sit amet est pulvinar placerat. Aenean eleifend, lorem sed faucibus pretium, metus tellus interdum mi, eu tristique mauris metus sit amet diam. Integer dui nulla, eleifend ac est id, viverra congue libero.</p>
-                
-                  <h2 className={ [s.LanguageTitle, s.Care ].join(' ') }>I care about:</h2>
-                </div>
-                <div className={ s.AboutRight }>
-                  
-                  <div className={ s.SkillBlock }>
-                    <h2 className={ s.LanguageTitle }>Languages.</h2>
-                    <hr className={ s.LanguageBreak } />
-                    <div className={ s.IconArray }>
-                      <img src={html} alt="HTML 5 logo." className={ s.LanguageIcon } />
-                      <img src={css} alt="CSS 3 logo." className={ s.LanguageIcon } />
-                      <img src={js} alt="JavaScript logo." className={ s.LanguageIcon } />
+                  <hr className={ s.FullBreak } />
+                  <h2 className={ [s.AboutSectionHeader, s.SkillAlt ].join(' ')}>Skills.</h2>
+                  <div className={ s.SkillsContainer }>
+                    <div className={ s.SkillsTitleContainer }>
+                      <h2 className={ s.AboutSectionHeader }>Skills.</h2>
+                    </div>
+                    <div className={ s.SkillColumn }>
+                      <h3 className={ s.SkillHeader }>Languages.</h3> 
+                      <p className={ s.SkillListItem }>HTML(5)</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>CSS(3)</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>JavaScript(ES6)</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>Java</p> 
+                    </div>
+                    <div className={ s.SkillColumn }>
+                      <h3 className={ s.SkillHeader }>Weapons of Choice.</h3>
+                      <p className={ s.SkillListItem }>React</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>Gatsby</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>jQuery</p> 
+                    </div>
+                    <div className={ s.SkillColumn }>
+                      <h3 className={ s.SkillHeader }>Additional Skills.</h3>
+                      <p className={ s.SkillListItem }>Git</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>Firebase</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>SQL</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>SEO</p> <hr className={ s.SkillDivider } />
+                      <p className={ s.SkillListItem }>Google Analytics</p>
                     </div>
                   </div>
-                  <div className={ s.SkillBlock }>
-                    <h2 className={ s.LanguageTitle }>Weapons of choice.</h2>
-                    <hr className={ s.LanguageBreak } />
-                    <div className={ s.IconArray }>
-                      <img src={reactLogo} alt="ReactJS logo." className={ s.LanguageIcon } />
-                      <img src={sass} alt="SASS logo." className={ s.LanguageIcon } />
-                      <img src={gatsbyLogo} alt="Gatsby logo." className={ s.LanguageIcon } />
-                    </div>
-                  </div>
-                  
-                  <div className={ s.SkillBlock }>
-                    <h2 className={ s.LanguageTitle }>Additional skills.</h2>
-                    <hr className={ s.LanguageBreak } />
-                    <div className={ s.AdditionalList }>
-                      <p>Git | jQuery | Google Analytics | SEO | SQL </p>
-                    </div>
-                  </div>
-                  
-                </div>
-                
-              </div>
-              <div className={ s.FocusBox }>
+                  <hr className={ s.FullBreak } />
+
+
+                  <h2 className={ s.AboutSectionHeader }>I care about:</h2>
+                  <div className={ s.FocusBox }>
                     <Focus number="1" title="Speed" content="There is nothing more valuable than load time, sites nowadays must load quickly to keep user attention. Modern front-end JavaScript frameworks can greatly speed up a large site, but can slow down a small site. I use the right tools for the job." />
                     <Focus number="2" title="Accessibility" content="Everybody should have equal access to the web, period. When designing and building I always take into consideration the guidelines outlined by the WCAG 2.0 and Section 508 to ensure no one is left out of the experiences I build." />
                     <Focus number="3" title="Simplicity" content="Content is king, let it do the talking. Everything I create is built around the underlying message, not the design itself." />
                   </div>
+                  
+                </div>
+                
+                
+              </div>
+              
             </div>
             <div ref={this.Work} className={ s.WorkContainer}>
               <h2 className={ s.SectionTitle }>My work.</h2>
@@ -170,19 +173,20 @@ export default class Index extends React.Component {
                   roles="Design, Development"
                   tools={['HTML/CSS', 'React', 'Gatsby']}
                   fluid={this.props.data.finalsclub.childImageSharp.fluid}
+                  url="http://finalsclub.io"
                 />
                 <WorkItem
                   odd={false}
                   img={rockland}
                   roles="Development"
                   title="Rockland Pediatrics"
-                  tools={['Gatsby', 'CSS Modules']}
+                  tools={['HTML/CSS', 'React', 'Gatsby']}
                   fluid={this.props.data.rockland.childImageSharp.fluid}
                 />
               </div>
             </div>
             <div ref={this.Contact} className={ s.ContactContainer }>
-              <h2 className={ s.SectionTitle }>Get in touch.</h2>
+              <h2 className={ s.SectionTitle }>Let's work together.</h2>
               <div className={ s.ContactMain }>
                 <p className={ [s.Paragraph, s.ContactParagraph ].join(" ")}>I'm always looking for new projects to work on. If you want a website built, or just want to say hello, send me a message using the form below and I'll get back to you as soon as possible.</p>
                 <form name="Contact" method="POST" data-netlify="true" aria-label="Contact form." className={ s.Form }>
@@ -190,7 +194,7 @@ export default class Index extends React.Component {
                   <input required className={ s.Input } onChange={this.formHandler} value={this.state.formName} placeholder="Name" name="formName" aria-label="Name input." />
                   <input required className={ s.Input } onChange={this.formHandler} value={this.state.formEmail} placeholder="Email" name="formEmail" aria-label="Email input." />
                   <textarea required className={ s.Input } onChange={this.formHandler} value={this.state.formMessage} placeholder="Message" rows="6" name="formMessage" aria-label="Message input."></textarea>
-                  <input type="Submit" value="Submit" className={ s.Submit } />
+                  <input type="Submit" value="Submit" readOnly className={ s.Submit } />
                 </form>
               </div>
             </div>
@@ -219,6 +223,7 @@ const WorkItem = (props) => (
           {props.tools.map((tool, index) => <li key={index}>{tool}</li>)}
         </ul>
       </div>
+      <a href={props.url} className={ s.ProjectLink }>View &#8594;</a>
     </div>
     <div className={ s.WorkRowImage }><Img fluid={props.fluid} /></div>
   </div>
