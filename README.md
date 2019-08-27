@@ -2,9 +2,9 @@
 
 ## About
 
-This is the code for my personal portfolio website.
+This is the code for my personal portfolio website. It was created using React and Gatsby, with no CSS frameworks used.
 
-It can be viewed at: `https://imjackson.dev`
+It can be viewed at: [imjackson.dev](https://imjackson.dev)
 
 ## Running Locally
 
