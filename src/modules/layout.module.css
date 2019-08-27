@@ -1,4 +1,6 @@
-/* Layout Base Formatting */
+/* 
+    Layout Base Formatting
+ */
 .Layout {
     min-height: 100vh;
     max-width: 100vw;
@@ -12,7 +14,9 @@
     position: relative;
 }
 
-/* Header Base Formatting */
+/* 
+    Header Base Formatting 
+*/
 .Header {
     width: 100%;
     padding: 0 10vw;
@@ -31,7 +35,7 @@
     cursor: pointer;
     outline-color: #252525;
     outline-offset: 10px;
-}.Logo {
+} .Logo {
     width: 2rem;
     height: auto;
     margin: 0;
@@ -40,7 +44,7 @@
     font-size: 1.5em;
     margin-left: 2rem;
     animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}.Nav {
+} .Nav {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -84,7 +88,9 @@
 }
 
 
-/* Footer Base Formatting */
+/* 
+    Footer Base Formatting 
+*/
 .Footer {
     width: 100%;
     background-color: transparent;
@@ -113,7 +119,7 @@
     align-items: center;
 } .FooterLogo {
     height: 3rem;
-}.FooterRight {
+} .FooterRight {
     width: 38%;
     display: flex;
     flex-flow: row nowrap;
@@ -139,11 +145,10 @@
     .Footer {
         padding-top: 2rem;
         padding-bottom: 2rem;
-    }.SocialIcon {
+    } .SocialIcon {
         height: 1.2rem;
         margin: 0 .35rem;
-
-    }.FooterTitle {
+    } .FooterTitle {
         font-size: .8em;
     } .FooterEmail {
         margin-top: .25rem;
@@ -154,8 +159,9 @@
 }
 
 
-/* Not Found */
-
+/*
+    Not Found 
+*/
 .NotFound {
     width: 100vw;
     min-height: 100vh;
@@ -190,11 +196,11 @@
     font-size: 1.5em;
 } .NotFoundNumberSmall {
     font-size: 30px;
-}.NotFoundNumber {
+} .NotFoundNumber {
     font-family: "IBM Plex Sans";
     font-weight: bold;
     font-size: 20vw;
-}.NotFoundText {
+} .NotFoundText {
     font-family: "Lato";
     font-size: 1.1em;
     margin-top: 1rem;
@@ -220,9 +226,9 @@
     .NotFoundNumber {
         font-size: 30vw;
         margin-bottom: 0rem;
-    }.NotFoundNumberSmall {
+    } .NotFoundNumberSmall {
         font-size: 14px;
-    }.NotFoundText {
+    } .NotFoundText {
         font-size: 14px;
         line-height: 24px;
     } .NotFoundReturn {
@@ -231,12 +237,14 @@
     }
 }
 
+/* 
+    Keyframes
+*/
 @keyframes fade-in {
     0% {
-      opacity: 0;
+        opacity: 0;
+    } 100% {
+        opacity: 1;
     }
-    100% {
-      opacity: 1;
-    }
-  }
+}
   

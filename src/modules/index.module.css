@@ -1,4 +1,6 @@
-/* Main container formatting */
+/* 
+    Main container formatting 
+*/
 .Main {
     width: 100vw;
     display: flex;
@@ -8,7 +10,9 @@
     min-height: 100vh;
 } 
 
-/* Global Components */
+/* 
+    Global Components 
+*/
 .SectionTitle {
     font-family: "Lato";
     font-size: 3.25em;
@@ -28,7 +32,9 @@
     }
 }
 
-/* Index Section */
+/* 
+    Index Section 
+*/
 .SplashContainer {
     width: 100vw;
     display: flex;
@@ -104,7 +110,9 @@
     }
 }
 
-/* Paragprahing */
+/*
+     Paragprahing 
+*/
 .Paragraph {
     font-family: "Lato";
     font-size: 1.1em;
@@ -125,7 +133,9 @@
     }
 }
 
-/* About Section */
+/* 
+    About Section 
+*/
 .AboutContainer {
     background-color: #f9f9f9;
     min-height: 100vh;
@@ -156,7 +166,6 @@
     font-weight: bold;
     font-size: 2em;
     margin-top: 1rem;
-
 } .AboutRight {
     width: 35%;
     display: flex;
@@ -266,7 +275,9 @@
     }
 }
 
-/* Work Section */
+/* 
+    Work Section 
+*/
 .WorkContainer {
     padding-top: 3rem;
     background-color: rgb(188, 240, 223);
@@ -378,7 +389,9 @@
     }
 }
 
-/* Contact section */
+/* 
+    Contact section 
+*/
 .ContactContainer {
     padding-top: 4rem;
     padding-bottom: 3rem;
@@ -395,9 +408,8 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    align-items: flex-start;
-    
-}.Form {
+    align-items: flex-start; 
+} .Form {
     width: 50rem;
     margin-top: 2rem;
     display: flex;
@@ -474,7 +486,9 @@
 
 
 
-
+/* 
+    Skills section
+*/
 .SkillsContainer {
     margin: 2rem 0;
     width: 100%;
@@ -490,7 +504,6 @@
     font-family: "Lato";
     font-size: 2.5em;
     color: #252525;
-    
 } .SkillAlt {
     display: none;
 } .SkillColumn {
@@ -509,7 +522,6 @@
     text-align: left;
     margin: 0;
     margin-left: 1rem;
-
 } .SkillDivider {
     display: none;
 } @media screen and (max-width: 860px ) {
@@ -554,7 +566,9 @@
 }
 
 
-
+/* 
+    Horizontal rules
+*/
 .FullBreak {
     width: 100%;
     height: 2px;

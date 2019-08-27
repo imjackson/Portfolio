@@ -231,16 +231,18 @@ const WorkItem = (props) => (
   </div>
 )
 
+// graphql query fragment for getting fluid images
 export const fluidImage = graphql`
-fragment fluidImage on File {
-  childImageSharp {
-    fluid(maxWidth: 1000) {
-      ...GatsbyImageSharpFluid
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid
+      }
     }
   }
-}
-`;
+`
 
+// graphql pageQuery to get individual images
 export const pageQuery = graphql`
   query {
     finalsclub: file(relativePath: { eq: "finalsclub-display.png" }) {
