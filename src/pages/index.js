@@ -125,9 +125,15 @@ export default class Index extends React.Component {
               <h2 className={ s.SectionTitle }>About me.</h2>
               <div className={ s.AboutMain }>
                 <div className={ s.AboutLeft }>
-                  <p className={ s.Paragraph}>Morbi vitae cursus odio. Suspendisse quam mauris, tincidunt id ultrices quis, ultricies sit amet nisi. Sed sit amet erat tincidunt, laoreet lectus in, placerat lorem. Cras quis leo ac metus ultrices bibendum. Donec vehicula mi at sapien porttitor congue. Fusce varius volutpat lectus id pharetra. Sed imperdiet sit amet neque at convallis.</p>
+                  <p className={ s.Paragraph}>
+                    I'm a front-end developer currently working with <a className={ s.Underlined } target="_blank" href="http://finalsclub.io">FinalsClub</a> as a UI/UX designer and developer.
+                    <div className={ s.LineBreak } ></div>
+                    I work out of Monmouth County, NJ during my gap year before attending the University of Delaware in 2020.
+                    <div className={ s.LineBreak } ></div>
+                    Additionally, I love learning about math and physics, and have an total obsession with space and all that lies beyond earth.
+                  </p>
                   <h3 className={ s.AboutSectionHeader }>As a developer</h3>
-                  <p className={ s.Paragraph }>Morbi non nisi eu nibh mollis viverra. Sed et placerat erat, et varius ipsum. Morbi condimentum mattis metus eget consectetur. Pellentesque cursus turpis non finibus volutpat. Ut porttitor aliquet felis id lobortis. Donec auctor euismod nisi, malesuada ultricies mi bibendum quis. Pellentesque vel arcu id felis vestibulum tempor. Phasellus ut ligula ornare, ultricies leo ut, scelerisque arcu. Sed cursus massa sit amet est pulvinar placerat. Aenean eleifend, lorem sed faucibus pretium, metus tellus interdum mi, eu tristique mauris metus sit amet diam. Integer dui nulla, eleifend ac est id, viverra congue libero.</p>
+                  <p className={ s.Paragraph }>For front-end frameworks, my go-to choice is React. Though, I'm plenty comfortable working with pure HTML, CSS, and JavaScript to build fast, simple websites.</p>
                   <hr className={ s.FullBreak } />
                   <h2 className={ [s.AboutSectionHeader, s.SkillAlt ].join(' ')}>Skills.</h2>
                   <div className={ s.SkillsContainer }>

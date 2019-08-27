@@ -120,6 +120,11 @@
     color: #252525;
     margin: 1rem 0;
     margin-right: 2rem;
+} .Underlined {
+    text-decoration: underline;
+    font-weight: bold;
+} .LineBreak {
+    margin: 15px 0;
 } @media screen and (max-width: 860px) {
     .Paragraph {
         font-size: 1.05em;
