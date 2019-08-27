@@ -135,7 +135,7 @@ export default class Index extends React.Component {
                       <h3 className={ s.SkillHeader }>Weapons of Choice.</h3>
                       <p className={ s.SkillListItem }>React</p> <hr className={ s.SkillDivider } />
                       <p className={ s.SkillListItem }>Gatsby</p> <hr className={ s.SkillDivider } />
-                      <p className={ s.SkillListItem }>jQuery</p> 
+                      
                     </div>
                     <div className={ s.SkillColumn }>
                       <h3 className={ s.SkillHeader }>Additional Skills.</h3>
@@ -144,6 +144,7 @@ export default class Index extends React.Component {
                       <p className={ s.SkillListItem }>SQL</p> <hr className={ s.SkillDivider } />
                       <p className={ s.SkillListItem }>SEO</p> <hr className={ s.SkillDivider } />
                       <p className={ s.SkillListItem }>Google Analytics</p>
+                      <p className={ s.SkillListItem }>jQuery</p> 
                     </div>
                   </div>
                   <hr className={ s.FullBreak } />
@@ -182,6 +183,7 @@ export default class Index extends React.Component {
                   title="Rockland Pediatrics"
                   tools={['HTML/CSS', 'React', 'Gatsby']}
                   fluid={this.props.data.rockland.childImageSharp.fluid}
+                  url="https://rocklandpediatrics.com"
                 />
               </div>
             </div>
@@ -223,7 +225,7 @@ const WorkItem = (props) => (
           {props.tools.map((tool, index) => <li key={index}>{tool}</li>)}
         </ul>
       </div>
-      <a href={props.url} className={ s.ProjectLink }>View &#8594;</a>
+      <a target="_blank" href={props.url} className={ s.ProjectLink }>View &#8594;</a>
     </div>
     <div className={ s.WorkRowImage }><Img fluid={props.fluid} /></div>
   </div>
