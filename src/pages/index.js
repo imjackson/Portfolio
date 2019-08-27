@@ -16,14 +16,6 @@ import wave from '../images/waves/wave2.svg'
 import waveTwo from '../images/waves/wave3.svg'
 import waveThree from '../images/waves/wave4.svg'
 
-// Language Icons
-import html from '../images/language-icons/html5.svg'
-import css from '../images/language-icons/css-3.svg'
-import js from '../images/language-icons/js.svg'
-import reactLogo from '../images/language-icons/react-logo.svg'
-import sass from '../images/language-icons/sass-logo.svg'
-import gatsbyLogo from '../images/language-icons/gatsby-logo.svg'
-
 // Site Images
 import rockland from '../images/site-images/rockland-display.png'
 import finalsclub from '../images/site-images/finalsclub-display.png'
@@ -34,10 +26,13 @@ import down from '../images/down-arrow.svg'
 export default class Index extends React.Component {
   constructor(props) {
     super(props)
+    // refs
     this.Splash = React.createRef()
     this.About = React.createRef()
     this.Work = React.createRef()
     this.Contact = React.createRef()
+    
+    // initial state
     this.state = {
       activeHeader: false,
       sec: "splash",
