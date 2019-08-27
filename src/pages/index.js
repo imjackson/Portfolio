@@ -102,6 +102,11 @@ export default class Index extends React.Component {
   
 
   render() {
+    // skill list item arrays
+    const languages = ['HTML(5)', 'CSS(3)', 'JavaScript(ES6)', 'Java']
+    const weapons = ['React', 'Gatsby']
+    const skills = ['Git', 'Firebase', 'SQL', 'SEO', 'Google Analytics', 'jQuery']
+
     return (
       <Layout top={this.toTop} scroller={this.scroller} activeSection={this.state.sec} activeHeader={this.state.activeHeader}>
           <SEO title="Front-End Developer" description="I'm a front-end developer with a dedication to writing fast, simple, accessible websites." />
@@ -131,25 +136,15 @@ export default class Index extends React.Component {
                     </div>
                     <div className={ s.SkillColumn }>
                       <h3 className={ s.SkillHeader }>Languages.</h3> 
-                      <p className={ s.SkillListItem }>HTML(5)</p> <hr className={ s.SkillDivider } />
-                      <p className={ s.SkillListItem }>CSS(3)</p> <hr className={ s.SkillDivider } />
-                      <p className={ s.SkillListItem }>JavaScript(ES6)</p> <hr className={ s.SkillDivider } />
-                      <p className={ s.SkillListItem }>Java</p> 
+                      {languages.map(lang => <><p className={ s.SkillListItem }>{lang}</p> <hr className={ s.SkillDivider } /></> )}
                     </div>
                     <div className={ s.SkillColumn }>
                       <h3 className={ s.SkillHeader }>Weapons of Choice.</h3>
-                      <p className={ s.SkillListItem }>React</p> <hr className={ s.SkillDivider } />
-                      <p className={ s.SkillListItem }>Gatsby</p> <hr className={ s.SkillDivider } />
-                      
+                      {weapons.map(weapon => <><p className={ s.SkillListItem }>{weapon}</p> <hr className={ s.SkillDivider } /></> )}
                     </div>
                     <div className={ s.SkillColumn }>
                       <h3 className={ s.SkillHeader }>Additional Skills.</h3>
-                      <p className={ s.SkillListItem }>Git</p> <hr className={ s.SkillDivider } />
-                      <p className={ s.SkillListItem }>Firebase</p> <hr className={ s.SkillDivider } />
-                      <p className={ s.SkillListItem }>SQL</p> <hr className={ s.SkillDivider } />
-                      <p className={ s.SkillListItem }>SEO</p> <hr className={ s.SkillDivider } />
-                      <p className={ s.SkillListItem }>Google Analytics</p>
-                      <p className={ s.SkillListItem }>jQuery</p> 
+                      {skills.map(skill => <><p className={ s.SkillListItem }>{skill}</p> <hr className={ s.SkillDivider } /></> )}
                     </div>
                   </div>
                   <hr className={ s.FullBreak } />

@@ -548,6 +548,8 @@
         width: 2px;
         height: 15px;
         background-color: #4d4d4d;
+    } .SkillDivider:last-child {
+        display: none;
     }
 }
 
