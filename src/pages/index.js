@@ -1,3 +1,5 @@
+
+// dependencies
 import React from "react"
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
@@ -45,14 +47,18 @@ export default class Index extends React.Component {
     }
   }
 
+  // add scroll listener to window
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll)
   }
 
+  // remove scroll listener from window
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll)
   }
 
+  // scroll listener - determines which section user is currently viewing, allowing for dyanmic styling
+  // of header link items
   handleScroll = () => {
     let y = window.pageYOffset, a, s
     let splash = this.Splash.current.offsetTop, about = this.About.current.offsetTop, work = this.Work.current.offsetTop, contact = this.Contact.current.offsetTop
@@ -72,27 +78,31 @@ export default class Index extends React.Component {
     })
   }
 
+  // scrolls to specific section of page based of prop 't' 
   scroller = (t) => {
     let splash = this.Splash.current.offsetTop, about = this.About.current.offsetTop, work = this.Work.current.offsetTop, contact = this.Contact.current.offsetTop
     let to
     t === "splash" ? to = splash : t === "about" ? to = about : t === "work" ? to = work : t === "contact" ? to = contact : to="error"
-    window.scrollTo({top: to - this.toRem(6), behavior: 'smooth'})
+    window.scrollTo({top: to - this.getRem(6), behavior: 'smooth'})
     setTimeout(() => {
       this.setState({ sec: t })
     }, 1000)
   }
 
+  // scroll to top of window
   toTop = () => {
     window.scrollTo({top: 0, behavior: 'smooth'})
   }
 
-  toRem = (rem) => {
+  // convert from rem value to pixel value based on document fontSize
+  getRem = (rem) => {
     return rem * parseFloat(getComputedStyle(document.documentElement).fontSize)
   }
 
+  // handler for changing form inputs
   formHandler = (e) => {
-    let n = e.target.name, v = e.target.value
-    this.setState({ [n]: v })
+    const {name, value} = e.target
+    this.setState({ [name]: value })
   }
   
 
