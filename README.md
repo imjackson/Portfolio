@@ -12,8 +12,3 @@ It can be viewed at: [imjackson.dev](https://imjackson.dev)
 - Install dependencies: `npm install`
 - Start Gatsby delelopment server: `gatsby develop`
 - View in browser: `localhost:8000`
-
-
-
-
-

@@ -104,7 +104,7 @@ export default class Index extends React.Component {
   render() {
     // skill list item arrays
     const languages = ['HTML(5)', 'CSS(3)', 'JavaScript(ES6)', 'Java']
-    const weapons = ['React', 'Gatsby']
+    const weapons = ['React', 'Gatsby', 'Webpack', 'Babel', 'Netlify']
     const skills = ['Git', 'Firebase', 'SQL', 'SEO', 'Google Analytics', 'jQuery']
 
     return (
@@ -170,7 +170,8 @@ export default class Index extends React.Component {
               
             </div>
             <div ref={this.Work} className={ s.WorkContainer}>
-              <h2 className={ s.SectionTitle }>My work.</h2>
+              <h2 className={ s.SectionTitle }>My Roles.</h2>
+              <h2 className={ s.SectionTitle }>My Sites.</h2>
               <div className={ s.WorkMain }>
                 <div className={ s.WorkBackground}></div>
                 <WorkItem

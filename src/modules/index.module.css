@@ -15,9 +15,13 @@
 */
 .SectionTitle {
     font-family: "Lato";
-    font-size: 3.25em;
+    font-size: 2.5em;
     margin: 0;
-    width: 75vw;
+    width: 1280px;
+} @media screen and (max-width: 1350px) {
+    .SectionTitle {
+        width: 1020px;
+    }
 } @media screen and (max-width: 1080px) {
     .SectionTitle {
         width: 90vw;
@@ -45,7 +49,7 @@
     position: relative;
 } .SplashMain {
     z-index: 2;
-    width: 70vw;
+    width: 1280px;
     padding-top: 8rem;
     display: flex;
     flex-flow: column nowrap;
@@ -85,6 +89,10 @@
     cursor: pointer;
 } .DownArrow:hover {
     transform: translateY(-5px);
+} @media screen and (max-width: 1350px) {
+    .SplashMain {
+        width: 1030px;
+    }
 } @media screen and (max-width: 1080px) {
     .SplashMain {
         width: 90vw;
@@ -153,7 +161,7 @@
     position: relative;
     padding-bottom: 18rem;
 } .AboutMain {
-    width: 75vw;
+    width: 1280px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -186,7 +194,7 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: flex-start;
-    width: 75vw;
+    width: 100%;
     margin-top: 1.5rem;
 } .Focus {
     display: flex;
@@ -215,6 +223,10 @@
     font-family: "Lato";
     font-size: 1em;
 
+} @media screen and (max-width: 1350px) {
+    .AboutMain {
+        width: 1020px;
+    }
 } @media screen and (max-width: 1080px) {
     .AboutMain {
         width: 90vw;
@@ -298,7 +310,7 @@
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 75vw;
+    width: 1280px;
     height: auto;
     margin-top: 2rem;
     position: relative;
@@ -319,7 +331,7 @@
     margin-bottom: 2rem;
 } .OddWorkRow {
     flex-flow: row-reverse nowrap;
-}.WorkRowImage {
+} .WorkRowImage {
     width: 60%;
     height: auto;
 } .WorkRowContent {
@@ -331,7 +343,7 @@
     padding: 0 2%;
 } .ProjectTitle {
     font-family: "IBM Plex Sans";
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
 } .ProjectBreak {
     height: 4px;
@@ -364,6 +376,10 @@
     background-color: #f9f9f9;
     box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.15);    
     
+} @media screen and (max-width: 1350px) {
+    .WorkMain {
+        width: 1020px;
+    }
 } @media screen and (max-width: 1080px) {
     .WorkMain {
         width: 90vw;
@@ -409,7 +425,7 @@
     align-items: center;
     position: relative;
 } .ContactMain {
-    width: 75vw;
+    width: 1280px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
