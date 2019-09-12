@@ -19,7 +19,6 @@ import s from '../modules/index.module.css'
 // Icons/Images
 import wave from '../images/waves/wave2.svg'
 import waveTwo from '../images/waves/wave3.svg'
-import waveThree from '../images/waves/wave4.svg'
 
 // Site Images
 import rockland from '../images/site-images/rockland-display.png'
