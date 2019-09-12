@@ -471,10 +471,10 @@ Main index page styling rules
 */
 .ContactContainer {
     padding-top: 4rem;
-    padding-bottom: 3rem;
+    padding-bottom: 8rem;
     background-color: #f9f9f9;
-    min-height: 100vh;
     width: 100vw;
+    height: auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -542,7 +542,9 @@ Main index page styling rules
         max-width: 90vw;
     }
 } @media screen and (max-width: 600px) {
-    .Form {
+    .ContactContainer {
+        padding-bottom: 4rem;
+    } .Form {
         margin-top: 1rem;
     } .Input {
         font-size: .9em;
