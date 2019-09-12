@@ -205,11 +205,11 @@
     width: 33%;
 
 } .FocusNumber {
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
     border-radius: 50%;
     font-family: "Lato";
-    font-size: 1.15em;
+    font-size: 1em;
     border: 1px solid rgb(207, 207, 207);
     display: flex;
     flex-flow: row nowrap;
@@ -356,10 +356,21 @@
     background-color: #252525;
 }.RoleDescription {
     font-family: "Roboto";
-    font-size: 18px;
+    font-size: 20px;
     line-height: 26px;
     max-width: 800px;
 }
+@media screen and (max-width: 1350px) {
+    .RoleContainer {
+        width: 1020px;
+    }
+} @media screen and (max-width: 1080px) {
+    .RoleContainer {
+        width: 90vw;
+    } .RolesDescription {
+        font-size: 18px;
+    }
+} 
 /* 
     WorkItem formatting 
 */

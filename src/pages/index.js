@@ -132,8 +132,6 @@ export default class Index extends React.Component {
                     <div className={ s.LineBreak } ></div>
                     Additionally, I love learning about math and physics, and have an total obsession with space and all that lies beyond earth.
                   </p>
-                  <h3 className={ s.AboutSectionHeader }>As a developer</h3>
-                  <p className={ s.Paragraph }>For front-end frameworks, my go-to choice is React. Though, I'm plenty comfortable working with pure HTML, CSS, and JavaScript to build fast, simple websites.</p>
                   <hr className={ s.FullBreak } />
                   <h2 className={ [s.AboutSectionHeader, s.SkillAlt ].join(' ')}>Skills.</h2>
                   <div className={ s.SkillsContainer }>
@@ -160,7 +158,7 @@ export default class Index extends React.Component {
                   <div className={ s.FocusBox }>
                     <Focus number="1" title="Speed" content="There is nothing more valuable than load time, sites nowadays must load quickly to keep user attention. Modern front-end JavaScript frameworks can greatly speed up a large site, but can slow down a small site. I use the right tools for the job." />
                     <Focus number="2" title="Accessibility" content="Everybody should have equal access to the web, period. When designing and building I always take into consideration the guidelines outlined by the WCAG 2.0 and Section 508 to ensure no one is left out of the experiences I build." />
-                    <Focus number="3" title="Simplicity" content="Content is king, let it do the talking. Everything I create is built around the underlying message, not the design itself." />
+                    <Focus number="3" title="Simplicity" content="Content is king, let it do the talking. Everything I create is built around the underlying message, never a design itself." />
                   </div>
                   
                 </div>
@@ -188,7 +186,7 @@ export default class Index extends React.Component {
                   roles="Design, Development"
                   tools={['HTML/CSS', 'React', 'Gatsby']}
                   fluid={this.props.data.finalsclub.childImageSharp.fluid}
-                  url="http://finalsclub.io"
+                  url="https://finalsclub-landing-design.netlify.com/"
                 />
                 <WorkItem
                   odd={false}
