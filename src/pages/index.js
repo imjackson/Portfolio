@@ -171,6 +171,13 @@ export default class Index extends React.Component {
             </div>
             <div ref={this.Work} className={ s.WorkContainer}>
               <h2 className={ s.SectionTitle }>My Roles.</h2>
+              <div className={ s.RoleContainer }>
+                <h3 className={ s.RoleTitle }>FinalsClub</h3>
+                <p className={ s.RoleHighInfo }><strong>UI/UX Designer &amp; Developer</strong> | May 2018 — Present</p>
+                <hr className={ s.RoleBreak } />
+                <p className={ s.RoleDescription }>I design and develop front-end React components for ed-tech startup FinalsClub, where we set out to improve online communication about courses and college-life at Rutgers.</p>
+                <p></p>
+              </div>
               <h2 className={ s.SectionTitle }>My Sites.</h2>
               <div className={ s.WorkMain }>
                 <div className={ s.WorkBackground}></div>

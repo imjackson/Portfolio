@@ -232,10 +232,13 @@
         width: 90vw;
     } .LanguageTitle {
         font-size: 1.25em;
-    }.LanguageIcon {
+    } .LanguageIcon {
         width: 1.75rem;
-    }.FocusBox {
+    } .FocusBox {
+        flex-flow: column nowrap;
         width: 90vw;
+    } .Focus {
+        width: 90%;
     }
 } @media screen and (max-width: 860px) {
     .AboutContainer {
@@ -253,11 +256,6 @@
         justify-content: center;
     } .SkillBlock {
         width: 45%;
-    } .FocusBox {
-        flex-flow: column nowrap;
-        width: 90vw;
-    } .Focus {
-        width: 90%;
     } .LanguageTitle {
         font-size: 1.25em;
     } .LanguageIcon {
@@ -321,7 +319,51 @@
     top: 0;
     right: 0;
     background-color: #14213D;
-} .WorkRow {
+} @media screen and (max-width: 1350px) {
+    .WorkMain {
+        width: 1020px;
+    }
+} @media screen and (max-width: 1080px) {
+    .WorkMain {
+        width: 90vw;
+    }
+} 
+
+/* 
+    Role Item formatting
+*/
+.RoleContainer {
+    width: 1280px;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+} .RoleTitle {
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 34px;
+} .RoleHighInfo {
+    font-family: "Lato";
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 8px;
+} .RoleBreak {
+    height: 2px;
+    width: 10rem;
+    margin: 1.5rem 0;
+    background-color: #252525;
+}.RoleDescription {
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 800px;
+}
+/* 
+    WorkItem formatting 
+*/
+.WorkRow {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -374,16 +416,7 @@
     padding: 15px 30px;
     border-radius: 4px;
     background-color: #f9f9f9;
-    box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.15);    
-    
-} @media screen and (max-width: 1350px) {
-    .WorkMain {
-        width: 1020px;
-    }
-} @media screen and (max-width: 1080px) {
-    .WorkMain {
-        width: 90vw;
-    }
+    box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.15); 
 } @media screen and (max-width: 860px) {
     .WorkBackground {
         display: none;
