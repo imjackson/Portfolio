@@ -123,7 +123,7 @@ export default class Index extends React.Component {
               </div>
               
               <img src={wave} alt="" className={ s.Wave } />
-              <div className={ s.ArrowContainer }><img src={down} alt="Down." onClick={() => {this.scroller("about")}} className={ s.DownArrow } /></div>
+              <div className={ s.ArrowContainer }><img src={down} alt="Down." tabIndex="0" onClick={() => {this.scroller("about")}} className={ s.DownArrow } /></div>
             </div>
             <div ref={this.About} className={ s.AboutContainer }>
               <img style={{transform: "translateY(2px)"}} src={waveTwo} alt="" className={ s.Wave } />
