@@ -1,3 +1,10 @@
+// ============================================================
+// footer.js
+//
+// Main site footer component
+// ============================================================
+
+// Dependencies
 import React from 'react'
 
 // Styles

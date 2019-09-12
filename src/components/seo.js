@@ -1,3 +1,10 @@
+// ============================================================
+// seo.js
+//
+// Site seo component for setting page meta-data
+// ============================================================
+
+// Dependencies
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"

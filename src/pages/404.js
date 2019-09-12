@@ -1,8 +1,15 @@
+// ============================================================
+// 404.js
+//
+// Site 404 page to be displayed when a user hits a non-existant
+// route
+// ============================================================
+
+// Dependencies
 import React from "react"
 import { Link } from 'gatsby'
 
 // Components
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from '../components/footer'
 

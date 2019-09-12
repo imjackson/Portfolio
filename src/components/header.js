@@ -1,7 +1,11 @@
-import React from "react"
+// ============================================================
+// header.js
+//
+// Main site header component
+// ============================================================
 
-// Components
-import { Link } from 'gatsby'
+// Dependencies
+import React from "react"
 
 // Styles
 import s from '../modules/layout.module.css'
