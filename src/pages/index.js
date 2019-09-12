@@ -125,13 +125,9 @@ export default class Index extends React.Component {
               <h2 className={ s.SectionTitle }>About me.</h2>
               <div className={ s.AboutMain }>
                 <div className={ s.AboutLeft }>
-                  <p className={ s.Paragraph}>
-                    I'm a front-end developer currently working with <a className={ s.Underlined } target="_blank" href="http://finalsclub.io">FinalsClub</a> as a UI/UX designer and developer.
-                    <div className={ s.LineBreak } ></div>
-                    I work out of Monmouth County, NJ during my gap year before attending the University of Delaware in 2020.
-                    <div className={ s.LineBreak } ></div>
-                    Additionally, I love learning about math and physics, and have an total obsession with space and all that lies beyond earth.
-                  </p>
+                  <p className={ s.Paragraph}> I'm a front-end developer currently working with <a className={ s.Underlined } target="_blank" href="http://finalsclub.io">FinalsClub</a> as a UI/UX designer and developer. </p>
+                  <p className={ s.Paragraph}> I work out of Monmouth County, NJ during my gap year before attending the University of Delaware in 2020.</p>
+                  <p className={ s.Paragraph}> Additionally, I love learning about math and physics, and have an total obsession with space and all that lies beyond earth.</p>
                   <hr className={ s.FullBreak } />
                   <h2 className={ [s.AboutSectionHeader, s.SkillAlt ].join(' ')}>Skills.</h2>
                   <div className={ s.SkillsContainer }>
