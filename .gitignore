@@ -68,6 +68,10 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-#vscode settings files
+# vscode settings files
 .vscode/
 .vscode/settings.json
+
+# .env files
+.env.development
+.env.production
