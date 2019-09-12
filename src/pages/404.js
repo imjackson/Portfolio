@@ -20,6 +20,7 @@ import s from '../modules/layout.module.css'
 
 const NotFoundPage = () => (
   <div className={ s.NotFound }>
+    <SEO title="404: Not Found | Front-End Developer" description="I'm a front-end developer with a dedication to writing fast, simple, accessible websites." />
     <header className={ s.NotFoundHeader }>
       <Link to="/"><img src={logo} alt="Logo." className={ s.Logo } /></Link>
     </header>
