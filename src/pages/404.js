@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import Footer from '../components/footer'
 
 // Icons 
-import logo from '../images/logos/Jackson1000.svg'
+import logo from '../images/logos/logo.svg'
 // Styles
 import s from '../modules/layout.module.css'
 
