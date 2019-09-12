@@ -65,7 +65,7 @@ Main layout component styling rules
     cursor: pointer;
     padding: .5rem 0;
     transition: .3s ease;
-    outline-offset: 10px;
+    outline-offset: 3px;
     outline-color: #252525;
 } .NavButton:hover {
     transform: translateY(-2px);

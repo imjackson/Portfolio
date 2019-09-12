@@ -409,7 +409,23 @@ Main index page styling rules
     text-transform: uppercase;
     text-align: right;
     line-height: 12px;
-} .ProjectLink {
+} .ProjectLinkLight {
+    font-family: "IBM Plex Sans";
+    font-weight: bold;
+    font-size: 14px;
+    padding: 15px 30px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.15);
+    transition: .3s ease;
+    outline: none;
+} .ProjectLinkLight:hover {
+    background-color: #14213D;
+    color: #f9f9f9;
+} .ProjectLinkLight:focus {
+    background-color: #14213D;
+    color: #f9f9f9;
+} .ProjectLinkDark {
     font-family: "IBM Plex Sans";
     font-weight: bold;
     font-size: 14px;
@@ -417,7 +433,13 @@ Main index page styling rules
     border-radius: 4px;
     background-color: #f9f9f9;
     box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.15); 
-} @media screen and (max-width: 860px) {
+    transition: .3s ease;
+    outline-color: rgb(188, 240, 223);
+} .ProjectLinkDark:hover {
+    background-color: rgb(188, 240, 223);
+} .ProjectLinkDark:focus {
+    background-color: rgb(188, 240, 223);
+}@media screen and (max-width: 860px) {
     .WorkBackground {
         display: none;
     } .WorkRow {
@@ -499,7 +521,11 @@ Main index page styling rules
     margin-top: 1rem;
     transition: .3s ease;
     cursor: pointer;
+    outline: none;
 } .Submit:hover {
+    background-color: #252525;
+    color: #f9f9f9;
+} .Submit:focus {
     background-color: #252525;
     color: #f9f9f9;
 } @media screen and (max-width: 1080px) {

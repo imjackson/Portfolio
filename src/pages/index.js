@@ -231,14 +231,14 @@ const WorkItem = (props) => (
   <div className={props.odd ? s.WorkRow : [ s.OddWorkRow, s.WorkRow].join(' ') }>
     <div style={props.odd ? {color: '#252525'} : {color: '#f9f9f9'} } className={ props.odd ? s.WorkRowContent : [ s.WorkRowContent, s.DarkContent ].join(' ')}>
       <h2 className={ s.ProjectTitle }>{props.title}</h2>
-      <hr style={ props.odd ? {backgroundColor: '#14213D'} : {backgroundColor: '#BCF0DF'} }className={ s.ProjectBreak }/>
+      <hr style={ props.odd ? {backgroundColor: '#14213D'} : {backgroundColor: '#BCF0DF'} } className={ s.ProjectBreak }/>
       <div className={ s.ProjectInfoRow }>
         <p className={ s.ProjectRoles }>{props.roles}</p>
         <ul className={ s.ProjectTools}>
           {props.tools.map((tool, index) => <li key={index}>{tool}</li>)}
         </ul>
       </div>
-      <a target="_blank" href={props.url} className={ s.ProjectLink }>View &#8594;</a>
+      <a target="_blank" href={props.url} className={ props.odd ? s.ProjectLinkLight : s.ProjectLinkDark }>View &#8594;</a>
     </div>
     <div className={ s.WorkRowImage }><Img fluid={props.fluid} /></div>
   </div>
