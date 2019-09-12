@@ -179,16 +179,36 @@
     font-weight: bold;
     font-size: 2em;
     margin-top: 1rem;
-} .AboutRight {
-    width: 35%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 4px;
-    padding: 2rem; 
-    box-shadow: 0px 5px 8px 2px rgba(0,0,0,0.08);
-} .FocusBox {
+} @media screen and (max-width: 1350px) {
+    .AboutMain {
+        width: 1020px;
+    }
+} @media screen and (max-width: 1080px) {
+    .AboutMain {
+        width: 90vw;
+    } 
+} @media screen and (max-width: 860px) {
+    .AboutContainer {
+        padding-bottom: 14rem;
+    } .AboutMain {
+        flex-flow: column nowrap;
+    } .AboutLeft {
+        width: 100%;
+    } .AboutSectionHeader {
+        font-size: 1.5em;
+    } 
+} @media screen and (max-width: 600px) {
+    .AboutContainer {
+        padding-bottom: 10rem;
+    } .AboutLeft {
+        padding-top: .75rem;
+    } 
+}
+
+/* 
+    Focus item
+*/
+.FocusBox {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -203,7 +223,6 @@
     align-items: flex-start;
     margin: 1rem 1.5rem;
     width: 33%;
-
 } .FocusNumber {
     height: 2.5rem;
     width: 2.5rem;
@@ -222,71 +241,26 @@
 } .FocusContent {
     font-family: "Lato";
     font-size: 1em;
-
-} @media screen and (max-width: 1350px) {
-    .AboutMain {
-        width: 1020px;
-    }
 } @media screen and (max-width: 1080px) {
-    .AboutMain {
-        width: 90vw;
-    } .LanguageTitle {
-        font-size: 1.25em;
-    } .LanguageIcon {
-        width: 1.75rem;
-    } .FocusBox {
+   .FocusBox {
         flex-flow: column nowrap;
         width: 90vw;
     } .Focus {
         width: 90%;
+        margin: 1rem 0;
     }
 } @media screen and (max-width: 860px) {
-    .AboutContainer {
-        padding-bottom: 14rem;
-    }.AboutMain {
-        flex-flow: column nowrap;
-    }.AboutLeft {
-        width: 100%;
-    } .AboutSectionHeader {
-        font-size: 1.5em;
-    }.AboutRight {
-        width: 100%;
-        flex-flow: row wrap;
-        align-items: flex-start;
-        justify-content: center;
-    } .SkillBlock {
-        width: 45%;
-    } .LanguageTitle {
-        font-size: 1.25em;
-    } .LanguageIcon {
-        width: 1.5rem;
-    } .FocusNumber {
-        font-size: 1em;
-        height: 2.5rem;
-        width: 2.5rem;
-    } .Care {
-        display: none;
-    }
+    .FocusNumber {
+        font-size: 14px;
+        height: 2rem;
+        width: 2rem;
+    } 
 } @media screen and (max-width: 600px) {
-    .AboutContainer {
-        padding-bottom: 10rem;
-    }.AboutLeft {
-        padding-top: .75rem;
-    } .AboutRight {
-        flex-flow: column nowrap;
-        align-items: center;
-        padding: 1rem 0;
-    } .LanguageTitle {
-        font-size: 1.2em;
-        margin-top: .5rem;
-    } .LanguageBreak {
-        margin: .55rem 0;
-    } .FocusTitle {
-        font-size: 1.65em;
-    } .LanguageIcon {
-        width: 1.15rem;
+    .FocusTitle {
+        font-size: 1.45em;
     } .FocusContent {
-        font-size: 1em;
+        font-size: 14px;
+        line-height: 22px;
     }
 }
 
@@ -354,21 +328,28 @@
     width: 10rem;
     margin: 1.5rem 0;
     background-color: #252525;
-}.RoleDescription {
+} .RoleDescription {
     font-family: "Roboto";
     font-size: 20px;
     line-height: 26px;
     max-width: 800px;
-}
-@media screen and (max-width: 1350px) {
+} @media screen and (max-width: 1350px) {
     .RoleContainer {
         width: 1020px;
     }
 } @media screen and (max-width: 1080px) {
     .RoleContainer {
         width: 90vw;
-    } .RolesDescription {
+    } .RoleDescription {
         font-size: 18px;
+    }
+} @media screen and (max-width: 860px) {
+    .RoleTitle {
+        font-size: 24px;
+    } .RoleHighInfo {
+        font-size: 16px;
+    } .RoleDescription {
+        font-size: 16px;
     }
 } 
 /* 
