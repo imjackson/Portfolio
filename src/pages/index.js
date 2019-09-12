@@ -118,7 +118,7 @@ export default class Index extends React.Component {
             <div ref={this.Splash} className={ s.SplashContainer }>
               <div className={ s.SplashMain }>
                 <h1 className={ s.Title }>I'm Jackson.</h1>
-                <p className={ s.Intro }>I'm a front-end developer with a dedication to writing fast, simple, accessible websites.</p>
+                <p className={ s.Intro }>I'm a front-end developer with a dedication to building fast, simple, accessible websites.</p>
               </div>
               
               <img src={wave} alt="" className={ s.Wave } />
@@ -156,7 +156,7 @@ export default class Index extends React.Component {
                   <h2 className={ s.AboutSectionHeader }>I care about:</h2>
                   <div className={ s.FocusBox }>
                     <Focus number="1" title="Speed" content="There is nothing more valuable than load time, sites nowadays must load quickly to keep user attention. Modern front-end JavaScript frameworks can greatly speed up a large site, but can slow down a small site. I use the right tools for the job." />
-                    <Focus number="2" title="Accessibility" content="Everybody should have equal access to the web, period. When designing and building I always take into consideration the guidelines outlined by the WCAG 2.0 and Section 508 to ensure no one is left out of the experiences I build." />
+                    <Focus number="2" title="Accessibility" content="Everybody should have equal access to the web, period. When designing and building I always take into consideration the guidelines outlined by the WCAG 2.0 to ensure no one is left out of the experiences I build." />
                     <Focus number="3" title="Simplicity" content="Content is king, let it do the talking. Everything I create is built around the underlying message, never a design itself." />
                   </div>
                   
