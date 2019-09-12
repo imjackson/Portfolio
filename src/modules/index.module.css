@@ -130,6 +130,7 @@ Main index page styling rules
      Paragprahing 
 */
 .Paragraph {
+    max-width: 900px;
     font-family: "Lato";
     font-size: 20px;
     line-height: 30px;

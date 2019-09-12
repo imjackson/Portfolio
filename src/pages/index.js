@@ -129,9 +129,8 @@ export default class Index extends React.Component {
               <h2 className={ s.SectionTitle }>About me.</h2>
               <div className={ s.AboutMain }>
                 <div className={ s.AboutLeft }>
-                  <p className={ s.Paragraph}> I'm a front-end developer currently working with <a className={ s.Underlined } rel="noopener noreferrer" target="_blank" href="http://finalsclub.io">FinalsClub</a> as a UI/UX designer and developer. </p>
-                  <p className={ s.Paragraph}> I work out of Monmouth County, NJ during my gap year before attending the University of Delaware in 2020.</p>
-                  <p className={ s.Paragraph}> Additionally, I love learning about math and physics, and have an total obsession with space and all that lies beyond earth.</p>
+                  <p className={ s.Paragraph}> I'm a front-end developer currently working out of Monmouth County, NJ. I seek to design and develop enjoyable user experiences with the most efficient toolsets possible.</p>
+                  <p className={ s.Paragraph}> My main role at the moment is working with with <a className={ s.Underlined } rel="noopener noreferrer" target="_blank" href="http://finalsclub.io">FinalsClub</a> as a UI/UX designer and developer to bring to life their vision of a more connected Rutgers student-base. </p>
                   <hr className={ s.FullBreak } />
                   <h2 className={ [s.AboutSectionHeader, s.SkillAlt ].join(' ')}>Skills.</h2>
                   <div className={ s.SkillsContainer }>
@@ -173,7 +172,7 @@ export default class Index extends React.Component {
                 <h3 className={ s.RoleTitle }>FinalsClub</h3>
                 <p className={ s.RoleHighInfo }><strong>UI/UX Designer &amp; Developer</strong> | May 2019 — Present</p>
                 <hr className={ s.RoleBreak } />
-                <p className={ s.RoleDescription }>I design and develop front-end React components for ed-tech startup FinalsClub, where we set out to improve online communication about courses and college-life at Rutgers.</p>
+                <p className={ s.RoleDescription }>I design and develop front-end React components for ed-tech startup FinalsClub, where we've set out to improve online communication about courses and college-life at Rutgers.</p>
                 <p></p>
               </div>
               <h2 className={ s.SectionTitle }>My Sites.</h2>
