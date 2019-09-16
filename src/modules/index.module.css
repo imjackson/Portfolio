@@ -463,6 +463,12 @@ Main index page styling rules
         line-height: 8px;
     } .ProjectRoles {
         font-size: .85em;
+    } .ProjectLinkLight {
+        padding: 10px 20px;
+        font-size: 12px;
+    } .ProjectLinkDark {
+        padding: 10px 20px;
+        font-size: 12px;
     }
 }
 
