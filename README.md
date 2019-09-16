@@ -8,7 +8,7 @@ It can be viewed at: [imjackson.dev](https://imjackson.dev)
 
 ## Running Locally
 
-- Clone repository: `git clone https://github.com/nbm-jackson/portfolio.git`
+- Clone repository: `git clone https://github.com/imjackson/portfolio.git`
 - Install dependencies: `npm install`
 - Start Gatsby delelopment server: `gatsby develop`
 - View in browser: `localhost:8000`
