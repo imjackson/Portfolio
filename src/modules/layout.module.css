@@ -81,9 +81,7 @@ Main layout component styling rules
         margin: 0 .75rem;
     }
 } @media screen and (max-width: 600px) {
-    .Header {
-        padding: 0 3vw;
-    } .Logo {
+    .Logo {
         height: 1rem;;
     } .HeaderTitle {
         font-size: 1.05em;
