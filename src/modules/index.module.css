@@ -359,8 +359,16 @@ Main index page styling rules
         font-size: 16px;
     } .RoleDescription {
         font-size: 16px;
+    } .RoleBreak {
+        margin: 1rem 0;
     }
-} 
+} @media screen and (max-width: 600px) {
+    .RoleHighInfo {
+        font-size: 12px;
+    } .RoleBreak {
+        margin: .75rem 0;
+    }
+}
 /* 
     WorkItem formatting 
 */
