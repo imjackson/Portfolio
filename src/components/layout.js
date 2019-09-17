@@ -10,8 +10,8 @@ import React from "react"
 import PropTypes from "prop-types"
 
 // Components
-import Header from "./header"
-import Footer from './footer'
+import Header from "./Header/"
+import Footer from './Footer/'
 
 // Styles
 import "./layout.css"

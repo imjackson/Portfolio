@@ -11,7 +11,7 @@ import { Link } from 'gatsby'
 
 // Components
 import SEO from "../components/seo"
-import Footer from '../components/footer'
+import Footer from '../components/Footer/'
 
 // Icons 
 import logo from '../images/logos/logo.svg'

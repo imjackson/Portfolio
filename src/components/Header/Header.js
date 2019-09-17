@@ -1,17 +1,17 @@
 // ============================================================
-// header.js
+// Header.js
 //
-// Main site header component
+// Main single-page site header component
 // ============================================================
 
 // Dependencies
 import React from "react"
 
 // Styles
-import s from '../modules/layout.module.css'
+import s from './Header.module.css'
 
 // Icons
-import logo from '../images/logos/logo.svg'
+import logo from '../../images/logos/logo.svg'
 
 // Active scroll styling
 const activeHeader = {
@@ -39,7 +39,7 @@ const nonActiveLink = {
 }
 
 const Header = (props) => (
-  <header style={ props.header ? activeHeader : nonActiveHeader } className={ s.Header }>
+  <header style={ props.header ? activeHeader : nonActiveHeader } className={ s.Container }>
       <div tabIndex="0" onClick={props.top} className={ s.Info }>
         <img src={logo} alt="Logo." className={ s.Logo } />
         {props.header ? <h2 className={ s.HeaderTitle }>I'm Jackson.</h2> : null}
