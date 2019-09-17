@@ -124,7 +124,7 @@ export default class Index extends React.Component {
               <img src={wave} alt="" className={ s.Wave } />
               <div className={ s.ArrowContainer }><img src={down} alt="Down." tabIndex="0" onClick={() => {this.scroller("about")}} className={ s.DownArrow } /></div>
             </div>
-            <div ref={this.About} className={ s.AboutContainer }>
+            <div id="About" ref={this.About} className={ s.AboutContainer }>
               <img style={{transform: "translateY(2px)"}} src={waveTwo} alt="" className={ s.Wave } />
               <h2 className={ s.SectionTitle }>About me.</h2>
               <div className={ s.AboutMain }>
@@ -166,7 +166,7 @@ export default class Index extends React.Component {
               </div>
               
             </div>
-            <div ref={this.Work} className={ s.WorkContainer}>
+            <div id="Work" ref={this.Work} className={ s.WorkContainer}>
               <h2 className={ s.SectionTitle }>My Roles.</h2>
               <div className={ s.RoleContainer }>
                 <h3 className={ s.RoleTitle }>FinalsClub</h3>
@@ -198,7 +198,7 @@ export default class Index extends React.Component {
                 />
               </div>
             </div>
-            <div ref={this.Contact} className={ s.ContactContainer }>
+            <div id="Contact" ref={this.Contact} className={ s.ContactContainer }>
               <h2 className={ s.SectionTitle }>Let's work together.</h2>
               <div className={ s.ContactMain }>
                 <p className={ [s.Paragraph, s.ContactParagraph ].join(" ")}>I'm always looking for new projects to work on. If you want a website built, or just want to say hello, send me a message using the form below and I'll get back to you as soon as possible.</p>

@@ -12,9 +12,7 @@ import { Link } from 'gatsby'
 // Components
 import SEO from "../components/seo"
 import Footer from '../components/Footer/'
-
-// Icons 
-import logo from '../images/logos/logo.svg'
+import InternalHeader from '../components/InternalHeader/'
 
 // Styles
 import s from '../modules/notfound.module.css'
@@ -22,9 +20,7 @@ import s from '../modules/notfound.module.css'
 const NotFoundPage = () => (
   <div className={ s.PageContainer }>
     <SEO title="404: Not Found | Front-End Developer" description="I'm a front-end developer with a dedication to writing fast, simple, accessible websites." />
-    <header className={ s.Header }>
-      <Link to="/"><img src={logo} alt="Logo." className={ s.Logo } /></Link>
-    </header>
+    <InternalHeader />
     <div className={ s.NotFoundContent }>
       <h2 className={ s.NotFoundTitle }>Uh oh,</h2>
       <h1 className={ s.NotFoundNumber }> <span className={ s.NotFoundNumberSmall}>a</span> 404 <span className={ s.NotFoundNumberSmall}>error.</span></h1>

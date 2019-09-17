@@ -22,32 +22,6 @@ Styling rules for site 404 page
 } 
 
 /* 
-    Page header
-*/
-.Header {
-    height: 6rem;
-    width: 100vw;
-    margin: 0;
-    padding: 0 10vw;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-} .Logo {
-    width: 2rem;
-    height: auto;
-    margin: 0;
-} @media screen and (max-width: 860px) {
-    .Logo {
-        height: 1.5rem;
-    } 
-} @media screen and (max-width: 600px) {
-    .Logo {
-        height: 1rem;;
-    } 
-}
-
-/* 
     Page content
 */
 .NotFoundContent {
