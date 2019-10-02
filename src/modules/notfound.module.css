@@ -19,7 +19,7 @@ Styling rules for site 404 page
     justify-content: flex-start;
     align-items: center;
     background-color: rgb(188, 240, 223);
-} 
+}
 
 /* 
     Page content
@@ -33,30 +33,43 @@ Styling rules for site 404 page
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-} .NotFoundTitle {
+}
+.NotFoundTitle {
     font-family: "IBM Plex Sans";
     font-weight: bold;
     font-size: 1.5em;
-} .NotFoundNumberSmall {
+}
+.NotFoundNumberSmall {
     font-size: 30px;
-} .NotFoundNumber {
+}
+.NotFoundNumber {
     font-family: "IBM Plex Sans";
     font-weight: bold;
-    font-size: 20vw;
-} .NotFoundText {
+    font-size: 15vw;
+}
+.NotFoundText {
     font-family: "Lato";
     font-size: 1.1em;
     margin-top: 1rem;
-} @media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 2000px) {
+    .NotFoundNumber {
+        font-size: 20vw;
+    }
+}
+@media screen and (max-width: 600px) {
     .NotFoundNumber {
         font-size: 30vw;
         margin-bottom: 0rem;
-    } .NotFoundNumberSmall {
+    }
+    .NotFoundNumberSmall {
         font-size: 14px;
-    } .NotFoundText {
+    }
+    .NotFoundText {
         font-size: 14px;
         line-height: 24px;
-    } .NotFoundReturn {
+    }
+    .NotFoundReturn {
         font-size: 14px;
         padding: 15px 25px;
     }
@@ -72,23 +85,27 @@ Styling rules for site 404 page
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
-} .Button {
+}
+.Button {
     font-family: "Lato";
     padding: 20px 35px;
     border-radius: 4px;
-    background-color: #14213D;
+    background-color: #14213d;
     color: #f9f9f9;
-    transition: .3s ease;
+    transition: 0.3s ease;
     outline: none;
-} .Button:hover {
+}
+.Button:hover {
     background-color: #f9f9f9;
     color: #252525;
     transform: translateY(-2px);
-} .Button:focus {
+}
+.Button:focus {
     background-color: #f9f9f9;
     color: #252525;
     transform: translateY(-2px);
-} @media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 600px) {
     .Button {
         font-size: 14px;
         padding: 15px 25px;
