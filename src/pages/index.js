@@ -64,55 +64,46 @@ const Index = props => {
         setCurrentSection(currentSection)
     }
 
-    // scrolls to specific section of page based of prop 't'
+    // scrolls to specific section of page based of prop 'destination'
     const scroller = destination => {
-        let intro = IntroSection.current.offsetTop,
-            about = AboutSetion.current.offsetTop,
-            work = WorkSection.current.offsetTop,
-            contact = ContactSection.current.offsetTop
-        let destinationRefOffset
-        switch (destination) {
-            case "splash":
-                destinationRefOffset = intro
-                break
-            case "about":
-                destinationRefOffset = about
-                break
-            case "work":
-                destinationRefOffset = work
-                break
-            case "contact":
-                destinationRefOffset = contact
-                break
-            default:
-                destinationRefOffset = intro
-                break
+        const refOffsets = {
+            intro: IntroSection.current.offsetTop,
+            about: AboutSetion.current.offsetTop,
+            work: WorkSection.current.offsetTop,
+            contact: ContactSection.current.offsetTop,
         }
+        let destinationRefOffset = refOffsets[destination]
+        scrollToRef(destinationRefOffset)
+        delayedSetCurrentSection(destination, 1000)
+    }
+
+    const scrollToRef = destinationRefOffset => {
         window.scrollTo({
-            top: destinationRefOffset - getRem(6),
+            top: destinationRefOffset - getPxFromRem(6),
             behavior: "smooth",
         })
+    }
+
+    const delayedSetCurrentSection = (destination, delay) => {
         setTimeout(() => {
             setCurrentSection(destination)
-        }, 1000)
+        }, delay)
     }
 
-    // scroll to top of window
-    const scollToTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" })
-    }
-
-    // convert from rem value to pixel value based on document fontSize
-    const getRem = rem => {
+    const getPxFromRem = rem => {
         return (
             rem *
             parseFloat(getComputedStyle(document.documentElement).fontSize)
         )
     }
 
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
     return (
         <Layout
-            top={scollToTop}
+            top={scrollToTop}
             scroller={scroller}
             activeSection={currentSection}
             activeHeader={headerIsActive}
