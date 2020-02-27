@@ -1,0 +1,51 @@
+/* <Paragraph /> */
+.Paragraph {
+    max-width: 900px;
+    font-family: "Lato";
+    font-size: 20px;
+    line-height: 30px;
+    color: #252525;
+    margin: 0.5rem 0;
+    margin-right: 2rem;
+}
+@media screen and (max-width: 860px) {
+    .Paragraph {
+        font-size: 1.05em;
+        line-height: 26px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .Paragraph {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0.75rem 0;
+    }
+}
+
+/* <SectionTitle /> */
+.SectionTitle {
+    font-family: "Lato";
+    font-size: 2.5em;
+    margin: 0;
+    width: 1280px;
+}
+@media screen and (max-width: 1350px) {
+    .SectionTitle {
+        width: 1020px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .SectionTitle {
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 860px) {
+    .SectionTitle {
+        font-size: 2.75em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .SectionTitle {
+        font-size: 2.25em;
+    }
+}

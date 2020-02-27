@@ -12,6 +12,8 @@ import Img from "gatsby-image"
 // Components
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import SectionTitle from "../components/common/SectionTitle"
+import Paragraph from "../components/common/Paragraph"
 
 // Sections
 import Contact from "../components/Contact/"
@@ -187,20 +189,18 @@ export default class Index extends React.Component {
                             alt=""
                             className={s.Wave}
                         />
-                        <h2 className={s.SectionTitle}>About me.</h2>
+                        <SectionTitle>About me.</SectionTitle>
                         <div className={s.AboutMain}>
                             <div className={s.AboutLeft}>
-                                <p className={s.Paragraph}>
-                                    {" "}
+                                <Paragraph>
                                     I'm a front-end developer currently working
                                     out of Monmouth County, NJ. I seek to design
                                     and develop enjoyable user experiences with
                                     the most efficient toolsets possible.
-                                </p>
-                                <p className={s.Paragraph}>
-                                    {" "}
+                                </Paragraph>
+                                <Paragraph>
                                     My main role at the moment is working with
-                                    with{" "}
+                                    with&nbsp;
                                     <a
                                         className={s.Underlined}
                                         rel="noopener noreferrer"
@@ -208,11 +208,11 @@ export default class Index extends React.Component {
                                         href="http://finalsclub.io"
                                     >
                                         FinalsClub
-                                    </a>{" "}
-                                    as a UI/UX designer and developer to bring
-                                    to life their vision of a more connected
-                                    Rutgers student-base.{" "}
-                                </p>
+                                    </a>
+                                    &nbsp;as a UI/UX designer and developer to
+                                    bring to life their vision of a more
+                                    connected Rutgers student-base.{" "}
+                                </Paragraph>
                                 <hr className={s.FullBreak} />
                                 <h2
                                     className={[
@@ -300,7 +300,7 @@ export default class Index extends React.Component {
                         </div>
                     </div>
                     <div id="Work" ref={this.Work} className={s.WorkContainer}>
-                        <h2 className={s.SectionTitle}>My Roles.</h2>
+                        <SectionTitle>My Roles.</SectionTitle>
                         <div className={s.RoleContainer}>
                             <h3 className={s.RoleTitle}>FinalsClub</h3>
                             <p className={s.RoleHighInfo}>
@@ -316,7 +316,7 @@ export default class Index extends React.Component {
                             </p>
                             <p></p>
                         </div>
-                        <h2 className={s.SectionTitle}>My Sites.</h2>
+                        <SectionTitle>My Sites.</SectionTitle>
                         <div className={s.WorkMain}>
                             <div className={s.WorkBackground}></div>
                             <WorkItem

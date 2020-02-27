@@ -1,6 +1,9 @@
 // Dependencies
 import React, { useState, forwardRef } from "react"
 
+// Components
+import SectionTitle from "../common/SectionTitle"
+
 // Styles
 import styles from "./Contact.module.css"
 
@@ -11,7 +14,7 @@ const Contact = forwardRef((props, ref) => {
 
     return (
         <div id="Contact" ref={ref} className={styles.ContactContainer}>
-            <h2 className={styles.SectionTitle}>Let's work together.</h2>
+            <SectionTitle>Let's work together.</SectionTitle>
             <div className={styles.ContactMain}>
                 <p className={styles.ContactParagraph}>
                     I'm always looking for new projects to work on. If you want
