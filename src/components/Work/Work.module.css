@@ -1,0 +1,248 @@
+/* 
+    Work Section 
+*/
+.WorkContainer {
+    padding-top: 3rem;
+    background-color: rgb(188, 240, 223);
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.WorkMain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1280px;
+    height: auto;
+    margin-top: 2rem;
+    position: relative;
+}
+.WorkBackground {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #14213d;
+}
+@media screen and (max-width: 1350px) {
+    .WorkMain {
+        width: 1020px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .WorkMain {
+        width: 90vw;
+    }
+}
+
+/* 
+    Role Item formatting
+*/
+.RoleContainer {
+    width: 1280px;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.RoleTitle {
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 34px;
+}
+.RoleHighInfo {
+    font-family: "Lato";
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+.RoleBreak {
+    height: 2px;
+    width: 10rem;
+    margin: 1.5rem 0;
+    background-color: #252525;
+}
+.RoleDescription {
+    font-family: "Roboto";
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 800px;
+}
+@media screen and (max-width: 1350px) {
+    .RoleContainer {
+        width: 1020px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .RoleContainer {
+        width: 90vw;
+    }
+    .RoleDescription {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 860px) {
+    .RoleTitle {
+        font-size: 24px;
+    }
+    .RoleHighInfo {
+        font-size: 16px;
+    }
+    .RoleDescription {
+        font-size: 16px;
+    }
+    .RoleBreak {
+        margin: 1rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .RoleHighInfo {
+        font-size: 12px;
+    }
+    .RoleBreak {
+        margin: 0.75rem 0;
+    }
+}
+/* 
+    WorkItem formatting 
+*/
+.WorkRow {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    margin-bottom: 2rem;
+}
+.EvenWorkRow {
+    flex-flow: row-reverse nowrap;
+}
+.WorkRowImage {
+    width: 60%;
+    height: auto;
+}
+.WorkRowContent {
+    width: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 2%;
+}
+.ProjectTitle {
+    font-family: "IBM Plex Sans";
+    font-size: 2em;
+    font-weight: bold;
+}
+.ProjectBreak {
+    height: 4px;
+    width: 6rem;
+    border: none;
+    margin: 1rem 0;
+}
+.ProjectInfoRow {
+    padding-right: 5%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.ProjectRoles {
+    font-family: "Roboto";
+    font-size: 1.1em;
+}
+.ProjectTools {
+    list-style-type: none;
+    font-size: 0.9em;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 12px;
+}
+.ProjectLinkLight {
+    font-family: "IBM Plex Sans";
+    font-weight: bold;
+    font-size: 14px;
+    padding: 15px 30px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+    outline: none;
+}
+.ProjectLinkLight:hover {
+    background-color: #14213d;
+    color: #f9f9f9;
+}
+.ProjectLinkLight:focus {
+    background-color: #14213d;
+    color: #f9f9f9;
+}
+.ProjectLinkDark {
+    font-family: "IBM Plex Sans";
+    font-weight: bold;
+    font-size: 14px;
+    padding: 15px 30px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+    outline-color: rgb(188, 240, 223);
+}
+.ProjectLinkDark:hover {
+    background-color: rgb(188, 240, 223);
+}
+.ProjectLinkDark:focus {
+    background-color: rgb(188, 240, 223);
+}
+@media screen and (max-width: 860px) {
+    .WorkBackground {
+        display: none;
+    }
+    .WorkRow {
+        flex-flow: column-reverse nowrap;
+    }
+    .WorkRowImage {
+        width: 100%;
+    }
+    .WorkRowContent {
+        width: 100%;
+        padding: 1rem 1rem;
+    }
+    .ProjectTitle {
+        font-size: 2.25em;
+    }
+    .DarkContent {
+        background-color: #14213d;
+    }
+}
+@media screen and (max-width: 860px) {
+    .ProjectTitle {
+        font-size: 1.5em;
+    }
+    .ProjectTools {
+        font-size: 0.65em;
+        line-height: 8px;
+    }
+    .ProjectRoles {
+        font-size: 0.85em;
+    }
+    .ProjectLinkLight {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    .ProjectLinkDark {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+}
