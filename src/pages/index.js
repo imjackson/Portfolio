@@ -16,6 +16,7 @@ import SectionTitle from "../components/common/SectionTitle"
 import Paragraph from "../components/common/Paragraph"
 
 // Sections
+import About from "../components/About/"
 import Contact from "../components/Contact/"
 
 // Styles
@@ -178,127 +179,7 @@ export default class Index extends React.Component {
                             />
                         </div>
                     </div>
-                    <div
-                        id="About"
-                        ref={this.About}
-                        className={s.AboutContainer}
-                    >
-                        <img
-                            style={{ transform: "translateY(2px)" }}
-                            src={waveTwo}
-                            alt=""
-                            className={s.Wave}
-                        />
-                        <SectionTitle>About me.</SectionTitle>
-                        <div className={s.AboutMain}>
-                            <div className={s.AboutLeft}>
-                                <Paragraph>
-                                    I'm a front-end developer currently working
-                                    out of Monmouth County, NJ. I seek to design
-                                    and develop enjoyable user experiences with
-                                    the most efficient toolsets possible.
-                                </Paragraph>
-                                <Paragraph>
-                                    My main role at the moment is working with
-                                    with&nbsp;
-                                    <a
-                                        className={s.Underlined}
-                                        rel="noopener noreferrer"
-                                        target="_blank"
-                                        href="http://finalsclub.io"
-                                    >
-                                        FinalsClub
-                                    </a>
-                                    &nbsp;as a UI/UX designer and developer to
-                                    bring to life their vision of a more
-                                    connected Rutgers student-base.{" "}
-                                </Paragraph>
-                                <hr className={s.FullBreak} />
-                                <h2
-                                    className={[
-                                        s.AboutSectionHeader,
-                                        s.SkillAlt,
-                                    ].join(" ")}
-                                >
-                                    Skills.
-                                </h2>
-                                <div className={s.SkillsContainer}>
-                                    <div className={s.SkillsTitleContainer}>
-                                        <h2 className={s.AboutSectionHeader}>
-                                            Skills.
-                                        </h2>
-                                    </div>
-                                    <div className={s.SkillColumn}>
-                                        <h3 className={s.SkillHeader}>
-                                            Languages.
-                                        </h3>
-                                        {languages.map(lang => (
-                                            <>
-                                                <p className={s.SkillListItem}>
-                                                    {lang}
-                                                </p>{" "}
-                                                <hr
-                                                    className={s.SkillDivider}
-                                                />
-                                            </>
-                                        ))}
-                                    </div>
-                                    <div className={s.SkillColumn}>
-                                        <h3 className={s.SkillHeader}>
-                                            Weapons of Choice.
-                                        </h3>
-                                        {weapons.map(weapon => (
-                                            <>
-                                                <p className={s.SkillListItem}>
-                                                    {weapon}
-                                                </p>{" "}
-                                                <hr
-                                                    className={s.SkillDivider}
-                                                />
-                                            </>
-                                        ))}
-                                    </div>
-                                    <div className={s.SkillColumn}>
-                                        <h3 className={s.SkillHeader}>
-                                            Additional Skills.
-                                        </h3>
-                                        {skills.map(skill => (
-                                            <>
-                                                <p className={s.SkillListItem}>
-                                                    {skill}
-                                                </p>{" "}
-                                                <hr
-                                                    className={s.SkillDivider}
-                                                />
-                                            </>
-                                        ))}
-                                    </div>
-                                </div>
-                                <hr className={s.FullBreak} />
-
-                                <h2 className={s.AboutSectionHeader}>
-                                    I care about:
-                                </h2>
-                                <div className={s.FocusBox}>
-                                    <Focus
-                                        number="1"
-                                        title="Speed"
-                                        content="There is nothing more valuable than load time, sites nowadays must load quickly to keep user attention. Modern front-end JavaScript frameworks can greatly speed up a large site, but can slow down a small site. I use the right tools for the job."
-                                    />
-                                    <Focus
-                                        number="2"
-                                        title="Accessibility"
-                                        content="Everybody should have equal access to the web, period. When designing and building I always take into consideration the guidelines outlined by the WCAG 2.0 to ensure no one is left out of the experiences I build."
-                                    />
-                                    <Focus
-                                        number="3"
-                                        title="Simplicity"
-                                        content="Content is king, let it do the talking. Everything I create is built around the underlying message, never a design itself."
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <About ref={this.About} />
                     <div id="Work" ref={this.Work} className={s.WorkContainer}>
                         <SectionTitle>My Roles.</SectionTitle>
                         <div className={s.RoleContainer}>
@@ -351,14 +232,6 @@ export default class Index extends React.Component {
         )
     }
 }
-
-const Focus = props => (
-    <div className={s.Focus}>
-        <p className={s.FocusNumber}>{props.number}</p>
-        <h3 className={s.FocusTitle}>{props.title}</h3>
-        <p className={s.FocusContent}>{props.content}</p>
-    </div>
-)
 
 const WorkItem = props => (
     <div
