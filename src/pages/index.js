@@ -13,15 +13,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 // Sections
+import Intro from "../components/Intro/"
 import About from "../components/About/"
 import Work from "../components/Work/"
 import Contact from "../components/Contact/"
 
 // Styles
 import s from "../modules/index.module.css"
-
-// Icons/Images
-import wave from "../images/waves/wave2.svg"
 
 // Other Icons
 import down from "../images/down-arrow.svg"
@@ -131,29 +129,9 @@ export default class Index extends React.Component {
                     title="Front-End Developer"
                     description="I'm a front-end developer with a dedication to writing fast, simple, accessible websites."
                 />
-                <div className={s.Main}>
-                    <div ref={this.Splash} className={s.SplashContainer}>
-                        <div className={s.SplashMain}>
-                            <h1 className={s.Title}>I'm Jackson.</h1>
-                            <p className={s.Intro}>
-                                I'm a front-end developer with a dedication to
-                                building fast, simple, accessible websites.
-                            </p>
-                        </div>
 
-                        <img src={wave} alt="" className={s.Wave} />
-                        <div className={s.ArrowContainer}>
-                            <img
-                                src={down}
-                                alt="Down."
-                                tabIndex="0"
-                                onClick={() => {
-                                    this.scroller("about")
-                                }}
-                                className={s.DownArrow}
-                            />
-                        </div>
-                    </div>
+                <div className={s.Main}>
+                    <Intro ref={this.Splash} scroller={this.scroller} />
                     <About ref={this.About} />
                     <Work
                         finalsClubImage={

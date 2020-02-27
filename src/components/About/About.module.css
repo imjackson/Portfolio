@@ -252,3 +252,9 @@
     height: auto;
     width: 100%;
 }
+
+/* Text */
+.Underlined {
+    text-decoration: underline;
+    font-weight: bold;
+}
