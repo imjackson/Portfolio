@@ -98,6 +98,7 @@ Styling rules for the main single-page site header
     transition: 0.3s ease;
     outline-offset: 3px;
     outline-color: #252525;
+    text-transform: capitalize;
 }
 .NavButton:hover {
     transform: translateY(-2px);
