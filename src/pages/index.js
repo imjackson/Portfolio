@@ -41,9 +41,8 @@ const Index = props => {
     // scroll listener - determines which section user is currently viewing, allowing for dyanmic styling
     // of header link items
     const handleScroll = () => {
-        let y = window.pageYOffset,
-            a,
-            s
+        let y = window.pageYOffset
+        let currentSection
         let intro = IntroSection.current.offsetTop,
             about = AboutSetion.current.offsetTop,
             work = WorkSection.current.offsetTop,
@@ -52,43 +51,54 @@ const Index = props => {
             y >= about - IntroSection.current.offsetHeight / 4 &&
             y < work - about / 4
         ) {
-            s = "about"
+            currentSection = "about"
         } else if (y >= work - about / 4 && y < contact - work / 4) {
-            s = "work"
+            currentSection = "work"
         } else if (y >= contact - work / 4) {
-            s = "contact"
+            currentSection = "contact"
         } else {
-            s = "intro"
+            currentSection = "intro"
         }
-        y > 40 ? (a = true) : (a = false) // Header styling logic
-        setHeaderIsActive(a)
-        setCurrentSection(s)
+        let headerIsActive = y > 40 // Header styling logic
+        setHeaderIsActive(headerIsActive)
+        setCurrentSection(currentSection)
     }
 
     // scrolls to specific section of page based of prop 't'
-    const scroller = t => {
+    const scroller = destination => {
         let intro = IntroSection.current.offsetTop,
             about = AboutSetion.current.offsetTop,
             work = WorkSection.current.offsetTop,
             contact = ContactSection.current.offsetTop
-        let to
-        t === "splash"
-            ? (to = intro)
-            : t === "about"
-            ? (to = about)
-            : t === "work"
-            ? (to = work)
-            : t === "contact"
-            ? (to = contact)
-            : (to = "error")
-        window.scrollTo({ top: to - getRem(6), behavior: "smooth" })
+        let destinationRefOffset
+        switch (destination) {
+            case "splash":
+                destinationRefOffset = intro
+                break
+            case "about":
+                destinationRefOffset = about
+                break
+            case "work":
+                destinationRefOffset = work
+                break
+            case "contact":
+                destinationRefOffset = contact
+                break
+            default:
+                destinationRefOffset = intro
+                break
+        }
+        window.scrollTo({
+            top: destinationRefOffset - getRem(6),
+            behavior: "smooth",
+        })
         setTimeout(() => {
-            setCurrentSection(t)
+            setCurrentSection(destination)
         }, 1000)
     }
 
     // scroll to top of window
-    const toTop = () => {
+    const scollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" })
     }
 
@@ -102,7 +112,7 @@ const Index = props => {
 
     return (
         <Layout
-            top={toTop}
+            top={scollToTop}
             scroller={scroller}
             activeSection={currentSection}
             activeHeader={headerIsActive}
