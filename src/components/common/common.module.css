@@ -25,27 +25,17 @@
 /* <SectionTitle /> */
 .SectionTitle {
     font-family: "Lato";
-    font-size: 2.5em;
+    font-size: 2.25rem;
     margin: 0;
-    width: 1280px;
-}
-@media screen and (max-width: 1350px) {
-    .SectionTitle {
-        width: 1020px;
-    }
-}
-@media screen and (max-width: 1080px) {
-    .SectionTitle {
-        width: 90vw;
-    }
+    width: var(--content-width);
 }
 @media screen and (max-width: 860px) {
     .SectionTitle {
-        font-size: 2.75em;
+        font-size: 2rem;
     }
 }
 @media screen and (max-width: 600px) {
     .SectionTitle {
-        font-size: 2.25em;
+        font-size: 1.75rem;
     }
 }

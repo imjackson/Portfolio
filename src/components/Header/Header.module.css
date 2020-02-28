@@ -22,7 +22,7 @@ Styling rules for the main single-page site header
     z-index: 5;
 }
 .Content {
-    width: 1280px;
+    width: var(--content-width);
     height: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -48,17 +48,6 @@ Styling rules for the main single-page site header
     font-size: 1.5em;
     margin-left: 2rem;
     animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-@media screen and (max-width: 1350px) {
-    .Content {
-        width: 1030px;
-    }
-}
-@media screen and (max-width: 1080px) {
-    .Content {
-        width: 100%;
-        padding: 0 5vw;
-    }
 }
 @media screen and (max-width: 860px) {
     .Logo {

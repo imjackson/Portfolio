@@ -17,7 +17,7 @@
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 1280px;
+    width: var(--content-width);
     height: auto;
     margin-top: 2rem;
     position: relative;
@@ -30,16 +30,6 @@
     right: 0;
     background-color: #14213d;
 }
-@media screen and (max-width: 1350px) {
-    .WorkMain {
-        width: 1020px;
-    }
-}
-@media screen and (max-width: 1080px) {
-    .WorkMain {
-        width: 90vw;
-    }
-}
 
 /* 
     Role Item formatting
@@ -47,7 +37,7 @@
 .RoleContainer {
     width: 1280px;
     padding: 2rem 0;
-    margin: 2rem 0;
+    margin: 1rem 0 2rem 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -68,7 +58,9 @@
     height: 2px;
     width: 10rem;
     margin: 1.5rem 0;
+    padding: 0;
     background-color: #252525;
+    border: none;
 }
 .RoleDescription {
     font-family: "Roboto";
@@ -100,7 +92,7 @@
         font-size: 16px;
     }
     .RoleBreak {
-        margin: 1rem;
+        margin: 1rem 0;
     }
 }
 @media screen and (max-width: 600px) {
@@ -216,7 +208,7 @@
         width: 100%;
     }
     .WorkRowContent {
-        width: 100%;
+        width: calc(100% - 2rem);
         padding: 1rem 1rem;
     }
     .ProjectTitle {

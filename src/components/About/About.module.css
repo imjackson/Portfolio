@@ -14,7 +14,7 @@
     padding-bottom: 18rem;
 }
 .AboutMain {
-    width: 1280px;
+    width: var(--content-width);
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -32,18 +32,8 @@
 .AboutSectionHeader {
     font-family: "Roboto";
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.8rem;
     margin-top: 1rem;
-}
-@media screen and (max-width: 1350px) {
-    .AboutMain {
-        width: 1020px;
-    }
-}
-@media screen and (max-width: 1080px) {
-    .AboutMain {
-        width: 90vw;
-    }
 }
 @media screen and (max-width: 860px) {
     .AboutContainer {
@@ -198,18 +188,18 @@
     align-items: center;
 }
 .FocusTitle {
-    font-size: 2em;
+    font-size: 1.75rem;
     color: #7a7a7a;
     margin: 1rem 0;
 }
 .FocusContent {
     font-family: "Lato";
-    font-size: 1em;
+    font-size: 1rem;
 }
 @media screen and (max-width: 1080px) {
     .FocusBox {
         flex-flow: column nowrap;
-        width: 90vw;
+        width: 100%;
     }
     .Focus {
         width: 90%;
