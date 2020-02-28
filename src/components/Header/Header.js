@@ -15,7 +15,7 @@ import logo from "../../images/logos/logo.svg"
 
 const Header = ({ top, scroll, header, current }) => {
     const HeaderStyle = {
-        backgroundColor: header ? "#f9f9f9" : "rgb(188, 240, 223)",
+        backgroundColor: header ? "var(--white)" : "var(--green)",
         boxShadow: header ? "0px 5px 8px 2px rgba(0,0,0,0.08)" : "none",
         height: header ? "5rem" : "6rem",
         transition: ".4s ease",
@@ -55,7 +55,9 @@ const Header = ({ top, scroll, header, current }) => {
 const NavButton = ({ current, section, scrollFunction }) => {
     const ButtonStyle = {
         borderBottom:
-            current === section ? "2px solid #252525" : "2px solid transparent",
+            current === section
+                ? "2px solid var(--black)"
+                : "2px solid transparent",
         transition: ".2s ease",
     }
     return (

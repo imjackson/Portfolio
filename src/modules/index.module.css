@@ -50,14 +50,14 @@ Main index page styling rules
 .Title {
     font-size: 5rem;
     font-family: "IBM Plex Sans";
-    color: #252525;
+    color: var(--black);
     margin-top: 4rem;
 }
 .Intro {
     font-family: "Lato";
     margin-top: 2rem;
     font-size: 1.25em;
-    color: #252525;
+    color: var(--black);
 }
 .ArrowContainer {
     position: absolute;

@@ -2,7 +2,7 @@
     About Section 
 */
 .AboutContainer {
-    background-color: #f9f9f9;
+    background-color: var(--white);
     min-height: 100vh;
     height: auto;
     width: 100vw;
@@ -77,7 +77,7 @@
 .SkillsTitle {
     font-family: "Lato";
     font-size: 2.5em;
-    color: #252525;
+    color: var(--black);
 }
 .SkillAlt {
     display: none;

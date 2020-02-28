@@ -3,7 +3,7 @@
 */
 .WorkContainer {
     padding-top: 3rem;
-    background-color: rgb(188, 240, 223);
+    background-color: var(--green);
     min-height: 100vh;
     width: 100vw;
     display: flex;
@@ -28,7 +28,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #14213d;
+    background-color: var(--navy);
 }
 
 /* 
@@ -59,7 +59,7 @@
     width: 10rem;
     margin: 1.5rem 0;
     padding: 0;
-    background-color: #252525;
+    background-color: var(--black);
     border: none;
 }
 .RoleDescription {
@@ -167,18 +167,15 @@
     font-size: 14px;
     padding: 15px 30px;
     border-radius: 4px;
-    background-color: #f9f9f9;
+    background-color: var(--white);
     box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
     transition: 0.3s ease;
     outline: none;
 }
-.ProjectLinkLight:hover {
-    background-color: #14213d;
-    color: #f9f9f9;
-}
+.ProjectLinkLight:hover,
 .ProjectLinkLight:focus {
-    background-color: #14213d;
-    color: #f9f9f9;
+    background-color: var(--navy);
+    color: var(--white);
 }
 .ProjectLinkDark {
     font-family: "IBM Plex Sans";
@@ -186,16 +183,14 @@
     font-size: 14px;
     padding: 15px 30px;
     border-radius: 4px;
-    background-color: #f9f9f9;
+    background-color: var(--white);
     box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
     transition: 0.3s ease;
-    outline-color: rgb(188, 240, 223);
+    outline-color: var(--green);
 }
-.ProjectLinkDark:hover {
-    background-color: rgb(188, 240, 223);
-}
+.ProjectLinkDark:hover,
 .ProjectLinkDark:focus {
-    background-color: rgb(188, 240, 223);
+    background-color: var(--green);
 }
 @media screen and (max-width: 860px) {
     .WorkBackground {
@@ -215,7 +210,7 @@
         font-size: 2.25em;
     }
     .DarkContent {
-        background-color: #14213d;
+        background-color: var(--navy);
     }
 }
 @media screen and (max-width: 860px) {

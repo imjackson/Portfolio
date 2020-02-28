@@ -29,14 +29,14 @@
 .IntroTitle {
     font-size: 4.5rem;
     font-family: "IBM Plex Sans";
-    color: #252525;
+    color: var(--black);
     margin-top: 4rem;
 }
 .IntroText {
     font-family: "Lato";
     margin-top: 1.5rem;
     font-size: 1.2rem;
-    color: #252525;
+    color: var(--black);
 }
 .ArrowContainer {
     position: absolute;

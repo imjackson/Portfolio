@@ -18,7 +18,7 @@ Styling rules for site 404 page
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgb(188, 240, 223);
+    background-color: var(--green);
 }
 
 /* 
@@ -90,19 +90,19 @@ Styling rules for site 404 page
     font-family: "Lato";
     padding: 20px 35px;
     border-radius: 4px;
-    background-color: #14213d;
-    color: #f9f9f9;
+    background-color: var(--navy);
+    color: var(--white);
     transition: 0.3s ease;
     outline: none;
 }
 .Button:hover {
-    background-color: #f9f9f9;
-    color: #252525;
+    background-color: var(--white);
+    color: var(--black);
     transform: translateY(-2px);
 }
 .Button:focus {
-    background-color: #f9f9f9;
-    color: #252525;
+    background-color: var(--white);
+    color: var(--black);
     transform: translateY(-2px);
 }
 @media screen and (max-width: 600px) {

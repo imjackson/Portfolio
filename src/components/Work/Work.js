@@ -54,7 +54,7 @@ const WorkItem = ({ odd, roles, title, tools, fluid, url }) => {
         : [styles.EvenWorkRow, styles.WorkRow].join(" ")
 
     const HorizontalRuleStyle = {
-        backgroundColor: odd ? "#14213D" : "#BCF0DF",
+        backgroundColor: odd ? "var(--navy)" : "var(--green)",
     }
 
     const ContentClasses = odd
@@ -62,7 +62,7 @@ const WorkItem = ({ odd, roles, title, tools, fluid, url }) => {
         : [styles.WorkRowContent, styles.DarkContent].join(" ")
 
     const ContentStyle = {
-        color: odd ? "#252525" : "#f9f9f9",
+        color: odd ? "var(--black)" : "var(--white)",
     }
 
     return (

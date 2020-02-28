@@ -35,7 +35,7 @@ Styling rules for the main single-page site header
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    outline-color: #252525;
+    outline-color: var(--black);
     outline-offset: 10px;
 }
 .Logo {
@@ -86,7 +86,7 @@ Styling rules for the main single-page site header
     padding: 0.5rem 0;
     transition: 0.3s ease;
     outline-offset: 3px;
-    outline-color: #252525;
+    outline-color: var(--black);
     text-transform: capitalize;
 }
 .NavButton:hover {

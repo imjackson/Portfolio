@@ -4,7 +4,7 @@
 .ContactContainer {
     padding-top: 4rem;
     padding-bottom: 6rem;
-    background-color: #f9f9f9;
+    background-color: var(--white);
     width: 100vw;
     height: auto;
     display: flex;
@@ -25,7 +25,7 @@
     font-family: "Lato";
     font-size: 20px;
     line-height: 30px;
-    color: #252525;
+    color: var(--black);
     margin: 1.5rem 2rem 0 0;
 }
 .Form {
@@ -50,14 +50,14 @@
     transition: 0.3s ease;
 }
 .Input:focus {
-    border: 2px solid #14213d;
+    border: 2px solid var(--navy);
 }
 .Submit {
     align-self: flex-end;
     font-family: "Lato";
     font-size: 1.15em;
     padding: 1rem 2rem;
-    background-color: rgb(188, 240, 223);
+    background-color: var(--green);
     border-radius: 4px;
     border: none;
     box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.2);
@@ -67,12 +67,12 @@
     outline: none;
 }
 .Submit:hover {
-    background-color: #252525;
-    color: #f9f9f9;
+    background-color: var(--black);
+    color: var(--white);
 }
 .Submit:focus {
-    background-color: #252525;
-    color: #f9f9f9;
+    background-color: var(--black);
+    color: var(--white);
 }
 @media screen and (max-width: 1080px) {
     .Form {
