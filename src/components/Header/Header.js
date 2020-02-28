@@ -17,7 +17,7 @@ const Header = ({ top, scroll, header, current }) => {
     const HeaderStyle = {
         backgroundColor: header ? "var(--white)" : "var(--green)",
         boxShadow: header ? "0px 5px 8px 2px rgba(0,0,0,0.08)" : "none",
-        height: header ? "5rem" : "6rem",
+        height: header ? "4.5rem" : "5.5rem",
         transition: ".4s ease",
     }
     return (
