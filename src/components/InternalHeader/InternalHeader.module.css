@@ -11,9 +11,9 @@ Styling rules for the interal page header component
 */
 .Container {
     height: 6rem;
-    width: 100vw;
+    width: 90vw;
     margin: 0;
-    padding: 0 10vw;
+    padding: 0 5vw;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
