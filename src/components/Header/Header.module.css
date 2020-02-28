@@ -22,7 +22,7 @@ Styling rules for the main single-page site header
     z-index: 5;
 }
 .Content {
-    width: 1280px;
+    width: var(--content-width);
     height: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -35,30 +35,19 @@ Styling rules for the main single-page site header
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    outline-color: #252525;
+    outline-color: var(--black);
     outline-offset: 10px;
 }
 .Logo {
-    width: 2rem;
+    width: 1.75rem;
     height: auto;
     margin: 0;
 }
 .HeaderTitle {
     font-family: "IBM Plex Sans";
-    font-size: 1.5em;
-    margin-left: 2rem;
+    font-size: 1.4em;
+    margin-left: 1.5rem;
     animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-@media screen and (max-width: 1350px) {
-    .Content {
-        width: 1030px;
-    }
-}
-@media screen and (max-width: 1080px) {
-    .Content {
-        width: 100%;
-        padding: 0 5vw;
-    }
 }
 @media screen and (max-width: 860px) {
     .Logo {
@@ -93,11 +82,13 @@ Styling rules for the main single-page site header
     border: none;
     margin: 0 1rem;
     font-family: "Lato";
+    font-size: 0.9rem;
     cursor: pointer;
     padding: 0.5rem 0;
     transition: 0.3s ease;
     outline-offset: 3px;
-    outline-color: #252525;
+    outline-color: var(--black);
+    text-transform: capitalize;
 }
 .NavButton:hover {
     transform: translateY(-2px);

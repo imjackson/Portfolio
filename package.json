@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Jackson Pack <jacksongpack@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.15.16",
+    "gatsby": "^2.19.22",
     "gatsby-image": "^2.2.19",
     "gatsby-plugin-canonical-urls": "^2.1.7",
     "gatsby-plugin-google-analytics": "^2.1.16",

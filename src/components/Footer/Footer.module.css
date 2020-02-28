@@ -10,7 +10,7 @@ Styling rules for the main site footer component
     Footer container and sectioning
 */
 .Container {
-    width: 100%;
+    width: 90vw;
     background-color: transparent;
     padding: 2rem 5vw;
     display: flex;
@@ -53,14 +53,15 @@ Styling rules for the main site footer component
 
 .FooterTitle {
     font-family: "IBM Plex Sans";
-    font-size: 1.5em;
+    font-size: 1.25rem;
 }
 .FooterEmail {
+    font-size: 0.85rem;
     font-family: "Lato";
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
 }
 .FooterLogo {
-    height: 3rem;
+    height: 2.5rem;
 }
 @media screen and (max-width: 860px) {
     .FooterLogo {
