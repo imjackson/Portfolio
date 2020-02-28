@@ -13,7 +13,7 @@ const Contact = forwardRef((props, ref) => {
     const [formMessage, setFormMessage] = useState("")
 
     return (
-        <div id="Contact" ref={ref} className={styles.ContactContainer}>
+        <div ref={ref} className={styles.ContactContainer}>
             <SectionTitle>Let's work together.</SectionTitle>
             <div className={styles.ContactMain}>
                 <p className={styles.ContactParagraph}>
