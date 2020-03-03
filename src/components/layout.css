@@ -28,6 +28,7 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     background-color: var(--green);
+    overflow-x: hidden;
 }
 :focus {
     outline-color: var(--black);

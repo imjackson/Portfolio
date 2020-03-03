@@ -45,7 +45,7 @@ Main index page styling rules
     bottom: 0;
     left: 0;
     height: auto;
-    width: 100%;
+    width: 100vw;
 }
 .Title {
     font-size: 5rem;
