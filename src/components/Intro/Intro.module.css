@@ -49,6 +49,16 @@
     justify-content: center;
     align-items: center;
 }
+.DownArrowButton {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
 .DownArrow {
     height: 2rem;
     width: auto;

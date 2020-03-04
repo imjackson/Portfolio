@@ -23,13 +23,12 @@ const Intro = forwardRef(({ scroller }, ref) => {
 
             <img src={wave} alt="" className={styles.Wave} />
             <div className={styles.ArrowContainer}>
-                <img
-                    src={down}
-                    alt="Down."
-                    tabIndex="0"
+                <button
+                    className={styles.DownArrowButton}
                     onClick={() => scroller("about")}
-                    className={styles.DownArrow}
-                />
+                >
+                    <img src={down} alt="Down." className={styles.DownArrow} />
+                </button>
             </div>
         </div>
     )
