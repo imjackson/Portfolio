@@ -8,7 +8,7 @@
 import React from "react"
 
 // Styles
-import s from "./Footer.module.css"
+import styles from "./Footer.module.css"
 
 // Icons
 import logo from "../../images/logos/logo.svg"
@@ -18,41 +18,45 @@ import github from "../../images/social-media/github-sign.svg"
 
 const Footer = () => {
     return (
-        <footer className={s.Container}>
-            <div className={s.FooterLeft}>
-                <h2 className={s.FooterTitle}>I'm Jackson.</h2>
+        <footer className={styles.Container}>
+            <div className={styles.FooterLeft}>
+                <h2 className={styles.FooterTitle}>I'm Jackson.</h2>
                 <a
                     href="mailto:jacksongpack@gmail.com"
-                    className={s.FooterEmail}
+                    className={styles.FooterEmail}
                 >
                     jacksongpack@gmail.com
                 </a>
             </div>
 
-            <div className={s.FooterCenter}>
-                <img className={s.FooterLogo} alt="" src={logo} />
+            <div className={styles.FooterCenter}>
+                <img className={styles.FooterLogo} alt="" src={logo} />
             </div>
 
-            <div className={s.FooterRight}>
+            <div className={styles.FooterRight}>
                 <a
-                    className={s.FooterLink}
+                    className={styles.FooterLink}
                     rel="noopener noreferrer"
                     href="https://www.linkedin.com/in/jackson-pack-08614b188/"
                     target="_blank"
                 >
                     <img
                         alt="Linkedin."
-                        className={s.SocialIcon}
+                        className={styles.SocialIcon}
                         src={linkedin}
                     />
                 </a>
                 <a
-                    className={s.FooterLink}
+                    className={styles.FooterLink}
                     rel="noopener noreferrer"
                     href="https://github.com/imjackson"
                     target="_blank"
                 >
-                    <img alt="Github." className={s.SocialIcon} src={github} />
+                    <img
+                        alt="Github."
+                        className={styles.SocialIcon}
+                        src={github}
+                    />
                 </a>
             </div>
         </footer>
