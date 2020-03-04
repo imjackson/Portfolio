@@ -12,22 +12,22 @@ import { Link } from "gatsby"
 import logo from ".././../images/logos/logo.svg"
 
 // styles
-import s from "./InternalHeader.module.css"
+import styles from "./InternalHeader.module.css"
 
 const InternalHeader = () => {
     return (
-        <header className={s.Container}>
+        <header className={styles.Container}>
             <Link to="/">
-                <img src={logo} alt="Logo." className={s.Logo} />
+                <img src={logo} alt="Logo." className={styles.Logo} />
             </Link>
-            <div className={s.Nav}>
-                <Link to="/#About" className={s.NavButton}>
+            <div className={styles.Nav}>
+                <Link to="/#About" className={styles.NavButton}>
                     About
                 </Link>
-                <Link to="/#Work" className={s.NavButton}>
+                <Link to="/#Work" className={styles.NavButton}>
                     Work
                 </Link>
-                <Link to="/#Contact" className={s.NavButton}>
+                <Link to="/#Contact" className={styles.NavButton}>
                     Contact
                 </Link>
             </div>

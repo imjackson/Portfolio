@@ -11,22 +11,27 @@ import PropTypes from "prop-types"
 
 // Components
 import Header from "./Header/"
-import Footer from './Footer/'
+import Footer from "./Footer/"
 
 // Styles
 import "./layout.css"
-import s from '../modules/layout.module.css'
+import styles from "../modules/layout.module.css"
 
-const Layout = (props) => (
-  <div className={ s.Layout }>
-    <Header top={props.top} scroll={props.scroller} current={props.activeSection} header={props.activeHeader} />
-    {props.children}
-    <Footer />
-  </div>
+const Layout = props => (
+    <div className={styles.Layout}>
+        <Header
+            top={props.top}
+            scroll={props.scroller}
+            current={props.activeSection}
+            header={props.activeHeader}
+        />
+        {props.children}
+        <Footer />
+    </div>
 )
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+    children: PropTypes.node.isRequired,
 }
 
 export default Layout
