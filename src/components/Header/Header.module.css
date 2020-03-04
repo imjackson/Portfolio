@@ -29,7 +29,9 @@ Styling rules for the main single-page site header
     justify-content: space-between;
     align-items: center;
 }
-.Info {
+.LogoButton {
+    background-color: transparent;
+    border: none;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;

@@ -23,12 +23,12 @@ const Header = ({ top, scroll, header, current }) => {
     return (
         <header style={HeaderStyle} className={styles.Container}>
             <div className={styles.Content}>
-                <div tabIndex="0" onClick={top} className={styles.Info}>
+                <button onClick={top} className={styles.LogoButton}>
                     <img src={logo} alt="Logo." className={styles.Logo} />
                     {header && (
                         <h2 className={styles.HeaderTitle}>I'm Jackson.</h2>
                     )}
-                </div>
+                </button>
 
                 <div className={styles.Nav}>
                     <NavButton
