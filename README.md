@@ -1,10 +1,12 @@
 # My Portfolio Website.
 
+This is my portfolio website, used to display my work and information online.
+
+The live version of the website can be viewed [here.](https://imjackson.dev)
+
 ## About
 
-This is the code for my personal portfolio website. It was created using React and Gatsby, with no CSS frameworks used.
-
-It can be viewed at: [imjackson.dev](https://imjackson.dev)
+This website was created using [GatsbyJS](https://www.gatsbyjs.org/), without any CSS frameworks used.
 
 ## Running Locally
 
