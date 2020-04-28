@@ -1,4 +1,4 @@
-# Jackson's Portfolio Website.
+# My Portfolio Website.
 
 ## About
 
@@ -8,7 +8,11 @@ It can be viewed at: [imjackson.dev](https://imjackson.dev)
 
 ## Running Locally
 
-- Clone repository: `git clone https://github.com/imjackson/portfolio.git`
-- Install dependencies: `npm install`
-- Start Gatsby delelopment server: `gatsby develop`
-- View in browser: `localhost:8000`
+-   Clone repository: `git clone https://github.com/imjackson/portfolio.git`
+-   Install dependencies: `npm install`
+-   Start Gatsby delelopment server: `gatsby develop`
+-   View in browser: `localhost:8000`
+
+## License
+
+This repository is maintained with the [GNU General Public License v3.0](./LICENSE)
