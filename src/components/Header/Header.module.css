@@ -39,6 +39,7 @@ Styling rules for the main single-page site header
     cursor: pointer;
     outline-color: var(--black);
     outline-offset: 10px;
+    padding: 0;
 }
 .Logo {
     width: 1.75rem;
