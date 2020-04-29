@@ -12,7 +12,6 @@ import styles from "./Footer.module.css"
 
 // Icons
 import logo from "../../images/logos/logo.svg"
-import insta from "../../images/social-media/instagram.svg"
 import linkedin from "../../images/social-media/linkedin.svg"
 import github from "../../images/social-media/github-sign.svg"
 
@@ -34,33 +33,30 @@ const Footer = () => {
             </div>
 
             <div className={styles.FooterRight}>
-                <a
-                    className={styles.FooterLink}
-                    rel="noopener noreferrer"
+                <SocialLink
+                    src={linkedin}
                     href="https://www.linkedin.com/in/jackson-pack-08614b188/"
-                    target="_blank"
-                >
-                    <img
-                        alt="Linkedin."
-                        className={styles.SocialIcon}
-                        src={linkedin}
-                    />
-                </a>
-                <a
-                    className={styles.FooterLink}
-                    rel="noopener noreferrer"
+                    alt="LinkedIn."
+                />
+                <SocialLink
+                    src={github}
                     href="https://github.com/imjackson"
-                    target="_blank"
-                >
-                    <img
-                        alt="Github."
-                        className={styles.SocialIcon}
-                        src={github}
-                    />
-                </a>
+                    alt="Github."
+                />
             </div>
         </footer>
     )
 }
+
+const SocialLink = ({ href, src, alt }) => (
+    <a
+        className={styles.SocialLink}
+        rel="noopener noreferrer"
+        href={href}
+        target="_blank"
+    >
+        <img alt={alt} className={styles.SocialIcon} src={src} />
+    </a>
+)
 
 export default Footer

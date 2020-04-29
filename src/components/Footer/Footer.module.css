@@ -89,14 +89,15 @@ Styling rules for the main site footer component
     margin: 0 0.75rem;
     width: auto;
 }
-.FooterLink {
+.SocialLink {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     transition: 0.3s ease;
 }
-.FooterLink:hover {
+.SocialLink:hover,
+.SocialLink:focus {
     transform: translateY(-2px);
 }
 @media screen and (max-width: 600px) {
