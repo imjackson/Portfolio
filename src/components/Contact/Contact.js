@@ -7,7 +7,7 @@ import SectionTitle from "../common/SectionTitle"
 // Styles
 import styles from "./Contact.module.css"
 
-const Contact = forwardRef(({}, ref) => {
+const Contact = forwardRef((props, ref) => {
     return (
         <div ref={ref} className={styles.ContactContainer}>
             <SectionTitle>Let's work together.</SectionTitle>
