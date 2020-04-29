@@ -64,7 +64,7 @@ const About = forwardRef((props, ref) => {
                         <SkillColumn>
                             <h3 className={styles.SkillHeader}>Languages.</h3>
                             {languages.map(lang => (
-                                <SkillListItem text={lang} />
+                                <SkillListItem key={lang} text={lang} />
                             ))}
                         </SkillColumn>
                         <SkillColumn>
@@ -72,7 +72,7 @@ const About = forwardRef((props, ref) => {
                                 Weapons of Choice.
                             </h3>
                             {weapons.map(weapon => (
-                                <SkillListItem text={weapon} />
+                                <SkillListItem key={weapon} text={weapon} />
                             ))}
                         </SkillColumn>
                         <SkillColumn>
@@ -80,7 +80,7 @@ const About = forwardRef((props, ref) => {
                                 Additional Skills.
                             </h3>
                             {skills.map(skill => (
-                                <SkillListItem text={skill} />
+                                <SkillListItem key={skill} text={skill} />
                             ))}
                         </SkillColumn>
                     </div>
