@@ -1,5 +1,5 @@
 // Dependencies
-import React, { useState, forwardRef } from "react"
+import React, { forwardRef } from "react"
 
 // Components
 import SectionTitle from "../common/SectionTitle"
@@ -7,11 +7,7 @@ import SectionTitle from "../common/SectionTitle"
 // Styles
 import styles from "./Contact.module.css"
 
-const Contact = forwardRef((props, ref) => {
-    const [formName, setFormName] = useState("")
-    const [formEmail, setFormEmail] = useState("")
-    const [formMessage, setFormMessage] = useState("")
-
+const Contact = forwardRef(({}, ref) => {
     return (
         <div ref={ref} className={styles.ContactContainer}>
             <SectionTitle>Let's work together.</SectionTitle>
@@ -34,29 +30,23 @@ const Contact = forwardRef((props, ref) => {
                     <input
                         required
                         className={styles.Input}
-                        onChange={event => setFormName(event.target.value)}
-                        value={formName}
                         placeholder="Name"
-                        name="formName"
+                        name="Name"
                         aria-label="Name input."
                     />
                     <input
                         required
                         className={styles.Input}
-                        onChange={event => setFormEmail(event.target.value)}
-                        value={formEmail}
                         placeholder="Email"
-                        name="formEmail"
+                        name="Email"
                         aria-label="Email input."
                     />
                     <textarea
                         required
                         className={styles.Input}
-                        onChange={event => setFormMessage(event.target.value)}
-                        value={formMessage}
                         placeholder="Message"
                         rows="6"
-                        name="formMessage"
+                        name="Message"
                         aria-label="Message input."
                     ></textarea>
                     <input
