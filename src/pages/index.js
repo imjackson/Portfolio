@@ -43,8 +43,7 @@ const Index = props => {
     const handleScroll = () => {
         let y = window.pageYOffset
         let currentSection
-        let intro = IntroSection.current.offsetTop,
-            about = AboutSetion.current.offsetTop,
+        let about = AboutSetion.current.offsetTop,
             work = WorkSection.current.offsetTop,
             contact = ContactSection.current.offsetTop
         if (
