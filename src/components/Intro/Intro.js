@@ -1,8 +1,5 @@
 // Dependencies
-import React, { forwardRef } from "react"
-
-// Icons
-import down from "../../images/down-arrow.svg"
+import React from "react"
 
 // Images
 import wave from "../../images/waves/wave2.svg"
@@ -10,7 +7,7 @@ import wave from "../../images/waves/wave2.svg"
 // Styles
 import styles from "./Intro.module.css"
 
-const Intro = forwardRef(({ scroller }, ref) => {
+const Intro = () => {
     return (
         <>
             <h1 className={styles.IntroTitle}>I'm Jackson.</h1>
@@ -21,6 +18,6 @@ const Intro = forwardRef(({ scroller }, ref) => {
             <img src={wave} alt="" className={styles.Wave} />
         </>
     )
-})
+}
 
 export default Intro

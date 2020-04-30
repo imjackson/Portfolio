@@ -21,7 +21,7 @@ const Layout = ({ children, location }) => {
     const path = location.pathname
 
     const getBackgroundColor = () => {
-        if (path == "/" || path == "/work") {
+        if (path === "/" || path === "/work") {
             return {
                 backgroundColor: "var(--green)",
             }
