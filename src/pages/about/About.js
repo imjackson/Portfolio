@@ -2,8 +2,8 @@
 import React, { forwardRef } from "react"
 
 // Components
-import SectionTitle from "../common/SectionTitle"
-import Paragraph from "../common/Paragraph"
+import SectionTitle from "../../components/common/SectionTitle"
+import Paragraph from "../../components/common/Paragraph"
 
 // Images
 import wave from "../../images/waves/wave3.svg"
