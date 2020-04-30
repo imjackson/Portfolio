@@ -6,14 +6,12 @@
 
 // dependencies
 import React, { useState, useEffect, useRef } from "react"
-import { graphql } from "gatsby"
 
 // Components
 import SEO from "../components/seo"
 
 // Sections
 import Intro from "../components/Intro/"
-import Work from "../components/Work/"
 import Contact from "../components/Contact/"
 
 // Styles
@@ -22,12 +20,7 @@ import styles from "../modules/index.module.css"
 const Index = props => {
     // refs
     const IntroSection = useRef(null)
-    const AboutSetion = useRef(null)
-    const WorkSection = useRef(null)
     const ContactSection = useRef(null)
-
-    const [headerIsActive, setHeaderIsActive] = useState(false)
-    const [currentSection, setCurrentSection] = useState("intro")
 
     // scroll listener - determines which section user is currently viewing, allowing for dyanmic styling
     // of header link items
@@ -98,37 +91,9 @@ const Index = props => {
             />
 
             <Intro ref={IntroSection} />
-
-            <Work
-                finalsClubImage={props.data.finalsclub.childImageSharp.fluid}
-                rocklandImage={props.data.rockland.childImageSharp.fluid}
-                ref={WorkSection}
-            />
             <Contact ref={ContactSection} />
         </>
     )
 }
 
-// graphql query fragment for getting fluid images
-export const fluidImage = graphql`
-    fragment fluidImage on File {
-        childImageSharp {
-            fluid(maxWidth: 1000) {
-                ...GatsbyImageSharpFluid
-            }
-        }
-    }
-`
-
-// graphql pageQuery to get individual images
-export const pageQuery = graphql`
-    query {
-        finalsclub: file(relativePath: { eq: "finalsclub-display.png" }) {
-            ...fluidImage
-        }
-        rockland: file(relativePath: { eq: "rockland-display.png" }) {
-            ...fluidImage
-        }
-    }
-`
 export default Index

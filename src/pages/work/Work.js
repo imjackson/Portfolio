@@ -1,16 +1,19 @@
 // Dependencies
-import React, { forwardRef } from "react"
-import Img from "gatsby-image"
+import React from "react"
 
 // Components
-import SectionTitle from "../common/SectionTitle"
+import SectionTitle from "../../components/common/SectionTitle"
+
+// Images
+import FinalsClubImage from "./FinalsClubImage.js"
+import RocklandImage from "./RocklandImage.js"
 
 // Styles
 import styles from "./Work.module.css"
 
-const Work = forwardRef((props, ref) => {
+const Work = () => {
     return (
-        <div id="Work" ref={ref} className={styles.WorkContainer}>
+        <>
             <SectionTitle>My Roles.</SectionTitle>
             <div className={styles.RoleContainer}>
                 <h3 className={styles.RoleTitle}>FinalsClub</h3>
@@ -33,22 +36,22 @@ const Work = forwardRef((props, ref) => {
                     title="FinalsClub Landing"
                     roles="Design, Development"
                     tools={["HTML/CSS", "React", "Gatsby"]}
-                    fluid={props.finalsClubImage}
+                    image={<FinalsClubImage />}
                     url="https://finalsclub-landing-design.netlify.com/"
                 />
                 <WorkItem
                     roles="Development"
                     title="Rockland Pediatrics"
                     tools={["HTML/CSS", "React", "Gatsby"]}
-                    fluid={props.rocklandImage}
+                    image={<RocklandImage />}
                     url="https://rocklandpediatrics.com"
                 />
             </div>
-        </div>
+        </>
     )
-})
+}
 
-const WorkItem = ({ odd, roles, title, tools, fluid, url }) => {
+const WorkItem = ({ odd, roles, title, tools, image, url }) => {
     const ContainerClasses = odd
         ? styles.WorkRow
         : [styles.EvenWorkRow, styles.WorkRow].join(" ")
@@ -92,9 +95,7 @@ const WorkItem = ({ odd, roles, title, tools, fluid, url }) => {
                     View &#8594;
                 </a>
             </div>
-            <div className={styles.WorkRowImage}>
-                <Img fluid={fluid} />
-            </div>
+            <div className={styles.WorkRowImage}>{image}</div>
         </div>
     )
 }
