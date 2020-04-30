@@ -6,6 +6,7 @@
 
 // Dependencies
 import React, { useState, useEffect } from "react"
+import { Link } from "gatsby"
 
 // Styles
 import styles from "./Header.module.css"
@@ -13,7 +14,7 @@ import styles from "./Header.module.css"
 // Icons
 import logo from "../../images/logos/logo.svg"
 
-const Header = ({ top, scroll, current }) => {
+const Header = () => {
     const [headerIsActive, setHeaderIsActive] = useState(false)
 
     useEffect(() => {
@@ -39,51 +40,35 @@ const Header = ({ top, scroll, current }) => {
     return (
         <header style={HeaderStyle} className={styles.Container}>
             <div className={styles.Content}>
-                <button onClick={top} className={styles.LogoButton}>
+                <Link to="/" className={styles.LogoButton}>
                     <img src={logo} alt="Logo." className={styles.Logo} />
                     {headerIsActive && (
                         <h2 className={styles.HeaderTitle}>I'm Jackson.</h2>
                     )}
-                </button>
+                </Link>
 
                 <div className={styles.Nav}>
-                    <NavButton
-                        section="about"
-                        current={current}
-                        scrollFunction={scroll}
-                    />
-                    <NavButton
-                        section="work"
-                        current={current}
-                        scrollFunction={scroll}
-                    />
-                    <NavButton
-                        section="contact"
-                        current={current}
-                        scrollFunction={scroll}
-                    />
+                    <NavButton page="About" to="/about" />
+                    <NavButton page="Work" to="/work" />
+                    <NavButton page="Contact" to="/contact" />
                 </div>
             </div>
         </header>
     )
 }
 
-const NavButton = ({ current, section, scrollFunction }) => {
-    const ButtonStyle = {
-        borderBottom:
-            current === section
-                ? "2px solid var(--black)"
-                : "2px solid transparent",
-        transition: ".2s ease",
-    }
+const NavButton = ({ page, to }) => {
+    // const ButtonStyle = {
+    //     borderBottom:
+    //         current === section
+    //             ? "2px solid var(--black)"
+    //             : "2px solid transparent",
+    //     transition: ".2s ease",
+    // }
     return (
-        <button
-            style={ButtonStyle}
-            onClick={() => scrollFunction(section)}
-            className={styles.NavButton}
-        >
-            {section}
-        </button>
+        <Link to={to} className={styles.NavButton}>
+            {page}
+        </Link>
     )
 }
 
