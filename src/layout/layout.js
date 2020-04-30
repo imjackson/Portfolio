@@ -10,12 +10,12 @@ import React from "react"
 import PropTypes from "prop-types"
 
 // Components
-import Header from "./Header/"
-import Footer from "./Footer/"
+import Header from "../components/Header/"
+import Footer from "../components/Footer/"
 
 // Styles
 import "./layout.css"
-import styles from "../modules/layout.module.css"
+import styles from "./layout.module.css"
 
 const Layout = props => (
     <div className={styles.Layout}>
@@ -23,7 +23,6 @@ const Layout = props => (
             top={props.top}
             scroll={props.scroller}
             current={props.activeSection}
-            header={props.activeHeader}
         />
         {props.children}
         <Footer />

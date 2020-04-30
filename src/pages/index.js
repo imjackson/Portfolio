@@ -9,7 +9,6 @@ import React, { useState, useEffect, useRef } from "react"
 import { graphql } from "gatsby"
 
 // Components
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 // Sections
@@ -101,12 +100,7 @@ const Index = props => {
     }
 
     return (
-        <Layout
-            top={scrollToTop}
-            scroller={scroller}
-            activeSection={currentSection}
-            activeHeader={headerIsActive}
-        >
+        <>
             <SEO
                 title="Front-End Developer"
                 description="I'm a front-end developer with a dedication to writing fast, simple, accessible websites."
@@ -124,7 +118,7 @@ const Index = props => {
                 />
                 <Contact ref={ContactSection} />
             </div>
-        </Layout>
+        </>
     )
 }
 
