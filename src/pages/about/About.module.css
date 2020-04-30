@@ -1,17 +1,6 @@
 /* 
     About Section 
 */
-.AboutContainer {
-    padding-bottom: 18rem;
-}
-.AboutMain {
-    width: var(--content-width);
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 2rem;
-}
 .AboutLeft {
     width: 100%;
     display: flex;

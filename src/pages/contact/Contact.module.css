@@ -1,25 +1,6 @@
 /* 
     Contact section 
 */
-.ContactContainer {
-    padding-top: 4rem;
-    padding-bottom: 6rem;
-    background-color: var(--white);
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-}
-.ContactMain {
-    width: var(--content-width);
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
 .ContactParagraph {
     width: 900px;
     font-family: "Lato";
