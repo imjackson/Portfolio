@@ -30,7 +30,7 @@ const Header = ({ top, scroll, current }) => {
     }
 
     const HeaderStyle = {
-        backgroundColor: headerIsActive ? "var(--white)" : "var(--green)",
+        backgroundColor: headerIsActive ? "var(--white)" : "transparent",
         boxShadow: headerIsActive ? "0px 5px 8px 2px rgba(0,0,0,0.08)" : "none",
         height: headerIsActive ? "4.5rem" : "5.5rem",
         transition: ".4s ease",

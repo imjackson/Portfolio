@@ -5,6 +5,25 @@ layout.css
 Site-wide style sheet for element-level styling rules
 
 */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#___gatsby {
+    height: 100%;
+    width: 100%;
+}
+
+#___gatsby > * {
+    height: 100%;
+    width: 100%;
+}
+
 :root {
     --content-width: 1280px;
     --green: #bcf0df;
@@ -12,6 +31,7 @@ Site-wide style sheet for element-level styling rules
     --black: #252525;
     --navy: #14213d;
 }
+
 @media screen and (max-width: 1350px) {
     :root {
         --content-width: 1020px;

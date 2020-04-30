@@ -10,9 +10,9 @@ Main layout component styling rules
     Layout Base Formatting
  */
 .Layout {
-    min-height: 100vh;
-    max-width: 100vw;
-    width: 100vw;
+    min-height: 100%;
+    max-width: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -21,4 +21,14 @@ Main layout component styling rules
     align-items: center;
     background-color: var(--green);
     position: relative;
+}
+
+.Main {
+    width: var(--content-width);
+    flex: 1;
+    padding-top: 7rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 }

@@ -2,15 +2,6 @@
     About Section 
 */
 .AboutContainer {
-    background-color: var(--white);
-    min-height: 100vh;
-    height: auto;
-    width: 100vw;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
     padding-bottom: 18rem;
 }
 .AboutMain {

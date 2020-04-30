@@ -17,17 +17,29 @@ import Footer from "../components/Footer/"
 import "./layout.css"
 import styles from "./layout.module.css"
 
-const Layout = props => (
-    <div className={styles.Layout}>
-        <Header
-            top={props.top}
-            scroll={props.scroller}
-            current={props.activeSection}
-        />
-        {props.children}
-        <Footer />
-    </div>
-)
+const Layout = ({ children, location }) => {
+    const path = location.pathname
+
+    const getBackgroundColor = () => {
+        if (path == "/" || path == "/work") {
+            return {
+                backgroundColor: "var(--green)",
+            }
+        } else {
+            return {
+                backgroundColor: "var(--white)",
+            }
+        }
+    }
+
+    return (
+        <div style={getBackgroundColor()} className={styles.Layout}>
+            <Header />
+            <main className={styles.Main}>{children}</main>
+            <Footer />
+        </div>
+    )
+}
 
 Layout.propTypes = {
     children: PropTypes.node.isRequired,

@@ -97,18 +97,14 @@ const Index = props => {
                 description="I'm a front-end developer with a dedication to writing fast, simple, accessible websites."
             />
 
-            <div className={styles.Main}>
-                <Intro ref={IntroSection} />
+            <Intro ref={IntroSection} />
 
-                <Work
-                    finalsClubImage={
-                        props.data.finalsclub.childImageSharp.fluid
-                    }
-                    rocklandImage={props.data.rockland.childImageSharp.fluid}
-                    ref={WorkSection}
-                />
-                <Contact ref={ContactSection} />
-            </div>
+            <Work
+                finalsClubImage={props.data.finalsclub.childImageSharp.fluid}
+                rocklandImage={props.data.rockland.childImageSharp.fluid}
+                ref={WorkSection}
+            />
+            <Contact ref={ContactSection} />
         </>
     )
 }

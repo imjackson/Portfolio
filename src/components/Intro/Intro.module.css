@@ -1,24 +1,6 @@
 /* 
     Index Section 
 */
-.IntroContainer {
-    width: 100vw;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 100vh;
-    position: relative;
-}
-.IntroMain {
-    z-index: 2;
-    width: var(--content-width);
-    padding-top: 8rem;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
 .Wave {
     position: absolute;
     bottom: 0;
