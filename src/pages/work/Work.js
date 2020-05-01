@@ -2,7 +2,7 @@
 import React from "react"
 
 // Components
-import SectionTitle from "../../components/common/SectionTitle"
+import SectionTitle from "../../components/SectionTitle"
 
 // Images
 import FinalsClubImage from "./FinalsClubImage.js"

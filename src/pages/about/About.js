@@ -2,8 +2,9 @@
 import React from "react"
 
 // Components
-import SectionTitle from "../../components/common/SectionTitle"
-import Paragraph from "../../components/common/Paragraph"
+import SectionTitle from "../../components/SectionTitle"
+import Paragraph from "../../components/Paragraph"
+import FullBreak from "../../components/FullBreak"
 
 // Images
 import wave from "../../images/waves/wave3.svg"
@@ -146,10 +147,6 @@ const Focus = ({ number, title, content }) => {
             <p className={styles.FocusContent}>{content}</p>
         </div>
     )
-}
-
-const FullBreak = props => {
-    return <hr className={styles.FullBreak} />
 }
 
 export default About
