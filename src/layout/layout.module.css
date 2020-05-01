@@ -26,7 +26,7 @@ Main layout component styling rules
     width: var(--content-width);
     flex: 1;
     padding-top: 7rem;
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
