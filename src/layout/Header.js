@@ -9,13 +9,17 @@ import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 
 // Styles
-import styles from "./Header.module.css"
+import styles from "./layout.module.css"
 
 // Icons
-import logo from "../../images/logos/logo.svg"
+import logo from "../images/logos/logo.svg"
 
-const Header = () => {
+const Header = ({ index }) => {
     const [headerIsActive, setHeaderIsActive] = useState(false)
+    const headerBackgroundColorActive = "var(--white)"
+    const headerBackgroundColorInactive = index
+        ? "var(--green)"
+        : "var(--white)"
 
     useEffect(() => {
         window.addEventListener("scroll", scrollHandler)
@@ -31,14 +35,15 @@ const Header = () => {
     }
 
     const HeaderStyle = {
-        backgroundColor: headerIsActive ? "var(--white)" : "transparent",
+        backgroundColor: headerIsActive
+            ? headerBackgroundColorActive
+            : headerBackgroundColorInactive,
         boxShadow: headerIsActive ? "0px 5px 8px 2px rgba(0,0,0,0.08)" : "none",
-        height: headerIsActive ? "4.5rem" : "5.5rem",
         transition: ".4s ease",
     }
 
     return (
-        <header style={HeaderStyle} className={styles.Container}>
+        <header style={HeaderStyle} className={styles.Header}>
             <div className={styles.Content}>
                 <Link to="/" className={styles.LogoButton}>
                     <img src={logo} alt="Logo." className={styles.Logo} />

@@ -22,13 +22,243 @@ Main layout component styling rules
     background-color: var(--green);
     position: relative;
 }
-
 .Main {
     width: var(--content-width);
     flex: 1;
     padding-top: 7rem;
+    padding-bottom: 10rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
+}
+
+/* 
+    Header Base Formatting 
+*/
+.Header {
+    height: 4.5rem;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+.Content {
+    width: var(--content-width);
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.LogoButton {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline-color: var(--black);
+    outline-offset: 10px;
+    padding: 0;
+}
+.Logo {
+    width: 1.75rem;
+    height: auto;
+    margin: 0;
+}
+.HeaderTitle {
+    font-family: "IBM Plex Sans";
+    font-size: 1.4em;
+    margin-left: 1.5rem;
+    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@media screen and (max-width: 860px) {
+    .Logo {
+        height: 1.5rem;
+    }
+    .HeaderTitle {
+        font-size: 1.25em;
+        margin-left: 1.5rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .Logo {
+        height: 1rem;
+    }
+    .HeaderTitle {
+        font-size: 1.05em;
+        margin-left: 0.5rem;
+    }
+}
+
+/* 
+    Single-page site navigation
+*/
+.Nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.NavButton {
+    background-color: transparent;
+    border: none;
+    margin: 0 1rem;
+    font-family: "Lato";
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    transition: 0.3s ease;
+    outline-offset: 3px;
+    outline-color: var(--black);
+    text-transform: capitalize;
+}
+.NavButton:hover {
+    transform: translateY(-2px);
+}
+@media screen and (max-width: 860px) {
+    .NavButton {
+        margin: 0 0.75rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .NavButton {
+        font-size: 0.75em;
+        margin: 0 0.35rem;
+        padding: 0.25rem 0;
+    }
+}
+
+/* 
+    Keyframes
+*/
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 
+    Footer Footer and sectioning
+*/
+.Footer {
+    width: var(--content-width);
+    background-color: transparent;
+    padding: 2rem 5vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.FooterLeft {
+    width: 38%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.FooterCenter {
+    width: 24%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.FooterRight {
+    width: 38%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+@media screen and (max-width: 860px) {
+    .Footer {
+        height: 2.5rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .Footer {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.FooterTitle {
+    font-family: "IBM Plex Sans";
+    font-size: 1.25rem;
+}
+.FooterEmail {
+    font-size: 0.85rem;
+    font-family: "Lato";
+    margin-top: 0.25rem;
+}
+.FooterLogo {
+    height: 2.5rem;
+}
+@media screen and (max-width: 860px) {
+    .FooterLogo {
+        height: 2.5rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .FooterTitle {
+        font-size: 0.8em;
+    }
+    .FooterEmail {
+        margin-top: 0.25rem;
+        font-size: 0.65em;
+    }
+    .FooterLogo {
+        height: 1.75rem;
+    }
+}
+
+/* 
+    Social media link
+*/
+.SocialIcon {
+    height: 1.5rem;
+    margin: 0 0.75rem;
+    width: auto;
+}
+.SocialLink {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.SocialLink:hover,
+.SocialLink:focus {
+    transform: translateY(-2px);
+}
+@media screen and (max-width: 600px) {
+    .SocialIcon {
+        height: 1.2rem;
+        margin: 0 0.35rem;
+    }
+}
+
+/* 
+    Keyframes
+*/
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

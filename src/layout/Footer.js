@@ -8,16 +8,16 @@
 import React from "react"
 
 // Styles
-import styles from "./Footer.module.css"
+import styles from "./layout.module.css"
 
 // Icons
-import logo from "../../images/logos/logo.svg"
-import linkedin from "../../images/social-media/linkedin.svg"
-import github from "../../images/social-media/github-sign.svg"
+import logo from "../images/logos/logo.svg"
+import linkedin from "../images/social-media/linkedin.svg"
+import github from "../images/social-media/github-sign.svg"
 
 const Footer = () => {
     return (
-        <footer className={styles.Container}>
+        <footer className={styles.Footer}>
             <div className={styles.FooterLeft}>
                 <h2 className={styles.FooterTitle}>I'm Jackson.</h2>
                 <a

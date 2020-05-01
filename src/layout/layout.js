@@ -10,8 +10,8 @@ import React from "react"
 import PropTypes from "prop-types"
 
 // Components
-import Header from "../components/Header/"
-import Footer from "../components/Footer/"
+import Header from "./Header"
+import Footer from "./Footer"
 
 // Styles
 import "./layout.css"
@@ -19,9 +19,10 @@ import styles from "./layout.module.css"
 
 const Layout = ({ children, location }) => {
     const path = location.pathname
+    const index = path === "/"
 
     const getBackgroundColor = () => {
-        if (path === "/" || path === "/work") {
+        if (index) {
             return {
                 backgroundColor: "var(--green)",
             }
@@ -34,7 +35,7 @@ const Layout = ({ children, location }) => {
 
     return (
         <div style={getBackgroundColor()} className={styles.Layout}>
-            <Header />
+            <Header index={index} />
             <main className={styles.Main}>{children}</main>
             <Footer />
         </div>

@@ -25,7 +25,12 @@ const About = () => {
 
     return (
         <>
-            <img src={wave} alt="" className={styles.Wave} />
+            <img
+                style={{ transform: "translateY(2px)" }}
+                src={wave}
+                alt=""
+                className={styles.Wave}
+            />
             <SectionTitle>About me.</SectionTitle>
 
             <div className={styles.AboutLeft}>
