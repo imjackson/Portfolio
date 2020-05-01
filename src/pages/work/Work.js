@@ -3,6 +3,7 @@ import React from "react"
 
 // Components
 import SectionTitle from "../../components/SectionTitle"
+import FullBreak from "../../components/FullBreak"
 
 // Images
 import FinalsClubImage from "./FinalsClubImage.js"
@@ -28,6 +29,9 @@ const Work = () => {
                     communication about courses and college-life at Rutgers.
                 </p>
             </div>
+            <Spacer />
+            <FullBreak />
+            <Spacer />
             <SectionTitle>My Sites.</SectionTitle>
             <div className={styles.WorkMain}>
                 <div className={styles.WorkBackground}></div>
@@ -49,6 +53,10 @@ const Work = () => {
             </div>
         </>
     )
+}
+
+const Spacer = () => {
+    return <div className={styles.Spacer} />
 }
 
 const WorkItem = ({ odd, roles, title, tools, image, url }) => {

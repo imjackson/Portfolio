@@ -30,14 +30,17 @@
     right: 0;
     background-color: var(--navy);
 }
+.Spacer {
+    height: 20px;
+}
 
 /* 
     Role Item formatting
 */
 .RoleContainer {
     width: 1280px;
-    padding: 2rem 0;
-    margin: 1rem 0 2rem 0;
+    padding: 2rem 0 0 0;
+    margin: 1rem 0 0 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -57,7 +60,7 @@
 .RoleBreak {
     height: 2px;
     width: 10rem;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     padding: 0;
     background-color: var(--black);
     border: none;
