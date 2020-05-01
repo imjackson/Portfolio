@@ -22,20 +22,20 @@
     }
 }
 
-/* <SectionTitle /> */
-.SectionTitle {
+/* <Subheader /> */
+.Subheader {
     font-family: "Lato";
     font-size: 2.25rem;
     margin: 0;
     width: var(--content-width);
 }
 @media screen and (max-width: 860px) {
-    .SectionTitle {
+    .Subheader {
         font-size: 2rem;
     }
 }
 @media screen and (max-width: 600px) {
-    .SectionTitle {
+    .Subheader {
         font-size: 1.75rem;
     }
 }

@@ -2,7 +2,7 @@
 import React from "react"
 
 // Components
-import SectionTitle from "../../components/SectionTitle"
+import Subheader from "../../components/Subheader"
 
 // Styles
 import styles from "./Contact.module.css"
@@ -10,7 +10,7 @@ import styles from "./Contact.module.css"
 const Contact = () => {
     return (
         <>
-            <SectionTitle>Let's work together.</SectionTitle>
+            <Subheader>Let's work together.</Subheader>
             <p className={styles.ContactParagraph}>
                 I'm always looking for new projects to work on. If you want a
                 website built, or just want to say hello, send me a message

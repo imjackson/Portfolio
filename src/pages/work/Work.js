@@ -2,7 +2,7 @@
 import React from "react"
 
 // Components
-import SectionTitle from "../../components/SectionTitle"
+import Subheader from "../../components/Subheader"
 import FullBreak from "../../components/FullBreak"
 
 // Images
@@ -15,7 +15,7 @@ import styles from "./Work.module.css"
 const Work = () => {
     return (
         <>
-            <SectionTitle>My Roles.</SectionTitle>
+            <Subheader tag="h1">My Roles.</Subheader>
             <div className={styles.RoleContainer}>
                 <h3 className={styles.RoleTitle}>FinalsClub</h3>
                 <p className={styles.RoleHighInfo}>
@@ -32,7 +32,7 @@ const Work = () => {
             <Spacer />
             <FullBreak />
             <Spacer />
-            <SectionTitle>My Sites.</SectionTitle>
+            <Subheader>My Sites.</Subheader>
             <div className={styles.WorkMain}>
                 <div className={styles.WorkBackground}></div>
                 <WorkItem

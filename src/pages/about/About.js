@@ -2,7 +2,7 @@
 import React from "react"
 
 // Components
-import SectionTitle from "../../components/SectionTitle"
+import Subheader from "../../components/Subheader"
 import Paragraph from "../../components/Paragraph"
 import FullBreak from "../../components/FullBreak"
 
@@ -32,7 +32,7 @@ const About = () => {
                 alt=""
                 className={styles.Wave}
             />
-            <SectionTitle>About me.</SectionTitle>
+            <Subheader tag="h1">About me.</Subheader>
 
             <div className={styles.AboutLeft}>
                 <Paragraph>
