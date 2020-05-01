@@ -35,12 +35,18 @@ const About = () => {
 
             <div className={styles.AboutLeft}>
                 <Paragraph>
-                    I'm a front-end developer currently working out of Monmouth
-                    County, NJ. I seek to design and develop enjoyable user
-                    experiences with the most efficient toolsets possible.
+                    I'm a freelance front-end developer currently working out of
+                    Monmouth County, New Jersey. I seek to design and develop
+                    user experiences that all can enjoy, with the most efficient
+                    toolsets possible.
                 </Paragraph>
                 <Paragraph>
-                    My main role at the moment is working with with&nbsp;
+                    I'm an avid supporter of the Jamstack model to develop fast
+                    and secure websites, taking advantage of CDNs to serve
+                    static content, Git backends, and atomic deploys.
+                </Paragraph>
+                <Paragraph>
+                    My primary role at the moment is working with&nbsp;
                     <a
                         className={styles.Underlined}
                         rel="noopener noreferrer"
@@ -49,8 +55,11 @@ const About = () => {
                     >
                         FinalsClub
                     </a>
-                    &nbsp;as a UI/UX designer and developer to bring to life
-                    their vision of a more connected Rutgers student-base.{" "}
+                    &nbsp;as a user interface and user experience
+                    designer/developer. I design and create front-end components
+                    while providing recommendations for maintaining proper
+                    usability and accessibility throughout their multi-platform
+                    messaging app.
                 </Paragraph>
 
                 <FullBreak />
