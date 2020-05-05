@@ -38,26 +38,20 @@ Main layout component styling rules
 */
 .Header {
     height: 4.5rem;
-    max-width: 100%;
-    width: 100%;
+    width: var(--content-width);
+    border-bottom: 5px solid;
+    transition: border 0.3s ease;
     padding: 0;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
     z-index: 5;
 }
-.Content {
-    width: var(--content-width);
-    height: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
 .LogoButton {
+    margin-left: 16px;
     background-color: transparent;
     border: none;
     display: flex;
@@ -111,7 +105,7 @@ Main layout component styling rules
 .NavButton {
     background-color: transparent;
     border: none;
-    margin: 0 1rem;
+    margin: 0 16px;
     font-family: "Lato";
     font-size: 0.9rem;
     cursor: pointer;
@@ -153,9 +147,10 @@ Main layout component styling rules
     Footer Footer and sectioning
 */
 .Footer {
+    height: 8rem;
     width: var(--content-width);
+    border-top: 5px solid;
     background-color: transparent;
-    padding: 2rem 5vw;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -202,10 +197,10 @@ Main layout component styling rules
 .FooterEmail {
     font-size: 0.85rem;
     font-family: "Lato";
-    margin-top: 0.25rem;
+    margin-top: 1px;
 }
 .FooterLogo {
-    height: 2.5rem;
+    height: 1.75rem;
 }
 @media screen and (max-width: 860px) {
     .FooterLogo {

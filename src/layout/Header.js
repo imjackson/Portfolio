@@ -14,10 +14,10 @@ import styles from "./layout.module.css"
 // Icons
 import logo from "../images/logos/logo.svg"
 
-const Header = ({ index }) => {
+const Header = ({ isIndexPage }) => {
     const [headerIsActive, setHeaderIsActive] = useState(false)
     const headerBackgroundColorActive = "var(--white)"
-    const headerBackgroundColorInactive = index
+    const headerBackgroundColorInactive = isIndexPage
         ? "var(--green)"
         : "var(--white)"
 
@@ -38,25 +38,22 @@ const Header = ({ index }) => {
         backgroundColor: headerIsActive
             ? headerBackgroundColorActive
             : headerBackgroundColorInactive,
-        boxShadow: headerIsActive ? "0px 5px 8px 2px rgba(0,0,0,0.08)" : "none",
-        transition: ".4s ease",
+        borderColor: headerIsActive ? "var(--green)" : "transparent",
     }
 
     return (
         <header style={HeaderStyle} className={styles.Header}>
-            <div className={styles.Content}>
-                <Link to="/" className={styles.LogoButton}>
-                    <img src={logo} alt="Logo." className={styles.Logo} />
-                    {headerIsActive && (
-                        <h2 className={styles.HeaderTitle}>I'm Jackson.</h2>
-                    )}
-                </Link>
+            <Link to="/" className={styles.LogoButton}>
+                <img src={logo} alt="Logo." className={styles.Logo} />
+                {headerIsActive && (
+                    <h2 className={styles.HeaderTitle}>I'm Jackson.</h2>
+                )}
+            </Link>
 
-                <div className={styles.Nav}>
-                    <NavButton page="About" to="/about" />
-                    <NavButton page="Work" to="/work" />
-                    <NavButton page="Contact" to="/contact" />
-                </div>
+            <div className={styles.Nav}>
+                <NavButton page="About" to="/about" />
+                <NavButton page="Work" to="/work" />
+                <NavButton page="Contact" to="/contact" />
             </div>
         </header>
     )

@@ -19,10 +19,10 @@ import styles from "./layout.module.css"
 
 const Layout = ({ children, location }) => {
     const path = location.pathname
-    const index = path === "/"
+    const isIndexPage = path === "/"
 
     const getBackgroundColor = () => {
-        if (index) {
+        if (isIndexPage) {
             return {
                 backgroundColor: "var(--green)",
             }
@@ -35,9 +35,9 @@ const Layout = ({ children, location }) => {
 
     return (
         <div style={getBackgroundColor()} className={styles.Layout}>
-            <Header index={index} />
+            <Header isIndexPage={isIndexPage} />
             <main className={styles.Main}>{children}</main>
-            <Footer />
+            <Footer isIndexPage={isIndexPage} />
         </div>
     )
 }

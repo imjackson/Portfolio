@@ -25,7 +25,7 @@ body {
 }
 
 :root {
-    --content-width: 1280px;
+    --content-width: 1000px;
     --green: #bcf0df;
     --white: #f9f9f9;
     --black: #252525;
@@ -34,7 +34,7 @@ body {
 
 @media screen and (max-width: 1350px) {
     :root {
-        --content-width: 1020px;
+        --content-width: 800px;
     }
 }
 @media screen and (max-width: 1080px) {

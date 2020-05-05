@@ -15,9 +15,15 @@ import logo from "../images/logos/logo.svg"
 import linkedin from "../images/social-media/linkedin.svg"
 import github from "../images/social-media/github-sign.svg"
 
-const Footer = () => {
+const Footer = ({ isIndexPage }) => {
+    const getFooterBorder = () => {
+        return {
+            borderColor: isIndexPage ? "transparent" : "var(--green)",
+        }
+    }
+
     return (
-        <footer className={styles.Footer}>
+        <footer style={getFooterBorder()} className={styles.Footer}>
             <div className={styles.FooterLeft}>
                 <h2 className={styles.FooterTitle}>I'm Jackson.</h2>
                 <a
