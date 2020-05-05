@@ -96,14 +96,13 @@ Main layout component styling rules
 /* 
     Single-page site navigation
 */
-.Nav {
+.Navigation {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 }
 .NavigationLink {
-    text-transform: capitalize;
     background-color: transparent;
     border: none;
     margin: 0 16px;
@@ -117,7 +116,8 @@ Main layout component styling rules
     text-transform: capitalize;
 }
 .NavigationLink:hover {
-    transform: translateY(-2px);
+    border-color: rgb(199, 199, 199);
+    /* transform: translateY(-2px); */
 }
 @media screen and (max-width: 860px) {
     .NavigationLink {

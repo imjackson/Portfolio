@@ -50,8 +50,7 @@ const Header = ({ path }) => {
                     <h2 className={styles.HeaderTitle}>I'm Jackson.</h2>
                 )}
             </Link>
-
-            <div className={styles.Nav}>
+            <nav className={styles.Navigation}>
                 <NavigationLink currentPath={path} page="about" to="/about" />
                 <NavigationLink currentPath={path} page="work" to="/work" />
                 <NavigationLink
@@ -59,7 +58,7 @@ const Header = ({ path }) => {
                     page="contact"
                     to="/contact"
                 />
-            </div>
+            </nav>
         </header>
     )
 }
