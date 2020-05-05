@@ -4,6 +4,7 @@ import React from "react"
 // Components
 import Subheader from "../../components/Subheader"
 import FullBreak from "../../components/FullBreak"
+import Paragraph from "../../components/Paragraph"
 
 // Images
 import FinalsClubImage from "./FinalsClubImage.js"
@@ -23,11 +24,17 @@ const Work = () => {
                     &nbsp;&nbsp;|&nbsp;&nbsp;May 2019 — Present
                 </p>
                 <hr className={styles.RoleBreak} />
-                <p className={styles.RoleDescription}>
-                    I design and develop front-end React components for ed-tech
-                    startup FinalsClub, where we've set out to improve online
-                    communication about courses and college-life at Rutgers.
-                </p>
+                <Paragraph>
+                    FinalsClub is an ed-tech startup that has set out to improve
+                    online communication about courses and college-life at
+                    Rugters University.
+                </Paragraph>
+                <Paragraph>
+                    My roles at FinalsClub include both designing and developing
+                    user interface components, as well as providing advice for
+                    upholding usuability and accessibilty throughout their
+                    application suite.
+                </Paragraph>
             </div>
             <Spacer />
             <FullBreak />

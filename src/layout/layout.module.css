@@ -38,7 +38,7 @@ Main layout component styling rules
 */
 .Header {
     height: 4.5rem;
-    width: var(--content-width);
+    width: calc(var(--content-width) + 100px);
     border-bottom: 5px solid;
     transition: border 0.2s ease;
     padding: 0;
@@ -73,6 +73,11 @@ Main layout component styling rules
     font-size: 1.4em;
     margin-left: 1.5rem;
     animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@media screen and (max-width: 1080px) {
+    .Header {
+        width: var(--content-width);
+    }
 }
 @media screen and (max-width: 860px) {
     .Logo {
@@ -149,7 +154,7 @@ Main layout component styling rules
 */
 .Footer {
     height: 8rem;
-    width: var(--content-width);
+    width: calc(var(--content-width) + 100px);
     border-top: 5px solid;
     background-color: transparent;
     display: flex;
@@ -178,6 +183,11 @@ Main layout component styling rules
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
+}
+@media screen and (max-width: 1080px) {
+    .Footer {
+        width: var(--content-width);
+    }
 }
 @media screen and (max-width: 860px) {
     .Footer {
