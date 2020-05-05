@@ -116,13 +116,21 @@
     align-items: center;
     z-index: 2;
     margin-bottom: 2rem;
+    color: var(--black);
 }
-.EvenWorkRow {
-    flex-flow: row-reverse nowrap;
-}
-.WorkRowImage {
+.ProjectImageContainer {
     width: 60%;
     height: auto;
+}
+.ProjectImageContainerOdd {
+    margin: 0 0 0 30px;
+}
+.ProjectImageContainerEven {
+    margin: 0 30px 0 0;
+}
+.ProjectImage {
+    box-shadow: 0px 5px 10px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
 }
 .WorkRowContent {
     width: 40%;
@@ -130,7 +138,6 @@
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0 2%;
 }
 .ProjectTitle {
     font-family: "IBM Plex Sans";
@@ -141,7 +148,8 @@
     height: 4px;
     width: 6rem;
     border: none;
-    margin: 1rem 0;
+    margin: 14px 0;
+    background-color: var(--black);
 }
 .ProjectInfoRow {
     padding-right: 5%;
@@ -210,9 +218,6 @@
     }
     .ProjectTitle {
         font-size: 2.25em;
-    }
-    .DarkContent {
-        background-color: var(--navy);
     }
 }
 @media screen and (max-width: 860px) {

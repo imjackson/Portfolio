@@ -34,7 +34,7 @@ const Work = () => {
             <Spacer />
             <Subheader>My Sites.</Subheader>
             <div className={styles.WorkMain}>
-                <div className={styles.WorkBackground}></div>
+                {/* <div className={styles.WorkBackground}></div> */}
                 <WorkItem
                     odd
                     title="FinalsClub Landing"
@@ -60,30 +60,23 @@ const Spacer = () => {
 }
 
 const WorkItem = ({ odd, roles, title, tools, image, url }) => {
-    const ContainerClasses = odd
-        ? styles.WorkRow
-        : [styles.EvenWorkRow, styles.WorkRow].join(" ")
-
-    const HorizontalRuleStyle = {
-        backgroundColor: odd ? "var(--navy)" : "var(--green)",
+    const ContainerStyle = {
+        flexFlow: odd ? "row nowrap" : "row-reverse nowrap",
     }
 
-    const ContentClasses = odd
-        ? styles.WorkRowContent
-        : [styles.WorkRowContent, styles.DarkContent].join(" ")
-
-    const ContentStyle = {
-        color: odd ? "var(--black)" : "var(--white)",
-    }
+    const ImageContainerClasses = odd
+        ? [styles.ProjectImageContainer, styles.ProjectImageContainerOdd].join(
+              " "
+          )
+        : [styles.ProjectImageContainer, styles.ProjectImageContainerEven].join(
+              " "
+          )
 
     return (
-        <div className={ContainerClasses}>
-            <div style={ContentStyle} className={ContentClasses}>
+        <div style={ContainerStyle} className={styles.WorkRow}>
+            <div className={styles.WorkRowContent}>
                 <h2 className={styles.ProjectTitle}>{title}</h2>
-                <hr
-                    style={HorizontalRuleStyle}
-                    className={styles.ProjectBreak}
-                />
+                <hr className={styles.ProjectBreak} />
                 <div className={styles.ProjectInfoRow}>
                     <p className={styles.ProjectRoles}>{roles}</p>
                     <ul className={styles.ProjectTools}>
@@ -103,7 +96,7 @@ const WorkItem = ({ odd, roles, title, tools, image, url }) => {
                     View &#8594;
                 </a>
             </div>
-            <div className={styles.WorkRowImage}>{image}</div>
+            <div className={ImageContainerClasses}>{image}</div>
         </div>
     )
 }

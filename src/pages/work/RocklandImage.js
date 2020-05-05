@@ -3,6 +3,9 @@ import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
+// styles
+import { ProjectImage } from "./Work.module.css"
+
 const RocklandImage = () => {
     const data = useStaticQuery(graphql`
         query {
@@ -15,7 +18,12 @@ const RocklandImage = () => {
             }
         }
     `)
-    return <Img fluid={data.image.childImageSharp.fluid} />
+    return (
+        <Img
+            className={ProjectImage}
+            fluid={data.image.childImageSharp.fluid}
+        />
+    )
 }
 
 export default RocklandImage
