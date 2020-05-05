@@ -35,7 +35,7 @@ const Layout = ({ children, location }) => {
 
     return (
         <div style={getBackgroundColor()} className={styles.Layout}>
-            <Header isIndexPage={isIndexPage} />
+            <Header path={path} />
             <main className={styles.Main}>{children}</main>
             <Footer isIndexPage={isIndexPage} />
         </div>

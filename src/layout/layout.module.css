@@ -40,7 +40,7 @@ Main layout component styling rules
     height: 4.5rem;
     width: var(--content-width);
     border-bottom: 5px solid;
-    transition: border 0.3s ease;
+    transition: border 0.2s ease;
     padding: 0;
     display: flex;
     flex-flow: row nowrap;
@@ -103,6 +103,7 @@ Main layout component styling rules
     align-items: center;
 }
 .NavButton {
+    text-transform: capitalize;
     background-color: transparent;
     border: none;
     margin: 0 16px;
@@ -110,7 +111,7 @@ Main layout component styling rules
     font-size: 0.9rem;
     cursor: pointer;
     padding: 0.5rem 0;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
     outline-offset: 3px;
     outline-color: var(--black);
     text-transform: capitalize;
@@ -233,7 +234,7 @@ Main layout component styling rules
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
 }
 .SocialLink:hover,
 .SocialLink:focus {

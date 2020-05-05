@@ -24,7 +24,7 @@
 }
 .WorkBackground {
     height: 100%;
-    width: 50%;
+    width: 100%;
     position: absolute;
     top: 0;
     right: 0;
@@ -48,19 +48,18 @@
 }
 .RoleTitle {
     font-family: "Roboto";
-    font-weight: 900;
-    font-size: 34px;
+    font-size: 30px;
 }
 .RoleHighInfo {
     font-family: "Lato";
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
-    margin-top: 8px;
+    margin-top: 6px;
 }
 .RoleBreak {
     height: 2px;
     width: 10rem;
-    margin: 1rem 0;
+    margin: 10px 0;
     padding: 0;
     background-color: var(--black);
     border: none;
@@ -86,7 +85,7 @@
 }
 @media screen and (max-width: 860px) {
     .RoleTitle {
-        font-size: 24px;
+        font-size: 22px;
     }
     .RoleHighInfo {
         font-size: 16px;

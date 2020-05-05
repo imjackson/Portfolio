@@ -19,8 +19,8 @@ const Work = () => {
             <div className={styles.RoleContainer}>
                 <h3 className={styles.RoleTitle}>FinalsClub</h3>
                 <p className={styles.RoleHighInfo}>
-                    <strong>UI/UX Designer &amp; Developer</strong> | May 2019 —
-                    Present
+                    <strong>UI/UX Designer &amp; Developer</strong>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;May 2019 — Present
                 </p>
                 <hr className={styles.RoleBreak} />
                 <p className={styles.RoleDescription}>

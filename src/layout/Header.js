@@ -14,7 +14,8 @@ import styles from "./layout.module.css"
 // Icons
 import logo from "../images/logos/logo.svg"
 
-const Header = ({ isIndexPage }) => {
+const Header = ({ path }) => {
+    const isIndexPage = path === "/"
     const [headerIsActive, setHeaderIsActive] = useState(false)
     const headerBackgroundColorActive = "var(--white)"
     const headerBackgroundColorInactive = isIndexPage
@@ -51,24 +52,25 @@ const Header = ({ isIndexPage }) => {
             </Link>
 
             <div className={styles.Nav}>
-                <NavButton page="About" to="/about" />
-                <NavButton page="Work" to="/work" />
-                <NavButton page="Contact" to="/contact" />
+                <NavButton currentPath={path} page="about" to="/about" />
+                <NavButton currentPath={path} page="work" to="/work" />
+                <NavButton currentPath={path} page="contact" to="/contact" />
             </div>
         </header>
     )
 }
 
-const NavButton = ({ page, to }) => {
-    // const ButtonStyle = {
-    //     borderBottom:
-    //         current === section
-    //             ? "2px solid var(--black)"
-    //             : "2px solid transparent",
-    //     transition: ".2s ease",
-    // }
+const NavButton = ({ currentPath, page, to }) => {
+    const thisPath = "/" + page
+    const LinkStyle = {
+        borderBottom:
+            currentPath === thisPath
+                ? "2px solid var(--black)"
+                : "2px solid transparent",
+        transition: ".2s ease",
+    }
     return (
-        <Link to={to} className={styles.NavButton}>
+        <Link style={LinkStyle} to={to} className={styles.NavButton}>
             {page}
         </Link>
     )
