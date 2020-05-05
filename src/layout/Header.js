@@ -51,19 +51,15 @@ const Header = ({ path }) => {
                 )}
             </Link>
             <nav className={styles.Navigation}>
-                <NavigationLink currentPath={path} page="about" to="/about" />
-                <NavigationLink currentPath={path} page="work" to="/work" />
-                <NavigationLink
-                    currentPath={path}
-                    page="contact"
-                    to="/contact"
-                />
+                <NavigationLink currentPath={path} page="about" />
+                <NavigationLink currentPath={path} page="work" />
+                <NavigationLink currentPath={path} page="contact" />
             </nav>
         </header>
     )
 }
 
-const NavigationLink = ({ currentPath, page, to }) => {
+const NavigationLink = ({ currentPath, page }) => {
     const thisPath = "/" + page
     const LinkStyle = {
         borderBottom:
@@ -73,7 +69,7 @@ const NavigationLink = ({ currentPath, page, to }) => {
         transition: ".2s ease",
     }
     return (
-        <Link style={LinkStyle} to={to} className={styles.NavigationLink}>
+        <Link style={LinkStyle} to={thisPath} className={styles.NavigationLink}>
             {page}
         </Link>
     )
