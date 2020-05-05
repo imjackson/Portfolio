@@ -102,7 +102,7 @@ Main layout component styling rules
     justify-content: center;
     align-items: center;
 }
-.NavButton {
+.NavigationLink {
     text-transform: capitalize;
     background-color: transparent;
     border: none;
@@ -110,22 +110,22 @@ Main layout component styling rules
     font-family: "Lato";
     font-size: 0.9rem;
     cursor: pointer;
-    padding: 0.5rem 0;
+    padding: 8px 0;
     transition: 0.2s ease;
     outline-offset: 3px;
     outline-color: var(--black);
     text-transform: capitalize;
 }
-.NavButton:hover {
+.NavigationLink:hover {
     transform: translateY(-2px);
 }
 @media screen and (max-width: 860px) {
-    .NavButton {
+    .NavigationLink {
         margin: 0 0.75rem;
     }
 }
 @media screen and (max-width: 600px) {
-    .NavButton {
+    .NavigationLink {
         font-size: 0.75em;
         margin: 0 0.35rem;
         padding: 0.25rem 0;
