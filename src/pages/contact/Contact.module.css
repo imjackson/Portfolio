@@ -1,16 +1,8 @@
 /* 
     Contact section 
 */
-.ContactParagraph {
-    width: 900px;
-    font-family: "Lato";
-    font-size: 20px;
-    line-height: 30px;
-    color: var(--black);
-    margin: 1.5rem 2rem 0 0;
-}
 .Form {
-    width: 900px;
+    width: var(--content-width);
     margin-top: 1.5rem;
     display: flex;
     flex-flow: column nowrap;
@@ -27,7 +19,7 @@
     resize: none;
     margin: 0 0 20px 0;
     font-size: 18px;
-    width: calc(900px - 28px);
+    width: calc(100% - 28px);
     outline: none;
     transition: 0.3s ease;
 }
@@ -35,7 +27,7 @@
     border: 2px solid var(--navy);
 }
 .Submit {
-    width: 900px;
+    width: 100%;
     font-family: "Lato";
     font-size: 1rem;
     padding: 12px 0;
