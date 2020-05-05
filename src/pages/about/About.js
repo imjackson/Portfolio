@@ -70,28 +70,9 @@ const About = () => {
                     <div className={styles.SkillsTitleContainer}>
                         <AboutSectionHeader>Skills.</AboutSectionHeader>
                     </div>
-                    <SkillColumn>
-                        <h3 className={styles.SkillHeader}>Languages.</h3>
-                        {languages.map(lang => (
-                            <SkillListItem key={lang} text={lang} />
-                        ))}
-                    </SkillColumn>
-                    <SkillColumn>
-                        <h3 className={styles.SkillHeader}>
-                            Weapons of Choice.
-                        </h3>
-                        {weapons.map(weapon => (
-                            <SkillListItem key={weapon} text={weapon} />
-                        ))}
-                    </SkillColumn>
-                    <SkillColumn>
-                        <h3 className={styles.SkillHeader}>
-                            Additional Skills.
-                        </h3>
-                        {skills.map(skill => (
-                            <SkillListItem key={skill} text={skill} />
-                        ))}
-                    </SkillColumn>
+                    <SkillColumn header="Languages." list={languages} />
+                    <SkillColumn header="Weapons of Choice." list={weapons} />
+                    <SkillColumn header="Additional Skills." list={skills} />
                 </div>
 
                 <FullBreak />
@@ -126,8 +107,15 @@ const AboutSectionHeader = ({ children, alternate }) => {
     return <h2 className={classes}>{children}</h2>
 }
 
-const SkillColumn = ({ children }) => {
-    return <div className={styles.SkillColumn}>{children}</div>
+const SkillColumn = ({ header, list }) => {
+    return (
+        <div className={styles.SkillColumn}>
+            <h3 className={styles.SkillHeader}>{header}</h3>
+            {list.map(lang => (
+                <SkillListItem key={lang} text={lang} />
+            ))}
+        </div>
+    )
 }
 
 const SkillListItem = ({ text }) => {
