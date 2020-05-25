@@ -171,7 +171,7 @@
     text-align: right;
     line-height: 12px;
 }
-.ProjectLinkLight {
+.ProjectLink {
     font-family: "IBM Plex Sans";
     font-weight: bold;
     font-size: 14px;
@@ -182,25 +182,10 @@
     transition: 0.3s ease;
     outline: none;
 }
-.ProjectLinkLight:hover,
-.ProjectLinkLight:focus {
+.ProjectLink:hover,
+.ProjectLink:focus {
     background-color: var(--navy);
     color: var(--white);
-}
-.ProjectLinkDark {
-    font-family: "IBM Plex Sans";
-    font-weight: bold;
-    font-size: 14px;
-    padding: 15px 30px;
-    border-radius: 4px;
-    background-color: var(--white);
-    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
-    transition: 0.3s ease;
-    outline-color: var(--green);
-}
-.ProjectLinkDark:hover,
-.ProjectLinkDark:focus {
-    background-color: var(--green);
 }
 @media screen and (max-width: 860px) {
     .WorkBackground {

@@ -96,9 +96,7 @@ const WorkItem = ({ odd, roles, title, tools, image, url }) => {
                     rel="noopener noreferrer"
                     target="_blank"
                     href={url}
-                    className={
-                        odd ? styles.ProjectLinkLight : styles.ProjectLinkDark
-                    }
+                    className={styles.ProjectLink}
                 >
                     View &#8594;
                 </a>
