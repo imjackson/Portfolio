@@ -58,13 +58,13 @@ const Header = ({ path }) => {
 }
 
 const NavigationLink = ({ currentPath, page }) => {
-    const thisPath = "/" + page
+    const path = "/" + page
     const LinkStyle = {
         borderBottomColor:
-            currentPath === thisPath ? "var(--black)" : "transparent",
+            currentPath === path ? "var(--black)" : "transparent",
     }
     return (
-        <Link style={LinkStyle} to={thisPath} className={styles.NavigationLink}>
+        <Link style={LinkStyle} to={path} className={styles.NavigationLink}>
             {page}
         </Link>
     )
