@@ -2,9 +2,7 @@
 import React from "react"
 
 // Components
-import Subheader from "../../components/Subheader"
-import Paragraph from "../../components/Paragraph"
-import FullBreak from "../../components/FullBreak"
+import { Subheader, Paragraph, FullBreak } from "../../components/common/"
 
 // Images
 import wave from "../../images/waves/wave3.svg"

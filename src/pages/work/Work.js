@@ -2,9 +2,7 @@
 import React from "react"
 
 // Components
-import Subheader from "../../components/Subheader"
-import FullBreak from "../../components/FullBreak"
-import Paragraph from "../../components/Paragraph"
+import { Subheader, FullBreak, Paragraph } from "../../components/common/"
 
 // Images
 import FinalsClubImage from "./FinalsClubImage.js"

@@ -2,7 +2,7 @@
 import React from "react"
 
 // styles
-import styles from "./components.module.css"
+import styles from "./common.module.css"
 
 const FullBreak = () => {
     return <hr className={styles.FullBreak} />

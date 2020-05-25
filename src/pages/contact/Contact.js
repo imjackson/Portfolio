@@ -2,8 +2,7 @@
 import React from "react"
 
 // Components
-import Subheader from "../../components/Subheader"
-import Paragraph from "../../components/Paragraph"
+import { Subheader, Paragraph } from "../../components/common/"
 
 // Styles
 import styles from "./Contact.module.css"

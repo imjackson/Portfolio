@@ -2,7 +2,7 @@
 import React from "react"
 
 // Styles
-import common from "./components.module.css"
+import common from "./common.module.css"
 
 const Paragraph = ({ children, styles }) => {
     return (
