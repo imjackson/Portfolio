@@ -37,9 +37,9 @@ Main layout component styling rules
     Header Base Formatting 
 */
 .Header {
-    height: 4.5rem;
+    height: 4rem;
     width: calc(var(--content-width) + 100px);
-    border-bottom: 5px solid;
+    border-bottom: 3px solid;
     transition: border 0.2s ease;
     padding: 0;
     display: flex;
@@ -64,13 +64,13 @@ Main layout component styling rules
     padding: 0;
 }
 .Logo {
-    width: 1.75rem;
+    width: 1.5rem;
     height: auto;
     margin: 0;
 }
 .HeaderTitle {
     font-family: "IBM Plex Sans";
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-left: 1.5rem;
     animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
@@ -114,7 +114,7 @@ Main layout component styling rules
     font-family: "Lato";
     font-size: 0.9rem;
     cursor: pointer;
-    padding: 8px 0;
+    padding: 5px 0;
     transition: 0.2s ease;
     outline-offset: 3px;
     outline-color: var(--black);
