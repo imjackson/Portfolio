@@ -46,9 +46,7 @@ const Header = ({ path }) => {
         <header style={HeaderStyle} className={styles.Header}>
             <Link to="/" className={styles.LogoButton}>
                 <img src={logo} alt="Logo." className={styles.Logo} />
-                {headerIsActive && (
-                    <h2 className={styles.HeaderTitle}>I'm Jackson.</h2>
-                )}
+                <h2 className={styles.HeaderTitle}>I'm Jackson.</h2>
             </Link>
             <nav className={styles.Navigation}>
                 <NavigationLink currentPath={path} page="about" />
@@ -62,11 +60,8 @@ const Header = ({ path }) => {
 const NavigationLink = ({ currentPath, page }) => {
     const thisPath = "/" + page
     const LinkStyle = {
-        borderBottom:
-            currentPath === thisPath
-                ? "2px solid var(--black)"
-                : "2px solid transparent",
-        transition: ".2s ease",
+        borderBottomColor:
+            currentPath === thisPath ? "var(--black)" : "transparent",
     }
     return (
         <Link style={LinkStyle} to={thisPath} className={styles.NavigationLink}>

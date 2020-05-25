@@ -49,6 +49,7 @@ Main layout component styling rules
     position: fixed;
     top: 0;
     z-index: 5;
+    transition: 0.2s border ease;
 }
 .LogoButton {
     margin-left: 16px;
@@ -80,6 +81,9 @@ Main layout component styling rules
     }
 }
 @media screen and (max-width: 860px) {
+    .Header {
+        width: 100%;
+    }
     .Logo {
         height: 1.5rem;
     }
@@ -89,6 +93,9 @@ Main layout component styling rules
     }
 }
 @media screen and (max-width: 600px) {
+    .Header {
+        height: 3rem;
+    }
     .Logo {
         height: 1rem;
     }
@@ -110,6 +117,7 @@ Main layout component styling rules
 .NavigationLink {
     background-color: transparent;
     border: none;
+    border-bottom: 2px solid;
     margin: 0 16px;
     font-family: "Lato";
     font-size: 0.9rem;
@@ -131,9 +139,10 @@ Main layout component styling rules
 }
 @media screen and (max-width: 600px) {
     .NavigationLink {
-        font-size: 0.75em;
+        border-bottom: 1px solid;
+        font-size: 12px;
         margin: 0 0.35rem;
-        padding: 0.25rem 0;
+        padding: 1px 0;
     }
 }
 
@@ -155,7 +164,7 @@ Main layout component styling rules
 .Footer {
     height: 8rem;
     width: calc(var(--content-width) + 100px);
-    border-top: 5px solid;
+    border-top: 3px solid;
     background-color: transparent;
     display: flex;
     flex-flow: row nowrap;
