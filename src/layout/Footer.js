@@ -11,7 +11,7 @@ import React from "react"
 import styles from "./layout.module.css"
 
 // Icons
-import logo from "../images/logos/logo.svg"
+import logo from "../images/logos/logo-light.svg"
 import linkedin from "../images/social-media/linkedin.svg"
 import github from "../images/social-media/github-sign.svg"
 
