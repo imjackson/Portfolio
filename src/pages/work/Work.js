@@ -3,6 +3,7 @@ import React from "react"
 
 // Components
 import { Subheader, FullBreak, Paragraph } from "../../components/common/"
+import SEO from "../../components/seo"
 
 // Images
 import FinalsClubImage from "./FinalsClubImage.js"
@@ -14,6 +15,7 @@ import styles from "./Work.module.css"
 const Work = () => {
     return (
         <>
+            <SEO title="My Work" />
             <Subheader tag="h1">My Roles.</Subheader>
             <div className={styles.RoleContainer}>
                 <h3 className={styles.RoleTitle}>FinalsClub</h3>

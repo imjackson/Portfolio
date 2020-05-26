@@ -4,10 +4,12 @@ import React from "react"
 // Components
 import { Subheader, Paragraph } from "../components/common"
 import ContactForm from "../components/ContactForm"
+import SEO from "../components/seo"
 
 const Contact = () => {
     return (
         <>
+            <SEO title="Contact Me" />
             <Subheader>Let's work together.</Subheader>
             <Paragraph>
                 I'm always looking for new projects to work on. If you want a

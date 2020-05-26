@@ -3,6 +3,7 @@ import React from "react"
 
 // Components
 import { Subheader, Paragraph, FullBreak } from "../../components/common/"
+import SEO from "../../components/seo"
 
 // Images
 import wave from "../../images/waves/wave3.svg"
@@ -25,6 +26,7 @@ const About = () => {
 
     return (
         <>
+            <SEO title="About Me" />
             <Subheader tag="h1">About me.</Subheader>
 
             <div className={styles.AboutLeft}>
