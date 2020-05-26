@@ -64,9 +64,9 @@ const Spacer = () => {
 }
 
 const WorkItem = ({ odd, roles, title, tools, image, url }) => {
-    const ContainerStyle = {
-        flexFlow: odd ? "row nowrap" : "row-reverse nowrap",
-    }
+    const ContainerClasses = odd
+        ? [styles.WorkRow, styles.WorkRowOdd].join(" ")
+        : [styles.WorkRow, styles.WorkRowEven].join(" ")
 
     const ImageContainerClasses = odd
         ? [styles.ProjectImageContainer, styles.ProjectImageContainerOdd].join(
@@ -77,7 +77,7 @@ const WorkItem = ({ odd, roles, title, tools, image, url }) => {
           )
 
     return (
-        <div style={ContainerStyle} className={styles.WorkRow}>
+        <div className={ContainerClasses}>
             <div className={styles.WorkRowContent}>
                 <h2 className={styles.ProjectTitle}>{title}</h2>
                 <hr className={styles.ProjectBreak} />

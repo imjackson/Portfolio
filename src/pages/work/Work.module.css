@@ -103,12 +103,17 @@
 .WorkRow {
     width: 100%;
     display: flex;
-    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     z-index: 2;
     margin-bottom: 2rem;
     color: var(--black);
+}
+.WorkRowOdd {
+    flex-flow: row nowrap;
+}
+.WorkRowEven {
+    flex-flow: row-reverse nowrap;
 }
 .ProjectImageContainer {
     width: 60%;
@@ -132,9 +137,8 @@
     align-items: flex-start;
 }
 .ProjectTitle {
-    font-family: "IBM Plex Sans";
+    font-family: "Roboto";
     font-size: 2em;
-    font-weight: bold;
 }
 .ProjectBreak {
     height: 4px;
@@ -152,16 +156,19 @@
     align-items: flex-start;
 }
 .ProjectRoles {
-    font-family: "Roboto";
+    font-family: "Lato";
     font-size: 1.1em;
 }
 .ProjectTools {
     list-style-type: none;
     font-size: 0.9em;
-    font-family: "Roboto";
+    font-family: "Lato";
     text-transform: uppercase;
     text-align: right;
-    line-height: 12px;
+    margin: 0;
+}
+.ProjectTools li {
+    margin-bottom: 3px;
 }
 .ProjectLink {
     font-family: "IBM Plex Sans";
@@ -180,7 +187,10 @@
     color: var(--white);
 }
 @media screen and (max-width: 860px) {
-    .WorkRow {
+    .WorkRowEven {
+        flex-flow: column-reverse nowrap;
+    }
+    .WorkRowOdd {
         flex-flow: column-reverse nowrap;
     }
     .WorkRowImage {
@@ -200,7 +210,9 @@
     }
     .ProjectTools {
         font-size: 0.65em;
-        line-height: 8px;
+    }
+    .ProjectTools li {
+        margin-bottom: 1px;
     }
     .ProjectRoles {
         font-size: 0.85em;
