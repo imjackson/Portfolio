@@ -36,7 +36,7 @@ module.exports = {
                 fonts: [
                     {
                         family: `Lato`,
-                        variants: [`400`, `700`, `900`],
+                        variants: [`400`, `700`],
                     },
                     {
                         family: `IBM Plex Sans`,
@@ -44,7 +44,11 @@ module.exports = {
                     },
                     {
                         family: `Roboto`,
-                        variants: [`400`, `700`, `900`],
+                        variants: [`400`, `700`],
+                    },
+                    {
+                        family: `Roboto Slab`,
+                        variants: [`400`, `700`],
                     },
                 ],
             },

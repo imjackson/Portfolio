@@ -25,12 +25,6 @@ const About = () => {
 
     return (
         <>
-            <img
-                style={{ transform: "translateY(2px)" }}
-                src={wave}
-                alt=""
-                className={styles.Wave}
-            />
             <Subheader tag="h1">About me.</Subheader>
 
             <div className={styles.AboutLeft}>
