@@ -119,18 +119,19 @@ Main layout component styling rules
     border: none;
     border-bottom: 2px solid;
     margin: 0 16px;
-    font-family: "Lato";
-    font-size: 0.9rem;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
     cursor: pointer;
     padding: 5px 0;
     transition: 0.2s ease;
     outline-offset: 3px;
+    color: #5c5858;
     outline-color: var(--black);
     text-transform: capitalize;
 }
 .NavigationLink:hover {
-    border-color: rgb(199, 199, 199);
-    /* transform: translateY(-2px); */
+    color: var(--black);
 }
 @media screen and (max-width: 860px) {
     .NavigationLink {
@@ -213,13 +214,13 @@ Main layout component styling rules
 .FooterTitle {
     font-family: "IBM Plex Sans";
     font-size: 1.25rem;
-    color: #84817a;
+    color: var(--grey);
 }
 .FooterEmail {
     font-size: 0.85rem;
     font-family: "Lato";
     margin-top: 1px;
-    color: #84817a;
+    color: var(--grey);
 }
 .FooterLogo {
     height: 1.75rem;

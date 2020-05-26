@@ -44,7 +44,7 @@ module.exports = {
                     },
                     {
                         family: `Roboto`,
-                        variants: [`400`, `700`],
+                        variants: [`400`, `500`, `700`],
                     },
                     {
                         family: `Roboto Slab`,

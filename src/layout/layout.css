@@ -30,6 +30,7 @@ body {
     --white: #f9f9f9;
     --black: #252525;
     --navy: #14213d;
+    --grey: #5c5858;
 }
 
 @media screen and (max-width: 1350px) {
