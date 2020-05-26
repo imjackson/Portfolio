@@ -22,14 +22,6 @@
     margin-top: 2rem;
     position: relative;
 }
-.WorkBackground {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: var(--navy);
-}
 .Spacer {
     height: 20px;
 }
@@ -188,9 +180,6 @@
     color: var(--white);
 }
 @media screen and (max-width: 860px) {
-    .WorkBackground {
-        display: none;
-    }
     .WorkRow {
         flex-flow: column-reverse nowrap;
     }

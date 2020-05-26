@@ -39,7 +39,6 @@ const Work = () => {
             <Spacer />
             <Subheader>My Sites.</Subheader>
             <div className={styles.WorkMain}>
-                {/* <div className={styles.WorkBackground}></div> */}
                 <WorkItem
                     odd
                     title="FinalsClub Landing"
