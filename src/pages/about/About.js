@@ -20,6 +20,7 @@ const About = () => {
         "SEO",
         "Google Analytics",
         "jQuery",
+        "Linux",
     ]
 
     return (
