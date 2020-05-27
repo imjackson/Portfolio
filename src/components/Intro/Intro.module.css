@@ -53,6 +53,9 @@
 }
 
 @media screen and (max-width: 860px) {
+    .Wave {
+        display: none;
+    }
     .IntroMain {
         padding-top: 9rem;
     }
