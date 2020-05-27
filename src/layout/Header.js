@@ -13,8 +13,9 @@ import styles from "./layout.module.css"
 
 // Icons
 import logo from "../images/logos/logo.svg"
+import menu from "../images/menu.svg"
 
-const Header = ({ path }) => {
+const Header = ({ path, isMobile }) => {
     const isIndexPage = path === "/"
     const [headerIsActive, setHeaderIsActive] = useState(false)
     const headerBackgroundColorActive = "var(--white)"
@@ -36,10 +37,7 @@ const Header = ({ path }) => {
     }
 
     const HeaderStyle = {
-        backgroundColor: headerIsActive
-            ? headerBackgroundColorActive
-            : headerBackgroundColorInactive,
-        borderColor: headerIsActive ? "var(--green)" : "transparent",
+        backgroundColor: isIndexPage ? "var(--green)" : "var(--white)",
     }
 
     return (
@@ -48,11 +46,17 @@ const Header = ({ path }) => {
                 <img src={logo} alt="Logo." className={styles.Logo} />
                 <h2 className={styles.HeaderTitle}>I'm Jackson.</h2>
             </Link>
-            <nav className={styles.Navigation}>
-                <NavigationLink currentPath={path} page="about" />
-                <NavigationLink currentPath={path} page="work" />
-                <NavigationLink currentPath={path} page="contact" />
-            </nav>
+            {isMobile ? (
+                <button className={styles.MenuButton} type="button">
+                    <img src={menu} className={styles.MenuButtonIcon} />
+                </button>
+            ) : (
+                <nav className={styles.Navigation}>
+                    <NavigationLink currentPath={path} page="about" />
+                    <NavigationLink currentPath={path} page="work" />
+                    <NavigationLink currentPath={path} page="contact" />
+                </nav>
+            )}
         </header>
     )
 }

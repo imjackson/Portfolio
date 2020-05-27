@@ -25,12 +25,17 @@ Main layout component styling rules
 .Main {
     width: var(--content-width);
     flex: 1;
-    padding-top: 7rem;
+    padding-top: 3rem;
     padding-bottom: 8rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
+}
+@media screen and (max-width: 860px) {
+    .Main {
+        padding-top: 7rem;
+    }
 }
 
 /* 
@@ -39,20 +44,16 @@ Main layout component styling rules
 .Header {
     height: 4rem;
     width: calc(var(--content-width) + 100px);
-    border-bottom: 3px solid;
     transition: border 0.2s ease;
     padding: 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
     z-index: 5;
     transition: 0.2s border ease;
 }
 .LogoButton {
-    margin-left: 16px;
     background-color: transparent;
     border: none;
     display: flex;
@@ -75,6 +76,18 @@ Main layout component styling rules
     margin-left: 1.5rem;
     animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
+.MenuButton {
+    background-color: transparent;
+    border: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+.MenuButtonIcon {
+    height: 38px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
 @media screen and (max-width: 1080px) {
     .Header {
         width: var(--content-width);
@@ -82,7 +95,11 @@ Main layout component styling rules
 }
 @media screen and (max-width: 860px) {
     .Header {
-        width: 100%;
+        width: 90%;
+        padding: 0 5%;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px 0px;
+        position: fixed;
+        top: 0;
     }
     .Logo {
         height: 1.5rem;
@@ -115,18 +132,14 @@ Main layout component styling rules
     align-items: center;
 }
 .NavigationLink {
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid;
-    margin: 0 16px;
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 16px;
-    cursor: pointer;
+    font: 500 16px "Roboto";
+    color: #5c5858;
+    margin: 0 18px 0 0;
     padding: 5px 0;
+    border-bottom: 2px solid;
+    cursor: pointer;
     transition: 0.2s ease;
     outline-offset: 3px;
-    color: #5c5858;
     outline-color: var(--black);
     text-transform: capitalize;
 }
@@ -201,14 +214,10 @@ Main layout component styling rules
 }
 @media screen and (max-width: 860px) {
     .Footer {
-        height: 2.5rem;
+        height: 6rem;
     }
 }
 @media screen and (max-width: 600px) {
-    .Footer {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
 }
 
 .FooterTitle {
@@ -227,7 +236,7 @@ Main layout component styling rules
 }
 @media screen and (max-width: 860px) {
     .FooterLogo {
-        height: 2.5rem;
+        height: 30px;
     }
 }
 @media screen and (max-width: 600px) {

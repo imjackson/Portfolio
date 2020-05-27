@@ -6,7 +6,7 @@
 // ============================================================
 
 // Dependencies
-import React from "react"
+import React, { useState, useLayoutEffect } from "react"
 import PropTypes from "prop-types"
 
 // Components
@@ -20,6 +20,25 @@ import styles from "./layout.module.css"
 const Layout = ({ children, location }) => {
     const path = location.pathname
     const isIndexPage = path === "/"
+
+    const [isMobile, setIsMobile] = useState(false)
+
+    useLayoutEffect(() => {
+        window.addEventListener("resize", handleSizeChage)
+        handleSizeChage()
+        return () => {
+            window.removeEventListener("resize", handleSizeChage)
+        }
+    }, [])
+
+    const handleSizeChage = () => {
+        let width = window.innerWidth
+        if (width <= 860) {
+            setIsMobile(true)
+        } else {
+            setIsMobile(false)
+        }
+    }
 
     const getBackgroundColor = () => {
         if (isIndexPage) {
@@ -35,7 +54,7 @@ const Layout = ({ children, location }) => {
 
     return (
         <div style={getBackgroundColor()} className={styles.Layout}>
-            <Header path={path} />
+            <Header isMobile={isMobile} path={path} />
             <main className={styles.Main}>{children}</main>
             <Footer isIndexPage={isIndexPage} />
         </div>
