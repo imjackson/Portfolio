@@ -5,7 +5,7 @@
 // ============================================================
 
 // Dependencies
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { Link } from "gatsby"
 
 // Styles
@@ -17,27 +17,10 @@ import menu from "../images/menu.svg"
 
 const Header = ({ path, isMobile }) => {
     const isIndexPage = path === "/"
-    const [headerIsActive, setHeaderIsActive] = useState(false)
-    const headerBackgroundColorActive = "var(--white)"
-    const headerBackgroundColorInactive = isIndexPage
-        ? "var(--green)"
-        : "var(--white)"
-
-    useEffect(() => {
-        window.addEventListener("scroll", scrollHandler)
-        return () => {
-            window.removeEventListener("scroll", scrollHandler)
-        }
-    }, [])
-
-    const scrollHandler = () => {
-        let offset = window.pageYOffset
-        const isActive = offset >= 40
-        setHeaderIsActive(isActive)
-    }
 
     const HeaderStyle = {
         backgroundColor: isIndexPage ? "var(--green)" : "var(--white)",
+        boxShadow: isIndexPage ? "none" : null,
     }
 
     return (
