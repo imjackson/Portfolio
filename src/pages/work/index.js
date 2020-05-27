@@ -1,1 +1,3 @@
-export { default } from "./Work.js"
+import Work from "./Work"
+
+export default Work
