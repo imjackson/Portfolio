@@ -5,21 +5,43 @@ layout.css
 Site-wide style sheet for element-level styling rules
 
 */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#___gatsby {
+    height: 100%;
+    width: 100%;
+}
+
+#___gatsby > * {
+    height: 100%;
+    width: 100%;
+}
+
 :root {
-    --content-width: 1280px;
+    --content-width: 1000px;
     --green: #bcf0df;
     --white: #f9f9f9;
     --black: #252525;
     --navy: #14213d;
+    --grey: #5c5858;
+    --header-height: 4rem;
 }
+
 @media screen and (max-width: 1350px) {
     :root {
-        --content-width: 1020px;
+        --content-width: 800px;
     }
 }
 @media screen and (max-width: 1080px) {
     :root {
-        --content-width: 90vw;
+        --content-width: 90%;
     }
 }
 
@@ -139,63 +161,9 @@ img {
     margin: 0;
     padding: 0;
 }
-
-ul {
-    margin-left: 1.45rem;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    margin-bottom: 1.45rem;
-    list-style-position: outside;
-    list-style-image: none;
-}
-ol {
-    margin-left: 1.45rem;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    margin-bottom: 1.45rem;
-    list-style-position: outside;
-    list-style-image: none;
-}
-dl {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    margin-bottom: 1.45rem;
-}
 form {
     margin: 0;
     padding: 0;
-}
-li {
-    margin-bottom: calc(1.45rem / 2);
-}
-ol li {
-    padding-left: 0;
-}
-ul li {
-    padding-left: 0;
-}
-li > ol {
-    margin-left: 1.45rem;
-    margin-bottom: calc(1.45rem / 2);
-    margin-top: calc(1.45rem / 2);
-}
-li > ul {
-    margin-left: 1.45rem;
-    margin-bottom: calc(1.45rem / 2);
-    margin-top: calc(1.45rem / 2);
 }
 
 @media only screen and (max-width: 480px) {

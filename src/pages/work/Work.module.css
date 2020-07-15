@@ -22,13 +22,8 @@
     margin-top: 2rem;
     position: relative;
 }
-.WorkBackground {
-    height: 100%;
-    width: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: var(--navy);
+.Spacer {
+    height: 20px;
 }
 
 /* 
@@ -36,8 +31,8 @@
 */
 .RoleContainer {
     width: 1280px;
-    padding: 2rem 0;
-    margin: 1rem 0 2rem 0;
+    padding: 2rem 0 0 0;
+    margin: 1rem 0 0 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -45,19 +40,18 @@
 }
 .RoleTitle {
     font-family: "Roboto";
-    font-weight: 900;
-    font-size: 34px;
+    font-size: 30px;
 }
 .RoleHighInfo {
     font-family: "Lato";
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
-    margin-top: 8px;
+    margin-top: 6px;
 }
 .RoleBreak {
     height: 2px;
     width: 10rem;
-    margin: 1.5rem 0;
+    margin: 10px 0;
     padding: 0;
     background-color: var(--black);
     border: none;
@@ -83,7 +77,7 @@
 }
 @media screen and (max-width: 860px) {
     .RoleTitle {
-        font-size: 24px;
+        font-size: 22px;
     }
     .RoleHighInfo {
         font-size: 16px;
@@ -109,18 +103,31 @@
 .WorkRow {
     width: 100%;
     display: flex;
-    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     z-index: 2;
     margin-bottom: 2rem;
+    color: var(--black);
 }
-.EvenWorkRow {
+.WorkRowOdd {
+    flex-flow: row nowrap;
+}
+.WorkRowEven {
     flex-flow: row-reverse nowrap;
 }
-.WorkRowImage {
+.ProjectImageContainer {
     width: 60%;
     height: auto;
+}
+.ProjectImageContainerOdd {
+    margin: 0 0 0 30px;
+}
+.ProjectImageContainerEven {
+    margin: 0 30px 0 0;
+}
+.ProjectImage {
+    box-shadow: 0px 5px 10px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
 }
 .WorkRowContent {
     width: 40%;
@@ -128,18 +135,17 @@
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0 2%;
 }
 .ProjectTitle {
-    font-family: "IBM Plex Sans";
+    font-family: "Roboto";
     font-size: 2em;
-    font-weight: bold;
 }
 .ProjectBreak {
     height: 4px;
     width: 6rem;
     border: none;
-    margin: 1rem 0;
+    margin: 14px 0;
+    background-color: var(--black);
 }
 .ProjectInfoRow {
     padding-right: 5%;
@@ -150,18 +156,21 @@
     align-items: flex-start;
 }
 .ProjectRoles {
-    font-family: "Roboto";
+    font-family: "Lato";
     font-size: 1.1em;
 }
 .ProjectTools {
     list-style-type: none;
     font-size: 0.9em;
-    font-family: "Roboto";
+    font-family: "Lato";
     text-transform: uppercase;
     text-align: right;
-    line-height: 12px;
+    margin: 0;
 }
-.ProjectLinkLight {
+.ProjectTools li {
+    margin-bottom: 3px;
+}
+.ProjectLink {
     font-family: "IBM Plex Sans";
     font-weight: bold;
     font-size: 14px;
@@ -172,31 +181,16 @@
     transition: 0.3s ease;
     outline: none;
 }
-.ProjectLinkLight:hover,
-.ProjectLinkLight:focus {
+.ProjectLink:hover,
+.ProjectLink:focus {
     background-color: var(--navy);
     color: var(--white);
 }
-.ProjectLinkDark {
-    font-family: "IBM Plex Sans";
-    font-weight: bold;
-    font-size: 14px;
-    padding: 15px 30px;
-    border-radius: 4px;
-    background-color: var(--white);
-    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
-    transition: 0.3s ease;
-    outline-color: var(--green);
-}
-.ProjectLinkDark:hover,
-.ProjectLinkDark:focus {
-    background-color: var(--green);
-}
 @media screen and (max-width: 860px) {
-    .WorkBackground {
-        display: none;
+    .WorkRowEven {
+        flex-flow: column-reverse nowrap;
     }
-    .WorkRow {
+    .WorkRowOdd {
         flex-flow: column-reverse nowrap;
     }
     .WorkRowImage {
@@ -209,9 +203,6 @@
     .ProjectTitle {
         font-size: 2.25em;
     }
-    .DarkContent {
-        background-color: var(--navy);
-    }
 }
 @media screen and (max-width: 860px) {
     .ProjectTitle {
@@ -219,7 +210,9 @@
     }
     .ProjectTools {
         font-size: 0.65em;
-        line-height: 8px;
+    }
+    .ProjectTools li {
+        margin-bottom: 1px;
     }
     .ProjectRoles {
         font-size: 0.85em;

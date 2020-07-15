@@ -1,0 +1,288 @@
+/*
+
+layout.module.css
+------------------------
+Main layout component styling rules
+
+*/
+
+/* 
+    Layout Base Formatting
+ */
+.Layout {
+    min-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--green);
+    position: relative;
+}
+.Main {
+    width: var(--content-width);
+    flex: 1;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+@media screen and (max-width: 860px) {
+    .Main {
+        padding-top: 7rem;
+    }
+}
+
+/* 
+    Header Base Formatting 
+*/
+.Header {
+    height: var(--header-height);
+    width: calc(var(--content-width) + 100px);
+    transition: border 0.2s ease;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    transition: 0.2s border ease;
+}
+.LogoButton {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline-color: var(--black);
+    outline-offset: 10px;
+    padding: 0;
+}
+.Logo {
+    width: 1.5rem;
+    height: auto;
+    margin: 0;
+}
+.HeaderTitle {
+    font-family: "IBM Plex Sans";
+    font-size: 1.2em;
+    margin-left: 1.5rem;
+    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.MenuButton {
+    background-color: transparent;
+    border: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+.MenuButtonIcon {
+    height: 38px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 1080px) {
+    .Header {
+        width: var(--content-width);
+    }
+}
+@media screen and (max-width: 860px) {
+    .Header {
+        width: var(--content-width);
+        padding: 0 5%;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
+        position: fixed;
+        top: 0;
+    }
+    .Logo {
+        height: 1.5rem;
+    }
+    .HeaderTitle {
+        font-size: 1.25em;
+        margin-left: 1.5rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .Logo {
+        height: 1rem;
+    }
+    .HeaderTitle {
+        font-size: 1.05em;
+        margin-left: 0.5rem;
+    }
+}
+
+/* 
+    Single-page site navigation
+*/
+.Navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.NavigationLink {
+    font: 500 16px "Roboto";
+    color: #5c5858;
+    margin: 0 24px 0 0;
+    padding: 5px 0;
+    border-bottom: 2px solid;
+    cursor: pointer;
+    transition: 0.2s ease;
+    outline-offset: 3px;
+    outline-color: var(--black);
+    text-transform: capitalize;
+}
+.NavigationLink:hover {
+    color: var(--black);
+}
+@media screen and (max-width: 860px) {
+    .NavigationLink {
+        margin: 0 0.75rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .NavigationLink {
+        border-bottom: 1px solid;
+        font-size: 12px;
+        margin: 0 0.35rem;
+        padding: 1px 0;
+    }
+}
+
+/* 
+    Keyframes
+*/
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 
+    Footer Footer and sectioning
+*/
+.Footer {
+    height: 8rem;
+    width: calc(var(--content-width) + 100px);
+    border-top: 3px solid;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+.FooterLeft {
+    width: 38%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.FooterCenter {
+    width: 24%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.FooterRight {
+    width: 38%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+@media screen and (max-width: 1080px) {
+    .Footer {
+        width: var(--content-width);
+    }
+}
+@media screen and (max-width: 860px) {
+    .Footer {
+        height: 6rem;
+    }
+}
+@media screen and (max-width: 600px) {
+}
+
+.FooterTitle {
+    font-family: "IBM Plex Sans";
+    font-size: 1.25rem;
+    color: var(--grey);
+}
+.FooterEmail {
+    font-size: 0.85rem;
+    font-family: "Lato";
+    margin-top: 1px;
+    color: var(--grey);
+}
+.FooterLogo {
+    height: 1.75rem;
+}
+@media screen and (max-width: 860px) {
+    .FooterLogo {
+        height: 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .FooterTitle {
+        font-size: 0.8em;
+    }
+    .FooterEmail {
+        margin-top: 0.25rem;
+        font-size: 0.65em;
+    }
+    .FooterLogo {
+        height: 1.75rem;
+    }
+}
+
+/* 
+    Social media link
+*/
+.SocialIcon {
+    height: 1.5rem;
+    margin: 0 0.75rem;
+    width: auto;
+}
+.SocialLink {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+}
+.SocialLink:hover,
+.SocialLink:focus {
+    transform: translateY(-2px);
+}
+@media screen and (max-width: 600px) {
+    .SocialIcon {
+        height: 1.2rem;
+        margin: 0 0.35rem;
+    }
+}
+
+/* 
+    Keyframes
+*/
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
