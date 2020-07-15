@@ -15,7 +15,7 @@ import styles from "./layout.module.css"
 import logo from "../images/logos/logo.svg"
 import menu from "../images/menu.svg"
 
-const Header = ({ path, isMobile }) => {
+const Header = ({ path, isMobile, toggleNavIsOpen }) => {
     const isIndexPage = path === "/"
 
     const HeaderStyle = {
@@ -30,7 +30,11 @@ const Header = ({ path, isMobile }) => {
                 <h2 className={styles.HeaderTitle}>I'm Jackson.</h2>
             </Link>
             {isMobile ? (
-                <button className={styles.MenuButton} type="button">
+                <button
+                    onClick={() => toggleNavIsOpen()}
+                    className={styles.MenuButton}
+                    type="button"
+                >
                     <img src={menu} className={styles.MenuButtonIcon} />
                 </button>
             ) : (

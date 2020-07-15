@@ -42,7 +42,7 @@ Main layout component styling rules
     Header Base Formatting 
 */
 .Header {
-    height: 4rem;
+    height: var(--header-height);
     width: calc(var(--content-width) + 100px);
     transition: border 0.2s ease;
     padding: 0;
@@ -50,7 +50,7 @@ Main layout component styling rules
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    z-index: 5;
+    z-index: 10;
     transition: 0.2s border ease;
 }
 .LogoButton {
@@ -95,9 +95,9 @@ Main layout component styling rules
 }
 @media screen and (max-width: 860px) {
     .Header {
-        width: 90%;
+        width: var(--content-width);
         padding: 0 5%;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px 0px;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
         position: fixed;
         top: 0;
     }
@@ -110,9 +110,6 @@ Main layout component styling rules
     }
 }
 @media screen and (max-width: 600px) {
-    .Header {
-        height: 3rem;
-    }
     .Logo {
         height: 1rem;
     }
@@ -184,7 +181,7 @@ Main layout component styling rules
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    z-index: 5;
 }
 .FooterLeft {
     width: 38%;

@@ -1,0 +1,45 @@
+.Container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.2s ease;
+    z-index: 8;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.Background {
+    flex: 1;
+    height: 100%;
+    background-color: #25252528;
+    opacity: 0;
+    animation: fade-in 0.2s ease 0.2s forwards;
+}
+
+.Menu {
+    height: 100%;
+    width: 300px;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--white);
+    padding: calc(var(--header-height) + 5px) 0 0 0;
+}
+
+.Link {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--grey);
+    font: 500 16px "Lato";
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
